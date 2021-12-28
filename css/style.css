@@ -118,7 +118,7 @@ html
     background-color: #F5F6FA;
   }
   nav {
-    height: 60px;
+    height: 65px;
   }
   #menuToggle {
     display: flex;
@@ -220,12 +220,11 @@ html
 
 #navbarMain {
     transition: all 0.5s ease-out;
-    padding-bottom: 1rem;
 }
 
 .background-xenith
 {
-    background-color: #261658;
+    background-color: rgba(37, 11, 85, 1);
     transition: all 0.8s ease-in;
     
 }
