@@ -2,23 +2,44 @@
 *{
 margin: 0%;
 padding: 0%;
+-webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}   
+*:focus {
+    outline: none !important;
 }
 .body{
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 .lotter-bg{
     width: 100%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .lotter-bg{
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
+    .lottie-bg{
+        width: 100%;
+        object-fit: cover;
+    }
+    .hidden{
+        display: block !important;
+    }
+    .active{
+        display: none !important;
+    }
 }
+
 .hidden{
-    display: none !important;
+    display: none;
 }
 #preLoader{
     width: 100%;
@@ -69,7 +90,7 @@ padding: 0%;
     color: #1E1E23;
     opacity:1;
     font-family: 'work sans', sans serif;
-    font-size: 1.5em;
+    font-size: 2.3em;
     font-weight: 400;
     transition: 200ms;
   }
@@ -79,6 +100,7 @@ padding: 0%;
     text-decoration: none;
   }
   ul {
+    text-align: center;
     padding: 0;
     list-style-type: none;
   }
@@ -159,7 +181,7 @@ padding: 0%;
   #menu
   {
     position: absolute;
-    width: 180px;
+    width: 300px;
     height: 100vh;
     box-shadow: 0 0 10px #85888C;
     margin: -50px 0 0 -50px;

@@ -11,6 +11,8 @@
       href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <!--Lottie player-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
@@ -19,6 +21,7 @@
   </head>
 
   <body>
+    <!--Pre Loader-->
     <div id="preLoader">
       <div class="uk-position-center">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -35,18 +38,21 @@
 
     <div id="postLoader" class="uk-hidden">
       <div class="uk-position-relative">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <!--Hidden For Phone-->
         <lottie-player
           src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json"
           background="transparent"
           speed="1"
-          class="lotter-bg"
-          style=""
+          class="active"
           loop
           autoplay
         ></lottie-player>
+        <!--Hidden For Pc-->
+        <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
+
+        <!--Hidden For Phone-->
         <div
-          class="uk-position-top hidden"
+          class="uk-position-top active"
           uk-scrollspy="cls:uk-animation-fade"
         >
           <div
@@ -85,7 +91,8 @@
             <span>Xenith'22</span>
           </h1>
         </div>
-        <div class="nav-mb">
+        <!--Hidden for Pc-->
+        <div class="nav-mb hidden">
           <nav role="navigation">
             <div id="menuToggle">
               <input type="checkbox" />
