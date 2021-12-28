@@ -226,5 +226,8 @@ html
 {
     background-color: rgba(37, 11, 85, 1);
     transition: all 0.8s ease-in;
-    
+}
+.c-white{
+  color:white !important;
+  transition: all 0.8s ease-in;
 }
