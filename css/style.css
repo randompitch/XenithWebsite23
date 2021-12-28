@@ -70,8 +70,7 @@ padding: 0%;
     opacity: 1;
 }
 
-.hero-heading
-{
+.hero-heading {
     color: white;
     font-family: 'Orbitron', sans-serif;
 }
@@ -201,3 +200,24 @@ padding: 0%;
   {
     transform: none;
   }
+#about {
+    font-size: 2em;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#navbarMain {
+    transition: all 1s ease-out;
+}
+
+.background-xenith
+{
+    background-color: #14062e;
+    transition: all 1s ease-in;
+}
+
+.background-xenith {
+    background-color: #14062e;
+}
