@@ -1,18 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-* {
-    margin: 0%;
-    padding: 0%;
+*{
+margin: 0%;
+padding: 0%;
+-webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}   
+*:focus {
+    outline: none !important;
 }
-html {
-    scroll-behavior: smooth;
+.body{
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+.lotter-bg{
+    width: 100%;
+}
+@media only screen and (max-width: 700px) {
+    .lottie-bg{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .hidden{
+        display: block !important;
+    }
+    .active{
+        display: none !important;
+    }
 }
 
-#preLoader {
+.hidden{
+    display: none;
+}
+#preLoader{
     width: 100%;
     height: 100vh;
 }
 
-li a {
+.cp-tag {
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -21,7 +52,7 @@ li a {
     font-family: 'Orbitron', sans-serif;
 }
 
-li a::before {
+.cp-tag::before {
     transition: 300ms;
     height: 3px;
     content: "";
@@ -31,11 +62,11 @@ li a::before {
     bottom: 20px;
 }
 
-li a:hover::before {
+.cp-tag:hover::before{
     width: 100%;
 }
 
-li a:hover {
+.cp-tag:hover {
     opacity: 1;
 }
 
@@ -44,24 +75,128 @@ li a:hover {
     font-family: 'Orbitron', sans-serif;
 }
 
-#about {
-    font-size: 2em;
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-}
 
-#navbarMain {
-    transition: all 1s ease-out;
+/* Navbar-mb*/
+.nav-mb{
+    position: fixed;
+    top: 0;
 }
-
-.background-xenith
-{
-    background-color: #14062e;
-    transition: all 1s ease-in;
-}
-
-.background-xenith {
-    background-color: #14062e;
-}
+.a-tag {
+    text-decoration: none;
+    color: #1E1E23;
+    opacity:1;
+    font-family: 'work sans', sans serif;
+    font-size: 1.6em;
+    font-weight: 400;
+    transition: 200ms;
+  }
+  .a-tag:hover{
+    opacity:0.5;
+    color: #512e7f;
+    text-decoration: none;
+  }
+  ul {
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+  }
+  .content {
+    border: 1px solid #36383F;
+    border-radius: 20px;
+    width: 100%;
+    height: 91%;
+    background-color: #F5F6FA;
+  }
+  nav {
+    height: 65px;
+  }
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 15 !important;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #menuToggle input
+  {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  #menuToggle span
+  {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    background: white;
+  }
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menu
+  {
+    position: absolute;
+    width: 220px;
+    height: 100vh;
+    box-shadow: 0 0 10px #85888C;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #F5F6FA;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li
+  {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+  
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }

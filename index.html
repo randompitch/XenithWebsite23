@@ -11,6 +11,8 @@
       href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <!--Lottie player-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
@@ -19,6 +21,7 @@
   </head>
 
   <body>
+    <!--Pre Loader-->
     <div id="preLoader">
       <div class="uk-position-center">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -35,22 +38,30 @@
 
     <div id="postLoader" class="uk-hidden">
       <div class="uk-position-relative">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <!--Hidden For Phone-->
         <lottie-player
           src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json"
           background="transparent"
           speed="1"
+          class="active"
           loop
           autoplay
         ></lottie-player>
+        <!--Hidden For Pc-->
+        <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
 
-        <div class="uk-position-top" uk-scrollspy="cls:uk-animation-fade">
+        <!--Hidden For Phone-->
+        <div
+          class="uk-position-top active"
+          uk-scrollspy="cls:uk-animation-fade"
+        >
           <div
             uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
-            id="navbarMain"
           >
             <nav
-              class="uk-navbar-container uk-navbar-transparent uk-light"
+              class="
+                uk-navbar-container uk-margin uk-navbar-transparent uk-light
+              "
               uk-navbar="dropbar: true;"
             >
               <div class="uk-navbar-center">
@@ -58,41 +69,50 @@
                   ><img src="" alt=""
                 /></a>
                 <ul class="uk-navbar-nav">
-                  <li class="uk-active"><a href="#postLoader">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#event">Events</a></li>
-                  <li><a href="#timeline">Timeline</a></li>
-                  <li><a href="#team">Team</a></li>
-                  <li><a href="#sponsors">Sponsors</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li class="uk-active cp-tag">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li><a class="cp-tag" href="#about">About</a></li>
+                  <li><a class="cp-tag" href="#event">Events</a></li>
+                  <li><a class="cp-tag" href="#timeline">Timeline</a></li>
+                  <li><a class="cp-tag" href="#team">Team</a></li>
+                  <li><a class="cp-tag" href="#sponsors">Sponsors</a></li>
+                  <li><a class="cp-tag" href="#contact">Contact</a></li>
                 </ul>
               </div>
             </nav>
           </div>
         </div>
-
         <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
           <h4 class="uk-heading-line uk-text-center hero-heading">
-            <span
-              >Jaypee Institute of Information Technolory in association with
-              IEEE presents</span
-            >
+            <span>Beyond The Apex With</span>
           </h4>
           <h1 class="uk-heading-large uk-text-center hero-heading">
             <span>Xenith'22</span>
           </h1>
         </div>
-      </div>
-      <div class="uk-section">
-        <div class="uk-container">
-          <div class="uk-position-relative">
-            <div class="uk-position-top-center">
-              <div class="uk-tile uk-tile-default">
-                <span id="about">About</span>
-              </div>
+        <!--Hidden for Pc-->
+        <div class="nav-mb hidden">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a class="a-tag" href="#">About</a></li>
+                <li><a class="a-tag" href="#">Events</a></li>
+                <li><a class="a-tag" href="#">Timeline</a></li>
+                <li><a class="a-tag" href="#">Team</a></li>
+                <li><a class="a-tag" href="#">Sponsors</a></li>
+                <li><a class="a-tag" href="#">Contact</a></li>
+              </ul>
             </div>
-          </div>
+          </nav>
         </div>
+      </div>
+      <div class="uk-section" id="about">
+        <div class="uk-container"></div>
       </div>
     </div>
   </body>
