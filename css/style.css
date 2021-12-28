@@ -13,6 +13,10 @@ padding: 0%;
 *:focus {
     outline: none !important;
 }
+html
+{
+  scroll-behavior: smooth;
+}
 .body{
     height: 100vh;
     width: 100%;
@@ -114,7 +118,7 @@ html
     background-color: #F5F6FA;
   }
   nav {
-    height: 65px;
+    height: 60px;
   }
   #menuToggle {
     display: flex;
@@ -215,15 +219,13 @@ html
 }
 
 #navbarMain {
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
+    padding-bottom: 1rem;
 }
 
 .background-xenith
 {
-    background-color: #14062e;
-    transition: all 1s ease-in;
-}
-
-.background-xenith {
-    background-color: #14062e;
+    background-color: #261658;
+    transition: all 0.8s ease-in;
+    
 }
