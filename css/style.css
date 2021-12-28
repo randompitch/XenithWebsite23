@@ -59,11 +59,11 @@ li a:hover {
 }
 
 #navbarMain {
-    transition: all 0.5s ease-out;
+    transition: all 1s ease-out;
 }
 
 .background-xenith
 {
     background-color: #14062e;
-    transition: all 0.5s ease-in;
+    transition: all 1s ease-in;
 }
