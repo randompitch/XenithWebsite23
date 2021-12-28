@@ -55,6 +55,16 @@ li a:hover {
     font-weight: bold;
 }
 
+#navbarMain {
+    transition: all 1s ease-out;
+}
+
+.background-xenith
+{
+    background-color: #14062e;
+    transition: all 1s ease-in;
+}
+
 .background-xenith {
     background-color: #14062e;
 }
