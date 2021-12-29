@@ -252,12 +252,13 @@ html
   {
     transform: none;
   }
-#about {
+.sectionHead {
     font-size: 2em;
     color: black;
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 5%;
 }
 
 #navbarMain {
@@ -272,4 +273,47 @@ html
 .c-white{
   color:white !important;
   transition: all 0.8s ease-in;
+}
+
+#pos-rel-1
+{
+  max-height: 110vh;
+  overflow: hidden;
+}
+
+#about
+{
+  height: 50vh;
+  overflow: hidden;
+  padding: 5%;
+}
+
+#event
+{
+  height: 150vh;
+  overflow: hidden;
+  padding: 5%;
+}
+
+.section-text
+{
+  margin: 0% 5%;
+}
+
+@media only screen and (max-width: 700px) {
+  #about
+  {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  #about
+  {
+    height: 110vh;
+    overflow: hidden;
+  }
+
 }

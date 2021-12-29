@@ -1,122 +1,127 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Xenith 2022</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/uikit.min.css" />
-    <!-- UIkit CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <!--Lottie player-->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-  </head>
 
-  <body>
-    <!--Pre Loader-->
-    <div id="preLoader">
-      <div class="uk-position-center">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player
-          src="src/lf30_editor_2vwxpmet.json"
-          background="transparent"
-          speed="1"
-          style="width: 300px; height: 300px"
-          loop
-          autoplay
-        ></lottie-player>
-      </div>
+<head>
+  <title>Xenith 2022</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!--Lottie player-->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <!--Pre Loader-->
+  <div id="preLoader">
+    <div class="uk-position-center">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="src/lf30_editor_2vwxpmet.json" background="transparent" speed="1"
+        style="width: 300px; height: 300px" loop autoplay></lottie-player>
     </div>
+  </div>
 
-    <div id="postLoader" class="uk-hidden">
-      <div class="uk-position-relative">
-        <!--Hidden For Phone-->
-        <lottie-player
-          src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json"
-          background="transparent"
-          speed="1"
-          class="active"
-          loop
-          autoplay
-        ></lottie-player>
-        <!--Hidden For Pc-->
-        <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
+  <div id="postLoader" class="uk-hidden">
+    <div class="uk-position-relative" id="pos-rel-1">
+      <!--Hidden For Phone-->
+      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json" background="transparent"
+        speed="1" class="active" loop autoplay></lottie-player>
+      <!--Hidden For Pc-->
+      <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
 
-        <!--Hidden For Phone-->
-        <div
-          class="uk-position-top active"
-          uk-scrollspy="cls:uk-animation-fade"
-        >
-          <div
-            uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
-          >
-            <nav
-              class="
+      <!--Hidden For Phone-->
+      <div class="uk-position-top active" uk-scrollspy="cls:uk-animation-fade">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+          <nav class="
                 uk-navbar-container uk-margin uk-navbar-transparent uk-light
-              "
-              uk-navbar="dropbar: true;"
-              id="navbarMain"
-            >
-              <div class="uk-navbar-center">
-                <a href="index.html" class="uk-navbar-item uk-logo"
-                  ><img src="" alt=""
-                /></a>
-                <ul class="uk-navbar-nav">
-                  <li><a class="cp-tag" href="#home">Home</a></li>
-                  <li><a class="cp-tag" href="#about">About</a></li>
-                  <li><a class="cp-tag" href="#event">Events</a></li>
-                  <li><a class="cp-tag" href="#timeline">Timeline</a></li>
-                  <li><a class="cp-tag" href="#team">Team</a></li>
-                  <li><a class="cp-tag" href="#sponsors">Sponsors</a></li>
-                  <li><a class="cp-tag" href="#contact">Contact</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
-          <h4 class="uk-heading-line uk-text-center hero-heading">
-            <span>Beyond The Apex With</span>
-          </h4>
-          <h1 class="uk-heading-large uk-text-center hero-heading">
-            <span class="heading-title">Xenith'22</span>
-          </h1>
-        </div>
-        <!--Hidden for Pc-->
-        <div class="nav-mb hidden">
-          <nav role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox" />
-              <span></span>
-              <span></span>
-              <span></span>
-              <ul id="menu">
-                <li><a class="a-tag" href="#">About</a></li>
-                <li><a class="a-tag" href="#">Events</a></li>
-                <li><a class="a-tag" href="#">Timeline</a></li>
-                <li><a class="a-tag" href="#">Team</a></li>
-                <li><a class="a-tag" href="#">Sponsors</a></li>
-                <li><a class="a-tag" href="#">Contact</a></li>
+              " uk-navbar="dropbar: true;" id="navbarMain">
+            <div class="uk-navbar-center">
+              <a href="index.html" class="uk-navbar-item uk-logo"><img src="" alt="" /></a>
+              <ul class="uk-navbar-nav">
+                <li><a class="cp-tag" href="#postLoader">Home</a></li>
+                <li><a class="cp-tag" href="#about">About</a></li>
+                <li><a class="cp-tag" href="#event">Events</a></li>
+                <li><a class="cp-tag" href="#timeline">Timeline</a></li>
+                <li><a class="cp-tag" href="#team">Team</a></li>
+                <li><a class="cp-tag" href="#sponsors">Sponsors</a></li>
+                <li><a class="cp-tag" href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
+      <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
+        <h4 class="uk-heading-line uk-text-center hero-heading">
+          <span>Beyond The Apex With</span>
+        </h4>
+        <h1 class="uk-heading-large uk-text-center hero-heading">
+          <span class="heading-title">Xenith'22</span>
+        </h1>
+      </div>
+      <!--Hidden for Pc-->
+      <div class="nav-mb hidden">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li><a class="a-tag" href="#postLoader">Home</a></li>
+              <li><a class="a-tag" href="#about">About</a></li>
+              <li><a class="a-tag" href="#event">Events</a></li>
+              <li><a class="a-tag" href="#timeline">Timeline</a></li>
+              <li><a class="a-tag" href="#team">Team</a></li>
+              <li><a class="a-tag" href="#sponsors">Sponsors</a></li>
+              <li><a class="a-tag" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-    
-    <div class="uk-section">
-      <div class="uk-container">
-        <div class="uk-position-relative">
+
+    <!--About section begins-->
+
+    <div class="uk-position-relative" id="about" uk-scrollspy="cls:uk-animation-fade">
+      <div class="uk-section">
+        <div class="uk-container">
           <div class="uk-position-top-center">
-            <div class="uk-tile uk-tile-default"><span id="about">About</span></div>
+            <div class="uk-tile uk-tile-default"><span class="sectionHead">About</span></div>
+          </div>
+          <div class="uk-position-center">
+            <p class="uk-text-center uk-text-large section-text">
+
+              Xenith 2021 is the much anticipated online edition of IEEE Student Branch JIIT’s two-day annual
+              fest."Reality is often disappointing" but little did we know back then that Thanos was actually talking
+              about TwentyTwenty. 2020 had been an outlandish and offbeat year. The global pandemic forced us all to be
+              hard stuck at our places and to help us cope up, we went from Ludo to guessing the gibberish, to accusing
+              our best friend of being an imposter and much more.
+              So to Ctrl+Alt+Delete 2020 and escape the ordinary, join the extraordinary IEEE Student Branch JIIT is
+              proud to announce the theme of its annual fest XENITH'21 as "ESCAPE THE REALITY".
+              Grab your seats and make your teams as we are coming with some exciting events, challenges and rewards for
+              you soon. Stay tuned!.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--About section ends-->
+
+    <!--Event section begins-->
+
+    <div class="uk-position-relative" id="event" uk-scrollspy="cls:uk-animation-fade">
+      <div class="uk-section">
+        <div class="uk-container">
+          <div class="uk-position-top-center">
+            <div class="uk-tile uk-tile-default"><span class="sectionHead">Events</span></div>
           </div>
           <div class="uk-position-center">
             
@@ -124,7 +129,39 @@
         </div>
       </div>
     </div>
+
+    <!--Event section ends-->
+
+    <!--Timeline section begins-->
+
+
+
+    <!--Timeline section ends -->
+
+    <!--Team section begins-->
+
+
+
+    <!--Team section ends-->
+
+    <!--Sponsor section begins-->
+
+
+
+    <!--Sponsor section ends-->
+
+    <!--Contact section begins-->
+
+
+
+
+    <!--Contact section ends-->
+    
   </div>
+
+  </div>
+
+
 </body>
 
 </html>
