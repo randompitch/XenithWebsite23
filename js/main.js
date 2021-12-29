@@ -15,5 +15,6 @@ $(document).ready(function () {
       nav.removeClass("background-xenith");
       anchor.removeClass("c-white");
     }
+
   });
 });
