@@ -9,6 +9,9 @@ padding: 0%;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    --bg-color: linear-gradient(to right, "#402571", "#311F65");
+    --typeSpeed: 2.5s;
+    --textLength: 9; 
 }   
 *:focus {
     outline: none !important;
@@ -30,6 +33,8 @@ html
 {
   scroll-behavior: smooth;
 }
+
+
 
 @media only screen and (max-width: 700px) {
     .lottie-bg{
@@ -85,6 +90,43 @@ html
     font-family: 'Orbitron', sans-serif;
 }
 
+.heading-title {
+  font-family: monospace;
+  position: relative;
+}
+
+.heading-title::before,
+.heading-title::after {
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.heading-title::before {
+  background-image: linear-gradient(to right, rgba(64, 37, 113, 1), rgba(51,32,102, 1));
+  animation: animateTyping var(--typeSpeed) steps(var(--textLength)) forwards;
+}
+
+.heading-title::after {
+  width: 0.125em;
+  background: white;
+  animation: animateTyping var(--typeSpeed) steps(var(--textLength)) forwards, blink 2.5s steps(var(--textLength)) forwards;
+}
+
+@keyframes animateTyping {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
 
 /* Navbar-mb*/
 .nav-mb{
