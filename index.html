@@ -37,7 +37,7 @@
     </div>
 
     <div id="postLoader" class="uk-hidden">
-      <div class="uk-position-relative">
+      <div class="uk-position-relative" id="pos-rel-1">
         <!--Hidden For Phone-->
         <lottie-player
           src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json"
@@ -70,7 +70,7 @@
                   ><img src="" alt=""
                 /></a>
                 <ul class="uk-navbar-nav">
-                  <li><a class="cp-tag" href="#home">Home</a></li>
+                  <li><a class="cp-tag" href="#postLoader">Home</a></li>
                   <li><a class="cp-tag" href="#about">About</a></li>
                   <li><a class="cp-tag" href="#event">Events</a></li>
                   <li><a class="cp-tag" href="#timeline">Timeline</a></li>
@@ -99,30 +99,241 @@
               <span></span>
               <span></span>
               <ul id="menu">
-                <li><a class="a-tag" href="#">About</a></li>
-                <li><a class="a-tag" href="#">Events</a></li>
-                <li><a class="a-tag" href="#">Timeline</a></li>
-                <li><a class="a-tag" href="#">Team</a></li>
-                <li><a class="a-tag" href="#">Sponsors</a></li>
-                <li><a class="a-tag" href="#">Contact</a></li>
+                <li><a class="a-tag" href="#postLoader">Home</a></li>
+                <li><a class="a-tag" href="#about">About</a></li>
+                <li><a class="a-tag" href="#event">Events</a></li>
+                <li><a class="a-tag" href="#timeline">Timeline</a></li>
+                <li><a class="a-tag" href="#team">Team</a></li>
+                <li><a class="a-tag" href="#sponsors">Sponsors</a></li>
+                <li><a class="a-tag" href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
-    </div>
-    
-    <div class="uk-section">
-      <div class="uk-container">
-        <div class="uk-position-relative">
-          <div class="uk-position-top-center">
-            <div class="uk-tile uk-tile-default"><span id="about">About</span></div>
+
+      <!--About section begins-->
+
+      <div
+        class="uk-position-relative"
+        id="about"
+        uk-scrollspy="cls:uk-animation-fade"
+      >
+        <div class="uk-section">
+          <div class="uk-container">
+            <div class="uk-position-top-center">
+              <div class="uk-tile uk-tile-default">
+                <span class="sectionHead">About</span>
+              </div>
+            </div>
+            <div class="uk-position-center">
+              <p class="uk-text-center uk-text-large section-text">
+                Xenith 2021 is the much anticipated online edition of IEEE
+                Student Branch JIIT’s two-day annual fest."Reality is often
+                disappointing" but little did we know back then that Thanos was
+                actually talking about TwentyTwenty. 2020 had been an outlandish
+                and offbeat year. The global pandemic forced us all to be hard
+                stuck at our places and to help us cope up, we went from Ludo to
+                guessing the gibberish, to accusing our best friend of being an
+                imposter and much more. So to Ctrl+Alt+Delete 2020 and escape
+                the ordinary, join the extraordinary IEEE Student Branch JIIT is
+                proud to announce the theme of its annual fest XENITH'21 as
+                "ESCAPE THE REALITY". Grab your seats and make your teams as we
+                are coming with some exciting events, challenges and rewards for
+                you soon. Stay tuned!.
+              </p>
+            </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
-</body>
 
+      <!--About section ends-->
+
+      <!--Event section begins-->
+
+      <div
+        class="uk-position-relative"
+        id="event"
+        uk-scrollspy="cls:uk-animation-fade"
+      >
+        <div class="uk-section">
+          <div class="uk-container">
+            <div class="uk-position-top-center">
+              <div class="uk-tile uk-tile-default">
+                <span class="sectionHead">Events</span>
+              </div>
+            </div>
+            <div class="uk-position-center">
+              <div
+                class="
+                  uk-child-width-1-3@m uk-grid-small uk-grid-match
+                  event-card
+                "
+                uk-grid
+              >
+                <div>
+                  <div
+                    class="uk-card uk-card-hover uk-card-default uk-card-body"
+                  >
+                    <h3 class="uk-card-title">Default</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="uk-card uk-card-hover uk-card-primary uk-card-body"
+                  >
+                    <h3 class="uk-card-title">Primary</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="uk-card uk-card-hover uk-card-secondary uk-card-body"
+                  >
+                    <h3 class="uk-card-title">Secondary</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+                  uk-child-width-1-3@m uk-grid-small uk-grid-match
+                  event-card
+                "
+                uk-grid
+              >
+                <div>
+                  <div
+                    class="uk-card uk-card-hover uk-card-default uk-card-body"
+                  >
+                    <h3 class="uk-card-title">Default</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="uk-card uk-card-hover uk-card-primary uk-card-body"
+                  >
+                    <h3 class="uk-card-title">Primary</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="uk-card uk-card-hover uk-card-secondary uk-card-body"
+                  >
+                    <h3 class="uk-card-title">Secondary</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+                  uk-child-width-1-3@m uk-grid-small uk-grid-match
+                  event-card
+                "
+                uk-grid
+              >
+                <div>
+                  <div
+                    class="uk-card uk-card-hover uk-card-default uk-card-body"
+                  >
+                    <h3 class="uk-card-title">Default</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="uk-card uk-card-hover uk-card-primary uk-card-body"
+                  >
+                    <h3 class="uk-card-title">Primary</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="uk-card uk-card-hover uk-card-secondary uk-card-body"
+                  >
+                    <h3 class="uk-card-title">Secondary</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Event section ends-->
+
+      <!--Timeline section begins-->
+
+      <div
+        class="uk-position-relative"
+        id="timeline"
+        uk-scrollspy="cls:uk-animation-fade"
+      >
+        <div class="uk-section">
+          <div class="uk-container">
+            <div class="uk-position-top-center">
+              <div class="uk-tile uk-tile-transparent">
+                <span class="sectionHead">Timeline</span>
+              </div>
+            </div>
+            <div class="timeline">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas id inventore exercitationem esse nobis minima laborum non, debitis accusantium deleniti enim similique reiciendis quaerat voluptates! Laborum molestiae pariatur temporibus!
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo consectetur aspernatur voluptas consequuntur tenetur dolore voluptates sunt enim a nam accusantium aut distinctio, repellendus incidunt, tempore hic magni quasi tempora.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perspiciatis harum quia laudantium est. Voluptatibus quos perspiciatis, quam praesentium ratione velit magni nobis, enim quae odio doloremque explicabo neque expedita.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quos impedit odio, placeat culpa necessitatibus. Quae omnis obcaecati, sit reprehenderit perferendis consequuntur sint cumque quod modi natus iste quaerat. Omnis quidem eaque odio sed magnam fugiat ut quaerat atque dignissimos.
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quis a consequuntur et nobis? Ad quaerat perspiciatis error cum, enim repellendus, assumenda, veritatis libero adipisci laudantium sequi vitae necessitatibus dolore delectus mollitia. Eos perferendis velit architecto veritatis, dolorem quibusdam, doloremque, aut voluptatibus adipisci natus animi accusamus? Vitae accusantium quidem dicta.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Timeline section ends -->
+
+      <!--Team section begins-->
+
+      <!--Team section ends-->
+
+      <!--Sponsor section begins-->
+
+      <!--Sponsor section ends-->
+
+      <!--Contact section begins-->
+
+      <!--Contact section ends-->
+
+      <!-- Footer section -->
+    </div>
+  </body>
 </html>
