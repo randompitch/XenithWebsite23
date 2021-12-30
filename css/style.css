@@ -191,17 +191,19 @@ li a:hover {
 
 
 .footer {
+    line-height:1;
   position: relative;
   width: 100%;
   background: rgb(59,35,108);
   min-height: 100px;
-  padding: 20px 50px;
+  padding: -5px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height:480px;
+  height:450px;
   font-family: Georgia, serif;
+  font-size: 20px;
 }
 
 .social-icon,
@@ -320,7 +322,6 @@ li a:hover {
 }
 .footer .footer-content .about {
     width: 550px;
-
     margin-right: 450px;
 }
 
@@ -335,6 +336,7 @@ li a:hover {
 
 
 .footer .footer-content .links ul a {
+    color: white;
     display: block;
     margin-bottom: 10px;
     font-size: 1.2em;
@@ -348,7 +350,7 @@ li a:hover {
   }
   
   .footer .footer-content .links ul a:hover {
-    color: white;
+    color: rgb(244, 136, 248);
     margin-left: 15px;
     transition: all .3s;
   }
