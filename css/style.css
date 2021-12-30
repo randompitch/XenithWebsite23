@@ -184,18 +184,9 @@ li a:hover {
       filter: saturate(200%) hue-rotate(20deg);
     }
   }
-.contentfooter
-{
-    font-size: 20px;
-}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
 
 .footer {
@@ -208,7 +199,8 @@ li a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height:500px
+  height:480px;
+  font-family: Georgia, serif;
 }
 
 .social-icon,
@@ -314,3 +306,49 @@ li a:hover {
     background-positon-x: 0px;
   }
 }
+.footer .footer-content {
+    height: 370px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+.footer .footer-content .footer-section {
+  flex: 1;
+  padding: 25px;
+  margin-bottom: 10px;
+  
+}
+.footer .footer-content .about {
+    width: 550px;
+
+    margin-right: 450px;
+}
+
+.footer .footer-content .links {
+    width: 350px;
+    margin-right: 450px;
+}
+.footer .footer-content h1,
+.footer .footer-content h2 {
+  color: white;
+}
+
+
+.footer .footer-content .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    transition: all .3s;
+  }
+  .footer .footer-content h3{
+      color: white;
+      font-family: Georgia, serif;
+
+      
+  }
+  
+  .footer .footer-content .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+  }
+ 
