@@ -959,3 +959,45 @@ nav {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+:root {
+  --size: 350px;
+  --radius: calc(var(--size) * 20 / 100);
+}
+
+body {
+  margin: 0;
+  background: #e9e9f4;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.image-card {
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--radius);
+  position: relative;
+  background-size: cover;
+  margin: calc(var(--size) * 20 / 100);
+}
+.image-card:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  border-radius: var(--radius);
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.6;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
