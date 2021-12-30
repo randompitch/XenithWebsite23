@@ -35,27 +35,44 @@ signs.forEach(el => {
         mixupInterval(el)
     })
 })
-const card = document.querySelector(".card");
+
 const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
 const THRESHOLD = 15;
-
-function handleHover(e) {
-    const { clientX, clientY, currentTarget } = e;
-    const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
-
-    const horizontal = (clientX - offsetLeft) / clientWidth;
-    const vertical = (clientY - offsetTop) / clientHeight;
-    const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
-    const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
-
-    card.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
-}
-
-function resetStyles(e) {
-    card.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
-}
-
 if (!motionMatchMedia.matches) {
-    card.addEventListener("mousemove", handleHover);
-    card.addEventListener("mouseleave", resetStyles);
-}
+    const card = document.querySelectorAll('.image-card').forEach(item => {
+        item.addEventListener('mousemove', event => {
+           
+            const { clientX, clientY, currentTarget } = event;
+        const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
+        if(clientX>800)
+        {
+            const horizontal = (clientX/3 - 100) / clientWidth;
+        const vertical = (clientY - 100) / clientHeight; 
+        const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
+        const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+        item.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+        console.log(clientX);
+        }
+        else
+        {
+            const horizontal = (clientX/1.5 - 100) / clientWidth;
+            const vertical = (clientY - 100) / clientHeight;
+            const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
+            const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+            item.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+        }
+        
+       
+    
+        
+        
+        })
+        item.addEventListener('mouseleave', event => {
+           
+            item.style.transform = `perspective(${event.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
+        
+        })
+      });
+  }
+
+
