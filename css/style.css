@@ -37,8 +37,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 @media only screen and (max-width: 700px) {
   .lottie-bg {
     height: 100%;
@@ -93,7 +91,7 @@ html {
 
 .hero-heading {
   color: white;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 .heading-title {
@@ -103,7 +101,7 @@ html {
 
 .heading-title::before,
 .heading-title::after {
-  content: '';
+  content: "";
   top: 0;
   right: 0;
   left: 0;
@@ -112,6 +110,11 @@ html {
 }
 
 .heading-title::before {
+  background-image: linear-gradient(
+    to right,
+    rgba(64, 37, 113, 1),
+    rgba(51, 32, 102, 1)
+  );
   background-image: linear-gradient(to right, rgba(64, 37, 113, 1), rgba(51, 32, 102, 1));
   animation: animateTyping var(--typeSpeed) steps(var(--textLength)) forwards;
 }
@@ -119,7 +122,8 @@ html {
 .heading-title::after {
   width: 0.125em;
   background: white;
-  animation: animateTyping var(--typeSpeed) steps(var(--textLength)) forwards, blink 2.5s steps(var(--textLength)) forwards;
+  animation: animateTyping var(--typeSpeed) steps(var(--textLength)) forwards,
+    blink 2.5s steps(var(--textLength)) forwards;
 }
 
 @keyframes animateTyping {
@@ -163,11 +167,11 @@ ul {
 }
 
 .content {
-  border: 1px solid #36383F;
+  border: 1px solid #36383f;
   border-radius: 20px;
   width: 100%;
   height: 91%;
-  background-color: #F5F6FA;
+  background-color: #f5f6fa;
 }
 
 nav {
@@ -316,7 +320,7 @@ nav {
   height: 150vh;
   overflow: hidden;
   padding: 5%;
-  background-image: url("../src/timeline.jpg");
+  background-color: whitesmoke;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -375,3 +379,60 @@ nav {
   }
 }
 
+/* Timeline */
+.timeline {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+}
+.timeline p {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  color: #34435e;
+}
+.timeline p:before {
+  content: counter(section);
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 1.25em;
+  width: 1.25em;
+  background-color: #34435e;
+  text-align: center;
+  line-height: 1.25em;
+  color: #fff;
+  font-size: 1em;
+}
+.timeline p:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+.timeline p:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+.timeline p:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+.timeline p:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+.timeline p:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.timeline p:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}

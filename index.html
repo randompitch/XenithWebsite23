@@ -27,36 +27,82 @@
         style="width: 300px; height: 300px" loop autoplay></lottie-player>
     </div>
   </div>
+    <div id="postLoader" class="uk-hidden">
+      <div class="uk-position-relative" id="pos-rel-1">
+        <!--Hidden For Phone-->
+        <lottie-player
+          src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json"
+          background="transparent"
+          speed="1"
+          class="active"
+          loop
+          autoplay
+        ></lottie-player>
+        <!--Hidden For Pc-->
+        <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
 
-  <div id="postLoader" class="uk-hidden">
-    <div class="uk-position-relative" id="pos-rel-1">
-      <!--Hidden For Phone-->
-      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json" background="transparent"
-        speed="1" class="active" loop autoplay></lottie-player>
-      <!--Hidden For Pc-->
-      <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
-
-      <!--Hidden For Phone-->
-      <div class="uk-position-top active" uk-scrollspy="cls:uk-animation-fade">
-        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-          <nav class="
+        <!--Hidden For Phone-->
+        <div
+          class="uk-position-top active"
+          uk-scrollspy="cls:uk-animation-fade"
+        >
+          <div
+            uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
+          >
+            <nav
+              class="
                 uk-navbar-container uk-margin uk-navbar-transparent uk-light
-              " uk-navbar="dropbar: true;" id="navbarMain">
-            <div class="uk-navbar-center">
-              <a href="index.html" class="uk-navbar-item uk-logo"><img src="" alt="" /></a>
-              <ul class="uk-navbar-nav">
-                <li><a class="cp-tag" href="#postLoader">Home</a></li>
-                <li><a class="cp-tag" href="#about">About</a></li>
-                <li><a class="cp-tag" href="#event">Events</a></li>
-                <li><a class="cp-tag" href="#timeline">Timeline</a></li>
-                <li><a class="cp-tag" href="#team">Team</a></li>
-                <li><a class="cp-tag" href="#sponsors">Sponsors</a></li>
-                <li><a class="cp-tag" href="#contact">Contact</a></li>
+              "
+              uk-navbar="dropbar: true;"
+              id="navbarMain"
+            >
+              <div class="uk-navbar-center">
+                <a href="index.html" class="uk-navbar-item uk-logo"
+                  ><img src="" alt=""
+                /></a>
+                <ul class="uk-navbar-nav">
+                  <li><a class="cp-tag" href="#postLoader">Home</a></li>
+                  <li><a class="cp-tag" href="#about">About</a></li>
+                  <li><a class="cp-tag" href="#event">Events</a></li>
+                  <li><a class="cp-tag" href="#timeline">Timeline</a></li>
+                  <li><a class="cp-tag" href="#team">Team</a></li>
+                  <li><a class="cp-tag" href="#sponsors">Sponsors</a></li>
+                  <li><a class="cp-tag" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
+          <h4 class="uk-heading-line uk-text-center hero-heading">
+            <span>Beyond The Apex With</span>
+          </h4>
+          <h1 class="uk-heading-large uk-text-center hero-heading">
+            <span class="heading-title">Xenith'22</span>
+          </h1>
+        </div>
+        <!--Hidden for Pc-->
+        <div class="nav-mb hidden">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a class="a-tag" href="#postLoader">Home</a></li>
+                <li><a class="a-tag" href="#about">About</a></li>
+                <li><a class="a-tag" href="#event">Events</a></li>
+                <li><a class="a-tag" href="#timeline">Timeline</a></li>
+                <li><a class="a-tag" href="#team">Team</a></li>
+                <li><a class="a-tag" href="#sponsors">Sponsors</a></li>
+                <li><a class="a-tag" href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
+
       <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
         <h4 class="uk-heading-line uk-text-center hero-heading">
           <span>Beyond The Apex With</span>
