@@ -826,7 +826,12 @@ nav {
    width:350px;
  }
 
-
+.footer-list
+{
+  padding-left: 30px;
+  text-align:justify;
+  list-style-type: disc;
+}
 .uk-card-body p{
   font-size: 1.2em;
   font-family: 'Arvo', serif;
