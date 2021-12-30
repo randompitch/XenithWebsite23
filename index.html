@@ -1,339 +1,459 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Xenith 2022</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/uikit.min.css" />
-    <!-- UIkit CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <!--Lottie player-->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-  </head>
 
-  <body>
-    <!--Pre Loader-->
-    <div id="preLoader">
-      <div class="uk-position-center">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player
-          src="src/lf30_editor_2vwxpmet.json"
-          background="transparent"
-          speed="1"
-          style="width: 300px; height: 300px"
-          loop
-          autoplay
-        ></lottie-player>
-      </div>
+<head>
+  <title>Xenith 2022</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!--Lottie player-->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <!--Pre Loader-->
+  <div id="preLoader">
+    <div class="uk-position-center">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="src/lf30_editor_2vwxpmet.json" background="transparent" speed="1"
+        style="width: 300px; height: 300px" loop autoplay></lottie-player>
     </div>
+  </div>
 
-    <div id="postLoader" class="uk-hidden">
-      <div class="uk-position-relative" id="pos-rel-1">
-        <!--Hidden For Phone-->
-        <lottie-player
-          src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json"
-          background="transparent"
-          speed="1"
-          class="active"
-          loop
-          autoplay
-        ></lottie-player>
-        <!--Hidden For Pc-->
-        <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
+  <div id="postLoader" class="uk-hidden">
+    <div class="uk-position-relative" id="pos-rel-1">
+      <!--Hidden For Phone-->
+      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json" background="transparent"
+        speed="1" class="active" loop autoplay></lottie-player>
+      <!--Hidden For Pc-->
+      <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
 
-        <!--Hidden For Phone-->
-        <div
-          class="uk-position-top active"
-          uk-scrollspy="cls:uk-animation-fade"
-        >
-          <div
-            uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
-          >
-            <nav
-              class="
+      <!--Hidden For Phone-->
+      <div class="uk-position-top active" uk-scrollspy="cls:uk-animation-fade">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+          <nav class="
                 uk-navbar-container uk-margin uk-navbar-transparent uk-light
-              "
-              uk-navbar="dropbar: true;"
-              id="navbarMain"
-            >
-              <div class="uk-navbar-center">
-                <a href="index.html" class="uk-navbar-item uk-logo"
-                  ><img src="" alt=""
-                /></a>
-                <ul class="uk-navbar-nav">
-                  <li><a class="cp-tag" href="#postLoader">Home</a></li>
-                  <li><a class="cp-tag" href="#about">About</a></li>
-                  <li><a class="cp-tag" href="#event">Events</a></li>
-                  <li><a class="cp-tag" href="#timeline">Timeline</a></li>
-                  <li><a class="cp-tag" href="#team">Team</a></li>
-                  <li><a class="cp-tag" href="#sponsors">Sponsors</a></li>
-                  <li><a class="cp-tag" href="#contact">Contact</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
-          <h4 class="uk-heading-line uk-text-center hero-heading">
-            <span>Beyond The Apex With</span>
-          </h4>
-          <h1 class="uk-heading-large uk-text-center hero-heading">
-            <span class="heading-title">Xenith'22</span>
-          </h1>
-        </div>
-        <!--Hidden for Pc-->
-        <div class="nav-mb hidden">
-          <nav role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox" />
-              <span></span>
-              <span></span>
-              <span></span>
-              <ul id="menu">
-                <li><a class="a-tag" href="#postLoader">Home</a></li>
-                <li><a class="a-tag" href="#about">About</a></li>
-                <li><a class="a-tag" href="#event">Events</a></li>
-                <li><a class="a-tag" href="#timeline">Timeline</a></li>
-                <li><a class="a-tag" href="#team">Team</a></li>
-                <li><a class="a-tag" href="#sponsors">Sponsors</a></li>
-                <li><a class="a-tag" href="#contact">Contact</a></li>
+              " uk-navbar="dropbar: true;" id="navbarMain">
+            <div class="uk-navbar-center">
+              <a href="index.html" class="uk-navbar-item uk-logo"><img src="" alt="" /></a>
+              <ul class="uk-navbar-nav">
+                <li><a class="cp-tag" href="#postLoader">Home</a></li>
+                <li><a class="cp-tag" href="#about">About</a></li>
+                <li><a class="cp-tag" href="#event">Events</a></li>
+                <li><a class="cp-tag" href="#timeline">Timeline</a></li>
+                <li><a class="cp-tag" href="#team">Team</a></li>
+                <li><a class="cp-tag" href="#sponsors">Sponsors</a></li>
+                <li><a class="cp-tag" href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
-
-      <!--About section begins-->
-
-      <div
-        class="uk-position-relative"
-        id="about"
-        uk-scrollspy="cls:uk-animation-fade"
-      >
-        <div class="uk-section">
-          <div class="uk-container">
-            <div class="uk-position-top-center">
-              <div class="uk-tile uk-tile-default">
-                <span class="sectionHead">About</span>
-              </div>
-            </div>
-            <div class="uk-position-center">
-              <p class="uk-text-center uk-text-large section-text">
-                Xenith 2021 is the much anticipated online edition of IEEE
-                Student Branch JIIT’s two-day annual fest."Reality is often
-                disappointing" but little did we know back then that Thanos was
-                actually talking about TwentyTwenty. 2020 had been an outlandish
-                and offbeat year. The global pandemic forced us all to be hard
-                stuck at our places and to help us cope up, we went from Ludo to
-                guessing the gibberish, to accusing our best friend of being an
-                imposter and much more. So to Ctrl+Alt+Delete 2020 and escape
-                the ordinary, join the extraordinary IEEE Student Branch JIIT is
-                proud to announce the theme of its annual fest XENITH'21 as
-                "ESCAPE THE REALITY". Grab your seats and make your teams as we
-                are coming with some exciting events, challenges and rewards for
-                you soon. Stay tuned!.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
+        <h4 class="uk-heading-line uk-text-center hero-heading">
+          <span>Beyond The Apex With</span>
+        </h4>
+        <h1 class="uk-heading-large uk-text-center hero-heading">
+          <span class="heading-title">Xenith'22</span>
+        </h1>
       </div>
-
-      <!--About section ends-->
-
-      <!--Event section begins-->
-
-      <div
-        class="uk-position-relative"
-        id="event"
-        uk-scrollspy="cls:uk-animation-fade"
-      >
-        <div class="uk-section">
-          <div class="uk-container">
-            <div class="uk-position-top-center">
-              <div class="uk-tile uk-tile-default">
-                <span class="sectionHead">Events</span>
-              </div>
-            </div>
-            <div class="uk-position-center">
-              <div
-                class="
-                  uk-child-width-1-3@m uk-grid-small uk-grid-match
-                  event-card
-                "
-                uk-grid
-              >
-                <div>
-                  <div
-                    class="uk-card uk-card-hover uk-card-default uk-card-body"
-                  >
-                    <h3 class="uk-card-title">Default</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="uk-card uk-card-hover uk-card-primary uk-card-body"
-                  >
-                    <h3 class="uk-card-title">Primary</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="uk-card uk-card-hover uk-card-secondary uk-card-body"
-                  >
-                    <h3 class="uk-card-title">Secondary</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="
-                  uk-child-width-1-3@m uk-grid-small uk-grid-match
-                  event-card
-                "
-                uk-grid
-              >
-                <div>
-                  <div
-                    class="uk-card uk-card-hover uk-card-default uk-card-body"
-                  >
-                    <h3 class="uk-card-title">Default</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="uk-card uk-card-hover uk-card-primary uk-card-body"
-                  >
-                    <h3 class="uk-card-title">Primary</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="uk-card uk-card-hover uk-card-secondary uk-card-body"
-                  >
-                    <h3 class="uk-card-title">Secondary</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="
-                  uk-child-width-1-3@m uk-grid-small uk-grid-match
-                  event-card
-                "
-                uk-grid
-              >
-                <div>
-                  <div
-                    class="uk-card uk-card-hover uk-card-default uk-card-body"
-                  >
-                    <h3 class="uk-card-title">Default</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="uk-card uk-card-hover uk-card-primary uk-card-body"
-                  >
-                    <h3 class="uk-card-title">Primary</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="uk-card uk-card-hover uk-card-secondary uk-card-body"
-                  >
-                    <h3 class="uk-card-title">Secondary</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <!--Hidden for Pc-->
+      <div class="nav-mb hidden">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li><a class="a-tag" href="#postLoader">Home</a></li>
+              <li><a class="a-tag" href="#about">About</a></li>
+              <li><a class="a-tag" href="#event">Events</a></li>
+              <li><a class="a-tag" href="#timeline">Timeline</a></li>
+              <li><a class="a-tag" href="#team">Team</a></li>
+              <li><a class="a-tag" href="#sponsors">Sponsors</a></li>
+              <li><a class="a-tag" href="#contact">Contact</a></li>
+            </ul>
           </div>
-        </div>
+        </nav>
       </div>
-
-      <!--Event section ends-->
-
-      <!--Timeline section begins-->
-
-      <div
-        class="uk-position-relative"
-        id="timeline"
-        uk-scrollspy="cls:uk-animation-fade"
-      >
-        <div class="uk-section">
-          <div class="uk-container">
-            <div class="uk-position-top-center">
-              <div class="uk-tile uk-tile-transparent">
-                <span class="sectionHead">Timeline</span>
-              </div>
-            </div>
-            <div class="timeline">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas id inventore exercitationem esse nobis minima laborum non, debitis accusantium deleniti enim similique reiciendis quaerat voluptates! Laborum molestiae pariatur temporibus!
-              </p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo consectetur aspernatur voluptas consequuntur tenetur dolore voluptates sunt enim a nam accusantium aut distinctio, repellendus incidunt, tempore hic magni quasi tempora.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perspiciatis harum quia laudantium est. Voluptatibus quos perspiciatis, quam praesentium ratione velit magni nobis, enim quae odio doloremque explicabo neque expedita.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quos impedit odio, placeat culpa necessitatibus. Quae omnis obcaecati, sit reprehenderit perferendis consequuntur sint cumque quod modi natus iste quaerat. Omnis quidem eaque odio sed magnam fugiat ut quaerat atque dignissimos.
-              </p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quis a consequuntur et nobis? Ad quaerat perspiciatis error cum, enim repellendus, assumenda, veritatis libero adipisci laudantium sequi vitae necessitatibus dolore delectus mollitia. Eos perferendis velit architecto veritatis, dolorem quibusdam, doloremque, aut voluptatibus adipisci natus animi accusamus? Vitae accusantium quidem dicta.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Timeline section ends -->
-
-      <!--Team section begins-->
-
-      <!--Team section ends-->
-
-      <!--Sponsor section begins-->
-
-      <!--Sponsor section ends-->
-
-      <!--Contact section begins-->
-
-      <!--Contact section ends-->
-
-      <!-- Footer section -->
     </div>
-  </body>
+
+    <!--About section begins-->
+
+    <div class="uk-position-relative" id="about" uk-scrollspy="cls:uk-animation-fade">
+      <div class="uk-section">
+        <div class="uk-container">
+          <div class="uk-position-top-center">
+            <div class="uk-tile uk-tile-default">
+              <span class="sectionHead">About</span>
+            </div>
+          </div>
+          <div class="uk-position-center">
+            <p class="uk-text-center uk-text-large section-text">
+              Xenith 2021 is the much anticipated online edition of IEEE
+              Student Branch JIIT’s two-day annual fest."Reality is often
+              disappointing" but little did we know back then that Thanos was
+              actually talking about TwentyTwenty. 2020 had been an outlandish
+              and offbeat year. The global pandemic forced us all to be hard
+              stuck at our places and to help us cope up, we went from Ludo to
+              guessing the gibberish, to accusing our best friend of being an
+              imposter and much more. So to Ctrl+Alt+Delete 2020 and escape
+              the ordinary, join the extraordinary IEEE Student Branch JIIT is
+              proud to announce the theme of its annual fest XENITH'21 as
+              "ESCAPE THE REALITY". Grab your seats and make your teams as we
+              are coming with some exciting events, challenges and rewards for
+              you soon. Stay tuned!.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--About section ends-->
+
+    <!--Event section begins-->
+
+    <div class="uk-position-relative" id="event" uk-scrollspy="cls:uk-animation-fade">
+      <div class="uk-section">
+        <div class="uk-container">
+          <div class="uk-position-top-center">
+            <div class="uk-tile uk-tile-default" style="background-color: transparent;">
+              <span class="sectionHead">Events</span>
+            </div>
+          </div>
+          <div class="uk-position-center">
+            <div class="
+                  uk-child-width-1-3@m uk-grid-small uk-grid-match
+                  event-card
+                " uk-grid>
+              <div>
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                  <h3 class="uk-card-title team-name">Default</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="uk-card uk-card-hover uk-card-primary uk-card-body">
+                  <h3 class="uk-card-title team-name">Primary</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="uk-card uk-card-hover uk-card-secondary uk-card-body">
+                  <h3 class="uk-card-title team-name">Secondary</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="
+                  uk-child-width-1-3@m uk-grid-small uk-grid-match
+                  event-card
+                " uk-grid>
+              <div>
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                  <h3 class="uk-card-title team-name">Default</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="uk-card uk-card-hover uk-card-primary uk-card-body">
+                  <h3 class="uk-card-title team-name">Primary</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="uk-card uk-card-hover uk-card-secondary uk-card-body">
+                  <h3 class="uk-card-title team-name">Secondary</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="
+                  uk-child-width-1-3@m uk-grid-small uk-grid-match
+                  event-card
+                " uk-grid>
+              <div>
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                  <h3 class="uk-card-title team-name">Default</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="uk-card uk-card-hover uk-card-primary uk-card-body">
+                  <h3 class="uk-card-title team-name">Primary</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="uk-card uk-card-hover uk-card-secondary uk-card-body">
+                  <h3 class="uk-card-title team-name">Secondary</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Event section ends-->
+
+    <!--Timeline section begins-->
+
+    <div class="uk-position-relative" id="timeline" uk-scrollspy="cls:uk-animation-fade">
+      <div class="uk-section">
+        <div class="uk-container">
+          <div class="uk-position-top-center">
+            <div class="uk-tile uk-tile-transparent">
+              <span class="sectionHead">Timeline</span>
+            </div>
+          </div>
+          <div class="timeline">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas id inventore exercitationem
+              esse nobis minima laborum non, debitis accusantium deleniti enim similique reiciendis quaerat voluptates!
+              Laborum molestiae pariatur temporibus!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo consectetur aspernatur voluptas
+              consequuntur tenetur dolore voluptates sunt enim a nam accusantium aut distinctio, repellendus incidunt,
+              tempore hic magni quasi tempora.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perspiciatis harum quia laudantium est.
+              Voluptatibus quos perspiciatis, quam praesentium ratione velit magni nobis, enim quae odio doloremque
+              explicabo neque expedita.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quos impedit odio, placeat culpa
+              necessitatibus. Quae omnis obcaecati, sit reprehenderit perferendis consequuntur sint cumque quod modi
+              natus iste quaerat. Omnis quidem eaque odio sed magnam fugiat ut quaerat atque dignissimos.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quis a consequuntur et nobis? Ad quaerat
+              perspiciatis error cum, enim repellendus, assumenda, veritatis libero adipisci laudantium sequi vitae
+              necessitatibus dolore delectus mollitia. Eos perferendis velit architecto veritatis, dolorem quibusdam,
+              doloremque, aut voluptatibus adipisci natus animi accusamus? Vitae accusantium quidem dicta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Timeline section ends -->
+
+    <!--Team section begins-->
+    <div class="uk-position-relative" id="team" uk-scrollspy="cls:uk-animation-fade">
+      <div class="uk-section">
+        <div class="uk-container">
+          <div class="uk-position-top-center">
+            <div class="uk-tile uk-tile-transparent">
+              <span class="sectionHead">Team</span>
+            </div>
+          </div>
+          <div class="uk-position-center" id="team-slider">
+            <div class="uk-slider-container" uk-slider>
+
+              <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/shwetank.jpg" alt="chairperson" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Shwetank</h3>
+                        <p>Chairperson</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/priyanjali.jpg" alt="vice-chairperson" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Priyanjali</h3>
+                        <p>Vice Chairperson</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/ishaan.jpg" alt="organising-secretary" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Ishaan</h3>
+                        <p>Organising Secretary</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/ayush.jpg" alt="treasurer" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Ayush</h3>
+                        <p>Treasurer</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/akshat.jpg" alt="management-head" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Akshat</h3>
+                        <p>Management Head</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/radhika.jpeg" alt="wie-management-head" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Radhika</h3>
+                        <p>WIE Management Head</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/suraj.jpg" alt="technical-head" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Suraj</h3>
+                        <p>Technical CSE Head</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/tanya.jpg" alt="technical-ece-head" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Tanya</h3>
+                        <p>Technical ECE Head</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/aditya.jpg" alt="digital-head" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Aditya</h3>
+                        <p>Digital Head</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/somya.jpg" alt="marketing-head" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Somya</h3>
+                        <p>Marketing Head</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/manan.jpeg" alt="creative-head" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Manan</h3>
+                        <p>Creative Head</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                        <img src="src/post/kartikey.jpg" alt="public-relation-head" class="team-members">
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title team-name">Kartikey</h3>
+                        <p>Public Relation Head</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+
+            </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Team section ends-->
+
+  <!--Sponsor section begins-->
+
+  <!--Sponsor section ends-->
+
+  <!--Contact section begins-->
+
+  <!--Contact section ends-->
+
+  <!-- Footer section -->
+  </div>
+</body>
+
 </html>

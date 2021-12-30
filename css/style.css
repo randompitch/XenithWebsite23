@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
 
 * {
   margin: 0%;
@@ -267,15 +270,7 @@ nav {
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 5%;
-}
-
-.sectionHeadLight {
-  font-size: 2em;
-  color: white;
-  font-family: "Orbitron", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 5%;
+  background-color: transparent;
 }
 
 #navbarMain {
@@ -304,9 +299,10 @@ nav {
 }
 
 #event {
-  height: 140vh;
+  height: 145vh;
   overflow: hidden;
   padding: 5%;
+  background-color: whitesmoke;
 }
 
 .event-card {
@@ -318,27 +314,63 @@ nav {
   height: 150vh;
   overflow: hidden;
   padding: 5%;
+}
+
+#team {
+  height: 90vh;
+  overflow: hidden;
+  padding: 5%;
   background-color: whitesmoke;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .section-text {
   margin: 0% 5%;
 }
 
+#team-slider
+{
+  padding: 10% 5%;
+  margin-top: 3%;
+}
+
+.team-members
+{
+    width: 45vh;
+    height: 45vh;
+    margin: 3%;
+    border-radius: 50%;
+}
+
+.team-name
+{
+  font-family: 'Moon Dance', cursive;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.uk-card-body p{
+  font-size: 1.2em;
+  font-family: 'Arvo', serif;
+}
+
 @media only screen and (max-width: 700px) {
   #about {
-    height: 100vh;
+    min-height: 130vh;
     overflow: hidden;
   }
 
   #event {
     height: 330vh;
     overflow: hidden;
+    background-color: whitesmoke;
     padding: 5%;
+  }
+
+  #team {
+    height: 100vh;
+    overflow: hidden;
+    padding: 5%;
+    background-color: whitesmoke;
   }
 
   .event-card {
@@ -347,7 +379,7 @@ nav {
   }
 
   #timeline {
-    height: 1000vh;
+    min-height: 200vh;
     overflow: hidden;
     padding: 5%;
   }
@@ -362,6 +394,7 @@ nav {
   #event {
     height: 330vh;
     overflow: hidden;
+    background-color: whitesmoke;
     padding: 5%;
   }
 
@@ -371,10 +404,18 @@ nav {
   }
 
   #timeline {
-    height: 130vh;
+    height: 170vh;
     overflow: hidden;
     padding: 5%;
   }
+
+  #team {
+    height: 100vh;
+    overflow: hidden;
+    padding: 5%;
+    background-color: whitesmoke;
+  }
+
 }
 
 /* Timeline */
