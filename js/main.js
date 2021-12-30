@@ -10,9 +10,11 @@ $(document).ready(function () {
         var top = 200;
         if ($(window).scrollTop() >= top) {
             nav.addClass('background-xenith');
+            anchor.addClass("c-white");
 
         } else {
             nav.removeClass('background-xenith');
+            anchor.removeClass("c-white");
         }
     });
 
