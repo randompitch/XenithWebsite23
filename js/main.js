@@ -10,11 +10,11 @@ $(document).ready(function () {
         var top = 200;
         if ($(window).scrollTop() >= top) {
             nav.addClass('background-xenith');
-            anchor.addClass("c-white");
+            
 
         } else {
             nav.removeClass('background-xenith');
-            anchor.removeClass("c-white");
+            
         }
     });
 
@@ -49,7 +49,8 @@ if (!motionMatchMedia.matches) {
             console.log(clientWidth);
             const rotateX = (20 * ((xVal - clientWidth / 2) / clientWidth));
             const rotateY = -20 * ((yVal - clientHeight / 2) / clientHeight);
-            item.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+            item.style.transform = `perspective(${clientWidth}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1, 1, 1)`;
+            console.log(item.style.transform);
 
 
 
