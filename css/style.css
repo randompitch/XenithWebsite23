@@ -1047,11 +1047,13 @@ main {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  display: inline;
   color: white;
+  text-align: center;
 }
 .content h3 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: inline;
    color: white;
    margin-top:0px;
+   text-align: center;
 
  }
