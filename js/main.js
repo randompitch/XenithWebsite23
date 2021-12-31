@@ -46,11 +46,9 @@ if (!motionMatchMedia.matches) {
             const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
             const xVal = event.layerX;
             const yVal = event.layerY;
-            console.log(clientWidth);
-            const rotateX = (20 * ((xVal - clientWidth / 2) / clientWidth));
-            const rotateY = -20 * ((yVal - clientHeight / 2) / clientHeight);
-            item.style.transform = `perspective(${clientWidth}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1, 1, 1)`;
-            console.log(item.style.transform);
+            const rotateX = 15 * ((xVal - clientWidth / 2) / clientWidth);
+            const rotateY = -15 * ((yVal - clientHeight / 2) / clientHeight);
+            item.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
 
 
 
