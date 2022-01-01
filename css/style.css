@@ -816,7 +816,7 @@ h1 {
 @media only screen and (max-width: 900px) {
   .footer
   {
-    height: 1200px;
+    height: 840px;
   }
   .footer .footer-content
   {
@@ -864,7 +864,7 @@ h1 {
   }
 
   #timeline {
-    min-height: 200vh;
+    min-height: 188vh;
     overflow: hidden;
     padding: 5%;
   }
@@ -1054,4 +1054,21 @@ main {
    color: white;
    margin-top:0px;
 
+ }
+
+ .final{
+   
+   padding: 0px 0px 0px 0px;
+   color: black;
+ }
+ .final:before{
+ background: white;
+ color: black;
+ }
+ .final:after{
+   background: white;
+   color: black;
+ }
+ .uk-tile{
+   padding-top: 0px;
  }
