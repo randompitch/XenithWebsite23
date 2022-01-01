@@ -798,7 +798,13 @@ h1 {
   text-align: justify;
   list-style-type: disc;
 }
-
+.uk-position-center{
+  width: 78%;
+}
+#universe{
+  height:350vh;
+  width: 100%;
+}
 @media only screen and (max-width: 1200px) {
   .footer .footer-content h3
   {
@@ -880,6 +886,9 @@ h1 {
   background-size: cover !important;
   /* background-repeat: no-repeat; */
   margin:0px !important;
+}
+#universe{
+  height:350vh;
 }
 .footer
 {
@@ -1273,4 +1282,9 @@ main {
   to {
     transform: translateX(-500px);
   }
+}
+#event{
+  padding-left: 0px;
+  padding-right: 0px;
+
 }
