@@ -816,7 +816,7 @@ h1 {
 @media only screen and (max-width: 900px) {
   .footer
   {
-    height: 840px;
+    height: 1000px;
   }
   .footer .footer-content
   {
@@ -830,6 +830,7 @@ h1 {
   .footer .footer-bottom 
   {
     width: 100%;
+    
   }
   .footer .footer-content .about
   {
@@ -878,7 +879,15 @@ h1 {
   position: relative;
   background-size: cover !important;
   /* background-repeat: no-repeat; */
-  margin:20px !important;
+  margin:0px !important;
+}
+.footer
+{
+  height: 1100px;
+}
+.timeline p 
+{
+  padding: 20px !important;
 }
 }
 @media only screen and (max-width: 1000px) {
@@ -1015,9 +1024,9 @@ main {
   left: 50%;
   transform: translate(-50%, 10%);
 }
-.image-card:hover .content {
+/* .image-card:hover .content {
   transform: perspective(50px) translateZ(2px);
-}
+} */
 .caption
 {
   
@@ -1162,7 +1171,9 @@ main {
 .trigger:nth-child(9):hover ~ .card {
   transform: rotateY(-8deg) rotateX(5deg);
 }
-
+.dcard:hover .content {
+  transform: perspective(50px) translateZ(2px);
+}
  
 @media (min-width: 960px){
 .uk-section {
