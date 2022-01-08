@@ -10,11 +10,11 @@ $(document).ready(function () {
         var top = 200;
         if ($(window).scrollTop() >= top) {
             nav.addClass('background-xenith');
-            
+
 
         } else {
             nav.removeClass('background-xenith');
-            
+
         }
     });
 
@@ -63,4 +63,16 @@ if (!motionMatchMedia.matches) {
     });
 }
 
-
+var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+        invert: false,
+    },
+    // autoHeight: true,
+    pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+    }
+});
