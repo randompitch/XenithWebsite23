@@ -360,8 +360,8 @@ nav {
   margin-top: 15px;
 }
 .btn {
-  width: 50px;
-  height: 50px;
+  width:35px;
+  height: 35px;
   background-color: #fafafa;
   display: flex;
   align-items: center;
@@ -371,9 +371,11 @@ nav {
   cursor: pointer;
   transition: all 0.3s;
   border-radius: 10px;
+  min-width: 5vh;
+  min-height: 5vh;
 }
 i.fa {
-  font-size: 30px;
+  font-size: 25px;
 }
 #fb {
   color: #006fff;
@@ -606,7 +608,7 @@ h1 {
   color: white;
 }
 
-.footer .footer-content .links  a {
+.footer .footer-content   a {
   color: white;
   display: inline-block;
   margin-bottom: 10px;
@@ -620,12 +622,13 @@ h1 {
   margin-top: 0px;
 }
 
-.footer .footer-content .links a:hover {
+.footer .footer-content  a:hover {
   color: rgb(244, 136, 248);
   margin-left: 15px;
   transition: all 0.3s;
 }
 */
+
 @import "compass/css3";
 .glitch {
   color: white;
@@ -633,6 +636,9 @@ h1 {
   position: relative;
 
   /* width: 400px; */
+}
+.name{
+  padding: 0px 0px 15px;
 }
 @keyframes noise-anim {
   0% {
@@ -815,6 +821,9 @@ h1 {
     width:0px;
     /* margin-right: 100px; */
   }
+  .name{
+    padding: 0px 0px 15px;
+  }
 }
 .uk-card-body p {
   font-size: 1.2em;
@@ -843,7 +852,9 @@ h1 {
   {
     width:auto;
   }
-  
+  .name{
+    padding: 0px 82px 30px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -875,6 +886,9 @@ h1 {
     min-height: 188vh;
     overflow: hidden;
     padding: 5%;
+  }
+  .name{
+    padding: 0px 16px 30px;
   }
 
 }
@@ -1533,9 +1547,7 @@ body{
  /*ff*/
  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
-* {
-  font-family: Open Sans;
-}
+
 
 section {
   width: 100%;
@@ -1554,8 +1566,9 @@ section {
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
+  font: normal 16px 'Open Sans', cursive;
+	padding: 25px 20px ;
+  margin-top: 300px;
 }
 
 .footer-distributed .footer-left,
@@ -1568,7 +1581,7 @@ section {
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 20%;
 }
 
 /* The company logo */
@@ -1609,11 +1622,10 @@ section {
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 35%;
+	width: 50%;
 }
 
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -1625,10 +1637,7 @@ section {
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
-}
+
 
 .footer-distributed .footer-center p{
 	display: inline-block;
@@ -1667,7 +1676,7 @@ section {
 /* Footer Right */
 
 .footer-distributed .footer-right{
-	width: 20%;
+	width: 25%;
 }
 
 .footer-distributed .footer-company-about{
@@ -1686,26 +1695,6 @@ section {
 	margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
@@ -1733,4 +1722,16 @@ section {
   padding-left: 0px;
   padding-right: 0px;
 
+}
+.footer-distributed   a {
+  color: white;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  transition: all 0.3s;
+}
+.footer-distributed   a:hover {
+  color: rgb(244, 136, 248);
+  margin-left: 15px;
+  transition: all 0.3s;
 }
