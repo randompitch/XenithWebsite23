@@ -36,32 +36,6 @@ signs.forEach(el => {
     })
 })
 
-const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
-const THRESHOLD = 2;
-if (!motionMatchMedia.matches) {
-    const card = document.querySelectorAll('.image-card').forEach(item => {
-        item.addEventListener('mousemove', event => {
-
-            const { clientX, clientY, currentTarget } = event;
-            const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
-            const xVal = event.layerX;
-            const yVal = event.layerY;
-            console.log(clientWidth);
-            const rotateX = (20 * ((xVal - clientWidth / 2) / clientWidth));
-            const rotateY = -20 * ((yVal - clientHeight / 2) / clientHeight);
-            item.style.transform = `perspective(${clientWidth}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1, 1, 1)`;
-            console.log(item.style.transform);
-
-
-
-        })
-        item.addEventListener('mouseleave', event => {
-
-            item.style.transform = `perspective(${event.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
-
-        })
-    });
-}
 
 var refreshIntervalId = setInterval(function(){
     var swiper = new Swiper('.blog-slider', {

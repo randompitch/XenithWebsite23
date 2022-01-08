@@ -469,7 +469,7 @@ h1 {
   font-family: Georgia, serif !important;
   font-size: 20px;
   bottom: 0;
-  margin-top: 40px;
+  margin-top: 300px;
   
 }
 
@@ -799,7 +799,13 @@ h1 {
   text-align: justify;
   list-style-type: disc;
 }
-
+.uk-position-center{
+  width: 78%;
+}
+#universe{
+  height:350vh;
+  width: 100%;
+}
 @media only screen and (max-width: 1200px) {
   .footer .footer-content h3
   {
@@ -817,7 +823,7 @@ h1 {
 @media only screen and (max-width: 900px) {
   .footer
   {
-    height: 840px;
+    height: 1000px;
   }
   .footer .footer-content
   {
@@ -831,6 +837,7 @@ h1 {
   .footer .footer-bottom 
   {
     width: 100%;
+    
   }
   .footer .footer-content .about
   {
@@ -874,12 +881,23 @@ h1 {
 @media only screen and (max-width: 400px) {
 .image-card {
   width: 95vw !important;;
-  height:300px!important;
+  height:350px!important;
   border-radius: var(--radius);
   position: relative;
   background-size: cover !important;
   /* background-repeat: no-repeat; */
-  margin:20px !important;
+  margin:0px !important;
+}
+#universe{
+  height:350vh;
+}
+.footer
+{
+  height: 1100px;
+}
+.timeline p 
+{
+  padding: 20px !important;
 }
 }
 @media only screen and (max-width: 1000px) {
@@ -1020,9 +1038,9 @@ main {
   left: 50%;
   transform: translate(-50%, 10%);
 }
-.image-card:hover .content {
+/* .image-card:hover .content {
   transform: perspective(50px) translateZ(2px);
-}
+} */
 .caption
 {
   
@@ -1044,6 +1062,7 @@ main {
   margin-top: 200px;
   border: none;
   text-align: center;
+  top: 58%;
  
  
  
@@ -1077,7 +1096,98 @@ main {
  .uk-tile{
    padding-top: 0px;
  }
+ * {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card {
+  transform-style: preserve-3d;
+}
+.dcard {
+  position: relative;
+  display: block;
+  perspective: 500px;
+}
+.col-md-12, .col-md-4 {
+  margin-bottom: 80px;
+  height: var(--size);
+}
+.col-md-12 .dcard {
+  perspective: 3000px;
+}
 
+.trigger {
+  position: absolute;
+  height: 33.333333%;
+  width: 33.333333%;
+  display: block;
+  z-index: 2;
+}
+.trigger:nth-child(1) {
+  left: 0%;
+  top: 0%;
+}
+.trigger:nth-child(1):hover ~ .card {
+  transform: rotateY(8deg) rotateX(-5deg);
+}
+.trigger:nth-child(2) {
+  left: 33.333333%;
+  top: 0%;
+}
+.trigger:nth-child(2):hover ~ .card {
+  transform: rotateY(0deg) rotateX(-5deg);
+}
+.trigger:nth-child(3) {
+  left: 66.666666%;
+  top: 0%;
+}
+.trigger:nth-child(3):hover ~ .card {
+  transform: rotateY(-8deg) rotateX(-5deg);
+}
+.trigger:nth-child(4) {
+  left: 0%;
+  top: 33.333333%;
+}
+.trigger:nth-child(4):hover ~ .card {
+  transform: rotateY(8deg);
+}
+.trigger:nth-child(5) {
+  left: 33.333333%;
+  top: 33.333333%;
+}
+.trigger:nth-child(5):hover ~ .card {
+  transform: rotateY(0deg) rotateX(0deg);
+}
+.trigger:nth-child(6) {
+  left: 66.666666%;
+  top: 33.333333%;
+}
+.trigger:nth-child(6):hover ~ .card {
+  transform: rotateY(-8deg) rotateX(0deg);
+}
+.trigger:nth-child(7) {
+  left: 0%;
+  top: 66.666666%;
+}
+.trigger:nth-child(7):hover ~ .card {
+  transform: rotateY(8deg) rotateX(5deg);
+}
+.trigger:nth-child(8) {
+  left: 33.333333%;
+  top: 66.666666%;
+}
+.trigger:nth-child(8):hover ~ .card {
+  transform: rotateY(0deg) rotateX(5deg);
+}
+.trigger:nth-child(9) {
+  left: 66.666666%;
+  top: 66.666666%;
+}
+.trigger:nth-child(9):hover ~ .card {
+  transform: rotateY(-8deg) rotateX(5deg);
+}
+.dcard:hover .content {
+  transform: perspective(50px) translateZ(2px);
+}
  
 @media (min-width: 960px){
 .uk-section {
@@ -1617,5 +1727,10 @@ section {
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
+
+}
+#event{
+  padding-left: 0px;
+  padding-right: 0px;
 
 }
