@@ -638,7 +638,7 @@ h1 {
   /* width: 400px; */
 }
 .name{
-  padding: 0px 0px 15px;
+  margin-bottom: 25px;
 }
 @keyframes noise-anim {
   0% {
@@ -821,9 +821,7 @@ h1 {
     width:0px;
     /* margin-right: 100px; */
   }
-  .name{
-    padding: 0px 0px 15px;
-  }
+  
 }
 .uk-card-body p {
   font-size: 1.2em;
@@ -853,7 +851,7 @@ h1 {
     width:auto;
   }
   .name{
-    padding: 0px 82px 30px;
+    /* padding: 0px 82px 30px; */
   }
 }
 
@@ -888,7 +886,7 @@ h1 {
     padding: 5%;
   }
   .name{
-    padding: 0px 16px 30px;
+    /* padding: 0px 16px 30px; */
   }
 
 }
@@ -1633,7 +1631,7 @@ section {
 	border-radius: 50%;
 	text-align: center;
 	line-height: 42px;
-	margin: 10px 15px;
+	/* margin: 10px 15px; */
 	vertical-align: middle;
 }
 
@@ -1645,6 +1643,7 @@ section {
   font-weight:400;
 	vertical-align: middle;
 	margin:0;
+  line-height:2;
 }
 
 .footer-distributed .footer-center p span{
@@ -1712,11 +1711,39 @@ section {
 		margin-bottom: 40px;
 		text-align: center;
 	}
-
+  .footer-center
+  {
+    width: 45% !important;
+    margin:auto;
+  }
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
 
+}
+@media (max-width: 550px)
+ {
+  .footer-center
+  {
+    width: 60% !important;
+    margin:auto;
+  }
+
+  :root {
+    --size: 300px;
+  }
+}
+@media (max-width: 410px)
+ {
+  .footer-center
+  {
+    width: 100% !important;
+    margin:auto;
+  }
+
+  :root {
+    --size: 300px;
+  }
 }
 #event{
   padding-left: 0px;
