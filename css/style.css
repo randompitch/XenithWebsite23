@@ -295,7 +295,7 @@ nav {
 }
 
 #event {
-  height: 145vh;
+  height: 100vh;
   overflow: hidden;
   padding-top: 70px;
   background-color: whitesmoke;
@@ -809,7 +809,7 @@ h1 {
   width: 78%;
 }
 #universe{
-  height:350vh;
+  height:100vh;
   width: 100%;
 }
 @media only screen and (max-width: 1200px) {
@@ -862,7 +862,7 @@ h1 {
   }
 
   #event {
-    height: 330vh;
+    height: 100vh;
     overflow: hidden;
     background-color: whitesmoke;
     padding: 5%;
@@ -919,7 +919,7 @@ h1 {
   }
 
   #event {
-    height: 330vh;
+    height: 100vh;
     overflow: hidden;
     background-color: whitesmoke;
     padding: 5%;
@@ -1322,7 +1322,6 @@ body{
   display:flex;
   justify-content:center;
    align-items:center;
-  background: var(--bgxmas);
   height:650px;
   padding: 30px;
   
@@ -1353,6 +1352,16 @@ body{
 		 height: auto;
 		 margin: 180px auto;
 	}
+  #universe
+  {
+    padding-top:15vh;
+    height:125vh;
+  }
+  #event
+  {
+    height: 125vh;
+  }
+  
 }
  @media screen and (max-height: 500px) and (min-width: 992px) {
 	 .blog-slider {
