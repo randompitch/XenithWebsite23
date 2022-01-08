@@ -1194,7 +1194,7 @@ body{
 .full{
   display:flex;
   justify-content:center;
-   align-item:center;
+   align-items:center;
   background: var(--bgxmas);
   height:650px;
   padding: 30px;
@@ -1206,7 +1206,7 @@ body{
 	 max-width: 800px;
    display:flex;
    justify-content:center;
-   align-item:center;
+   align-items:center;
 	 margin: auto;
 	 background: #fff;
    box-shadow: var(--shadowgreen);

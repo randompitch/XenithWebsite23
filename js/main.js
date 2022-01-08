@@ -63,7 +63,8 @@ if (!motionMatchMedia.matches) {
     });
 }
 
-var swiper = new Swiper('.blog-slider', {
+var refreshIntervalId = setInterval(function(){
+    var swiper = new Swiper('.blog-slider', {
     spaceBetween: 30,
     effect: 'fade',
     loop: true,
@@ -76,3 +77,4 @@ var swiper = new Swiper('.blog-slider', {
         clickable: true,
     }
 });
+clearInterval(refreshIntervalId);},4000);
