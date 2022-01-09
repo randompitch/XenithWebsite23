@@ -1666,12 +1666,12 @@ section {
 {
   margin-top: 10vh;
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-  background: #456990;
+  background: 	#0e1111;
   color: #fff;
   padding-bottom: 50px;
 }
 .timeline ul {
-  background: #456990;
+  background: 	#0e1111;
   padding: 50px 0;
 }
 
@@ -1702,7 +1702,7 @@ section {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #f45b69;
+  /* background: #f45b69; */
 }
 
 .timeline ul li div::before {
@@ -1721,7 +1721,7 @@ section {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #f45b69 transparent transparent;
+  border-color: transparent #172b4d transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -1731,7 +1731,7 @@ section {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #f45b69;
+  border-color: transparent transparent transparent #172b4d;
 }
 
 time {
@@ -1750,7 +1750,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: #f45b69;
+  background: #172b4d;
 }
 
 .timeline ul li div {
@@ -1800,7 +1800,7 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    border-color: transparent #172b4d transparent transparent;
   }
 }
 
@@ -1868,4 +1868,118 @@ time {
   background: url('../src/post/91656.jpg') repeat fixed 100%;
   background-size: 100% 100%;
 
+}
+
+
+
+.timeline-card {
+  display: inline-block;
+  position: relative;
+  width: 220px;
+  height: 300px;
+  word-wrap: break-word;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  background-color: #fff;
+  background-clip: border-box;
+  box-shadow: 0 0 2rem 0 white;
+  
+}
+
+.card-lift--hover:hover {
+  transition: all 0.15s ease;
+  transform: translateY(-20px);
+  box-shadow: 0 0 2rem 0 gold;
+  cursor: pointer;
+}
+
+.cover-bg {
+  background: transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.timeline-card .card-blockquote {
+  position: relative;
+  padding: 1rem;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.15s ease;
+  border-radius: 10px;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+.bg-gradient-default {
+  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%);
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.mt-sm {
+  margin-top: 2rem;
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon i,
+.icon svg {
+  font-size: 1.7rem;
+}
+
+.icon-shape {
+  display: inline-flex;
+  padding: 12px;
+  text-align: center;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-shape i,
+.icon-shape svg {
+  font-size: 1.25rem;
+}
+
+.icon-shadow {
+  box-shadow: 0 0 2rem 0 white;
+}
+
+.icon-color {
+  color: white;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-weight-bold {
+  font-weight: 600;
+}
+
+.border-bottom {
+  border-bottom: 0.0625rem solid #e9ecef;
 }
