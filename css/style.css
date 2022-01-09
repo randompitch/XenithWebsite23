@@ -320,7 +320,7 @@ nav {
 }
 @media only screen and (max-width: 1439px) {
   #about {
-    height: 88vh;
+    min-height: 88vh;
     overflow: hidden;
   }
 }
@@ -357,7 +357,7 @@ nav {
 }
 @media only screen and (max-width: 700px) {
   #about {
-    height: 151vh;
+    min-height: 151vh;
     overflow: hidden;
   }
 
@@ -385,10 +385,22 @@ nav {
     overflow: hidden;
     padding: 5%;
   }
- 
+  .name{
+    /* padding: 0px 16px 30px; */
+  }
 
 }
-
+@media only screen and (max-width: 424px) {
+  #about {
+    min-height: 171vh;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 327px) {
+  #about {
+    min-height: 274vh;
+    overflow: hidden;
+  }
 .section-text {
   margin: 0% 5%;
 }
@@ -920,7 +932,9 @@ h1 {
   {
     width:auto;
   }
- 
+  .name{
+    /* padding: 0px 82px 30px; */
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1789,5 +1803,4 @@ section {
   color: rgb(244, 136, 248);
   margin-left: 15px;
   transition: all 0.3s;
-}
 }
