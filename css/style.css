@@ -1671,7 +1671,6 @@ section {
   padding-bottom: 50px;
 }
 .timeline ul {
-  background: 	#0e1111;
   padding: 50px 0;
 }
 
@@ -1869,8 +1868,22 @@ time {
   background-size: 100% 100%;
 
 }
+.parallax {
+  background: url('../src/post/l.jpg') repeat fixed 100%;
+  background-size: 100% 100%;
+  opacity: 0.8;
+
+}
 
 
+@media screen and (max-width: 600px) {
+  .parallax {
+    background-size: 180% 100%;
+    /*opacity: 0.8;*/
+  
+  }
+
+}
 
 .timeline-card {
   display: inline-block;
