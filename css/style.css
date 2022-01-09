@@ -309,7 +309,7 @@ nav {
 #timeline {
   /* height: 150vh; */
   overflow: hidden;
-  padding: 5%;
+  /* padding: 5%; */
 }
 
 #team {
@@ -345,7 +345,7 @@ nav {
   #timeline {
     /* height: 170vh; */
     overflow: hidden;
-    padding: 5%;
+    /* padding: 5%; */
   }
 
   #team {
@@ -383,11 +383,9 @@ nav {
   #timeline {
     /* min-height: 188vh; */
     overflow: hidden;
-    padding: 5%;
+    /* padding: 5%; */
   }
-  .name{
-    /* padding: 0px 16px 30px; */
-  }
+  
 
 }
 @media only screen and (max-width: 424px) {
@@ -1659,8 +1657,14 @@ section {
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.time
+{
+  max-width:100%;
+  padding: 0px;
+}
 .timeline
 {
+  margin-top: 10vh;
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
   background: #456990;
   color: #fff;
