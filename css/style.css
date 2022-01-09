@@ -1869,16 +1869,15 @@ time {
 
 }
 .parallax {
-  background: url('../src/post/l.jpg') repeat fixed 100%;
+  background: url('../src/post/Digita.png') repeat fixed 100%;
   background-size: 100% 100%;
-  opacity: 0.8;
 
 }
 
 
 @media screen and (max-width: 600px) {
   .parallax {
-    background-size: 180% 100%;
+    background-size: 300% 100%;
     /*opacity: 0.8;*/
   
   }
