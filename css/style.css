@@ -289,13 +289,13 @@ nav {
 }
 
 #about {
-  height: 50vh;
+  height: 51vh;
   overflow: hidden;
   padding: 5%;
 }
 
 #event {
-  height: 100vh;
+  height: 117vh;
   overflow: hidden;
   padding-top: 70px;
   background-color: whitesmoke;
@@ -318,7 +318,89 @@ nav {
   padding: 5%;
   background-color: whitesmoke;
 }
+@media only screen and (max-width: 1439px) {
+  #about {
+    min-height: 88vh;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #about {
+    height: 110vh;
+    overflow: hidden;
+  }
 
+  #event {
+    height: 100vh;
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding: 5%;
+  }
+
+  .event-card {
+    height: 100vh;
+    margin: 0% 3%;
+  }
+
+  #timeline {
+    height: 170vh;
+    overflow: hidden;
+    padding: 5%;
+  }
+
+  #team {
+    height: 100vh;
+    overflow: hidden;
+    padding: 5%;
+    background-color: whitesmoke;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #about {
+    min-height: 151vh;
+    overflow: hidden;
+  }
+
+  #event {
+    height: 100vh;
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding: 5%;
+  }
+
+  #team {
+    height: 100vh;
+    overflow: hidden;
+    padding: 5%;
+    background-color: whitesmoke;
+  }
+
+  .event-card {
+    height: 100vh;
+    margin: 0% 3%;
+  }
+
+  #timeline {
+    min-height: 188vh;
+    overflow: hidden;
+    padding: 5%;
+  }
+  .name{
+    /* padding: 0px 16px 30px; */
+  }
+
+}
+@media only screen and (max-width: 424px) {
+  #about {
+    min-height: 171vh;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 327px) {
+  #about {
+    min-height: 274vh;
+    overflow: hidden;
+  }
 .section-text {
   margin: 0% 5%;
 }
@@ -809,7 +891,7 @@ h1 {
   width: 78%;
 }
 #universe{
-  height:100vh;
+  height:110vh;
   width: 100%;
 }
 @media only screen and (max-width: 1200px) {
@@ -855,41 +937,6 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 700px) {
-  #about {
-    min-height: 130vh;
-    overflow: hidden;
-  }
-
-  #event {
-    height: 100vh;
-    overflow: hidden;
-    background-color: whitesmoke;
-    padding: 5%;
-  }
-
-  #team {
-    height: 100vh;
-    overflow: hidden;
-    padding: 5%;
-    background-color: whitesmoke;
-  }
-
-  .event-card {
-    height: 100vh;
-    margin: 0% 3%;
-  }
-
-  #timeline {
-    min-height: 188vh;
-    overflow: hidden;
-    padding: 5%;
-  }
-  .name{
-    /* padding: 0px 16px 30px; */
-  }
-
-}
 @media only screen and (max-width: 400px) {
 .image-card {
   width: 95vw !important;;
@@ -912,37 +959,7 @@ h1 {
   padding: 20px !important;
 }
 }
-@media only screen and (max-width: 1000px) {
-  #about {
-    height: 110vh;
-    overflow: hidden;
-  }
 
-  #event {
-    height: 100vh;
-    overflow: hidden;
-    background-color: whitesmoke;
-    padding: 5%;
-  }
-
-  .event-card {
-    height: 100vh;
-    margin: 0% 3%;
-  }
-
-  #timeline {
-    height: 170vh;
-    overflow: hidden;
-    padding: 5%;
-  }
-
-  #team {
-    height: 100vh;
-    overflow: hidden;
-    padding: 5%;
-    background-color: whitesmoke;
-  }
-}
 
 .contentfooter a{
   display:inline-block;
@@ -1449,6 +1466,7 @@ body{
 		 text-align: center;
 		 padding: 0 30px;
 	}
+  
 }
  @media screen and (max-width: 576px) {
 	 .blog-slider__content {
@@ -1494,6 +1512,7 @@ body{
 	 .blog-slider__button {
 		 width: 100%;
 	}
+  
 }
  .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
 	 bottom: 10px;
@@ -1525,10 +1544,24 @@ body{
  .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
 	 margin: 8px 0;
 }
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 321px) {
 	 .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
 		 margin: 0 5px;
 	}
+  .blog-slider__img {
+   
+    height: 199px;
+  }
+  .blog-slider__pagination {
+    
+    top: 26vh;
+  }
+  #universe {
+    padding-top: 3vh;
+  }
+  .blog-slider {
+    width: 115%;
+  }
 }
  .blog-slider__pagination .swiper-pagination-bullet {
 	 width: 11px;
