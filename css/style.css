@@ -1713,7 +1713,7 @@ section {
   transition: all 0.3s;
 }
 #universe{
-  background: url('/src/post/91656.jpg') repeat fixed 100%;
+  background: url('../src/post/91656.jpg') repeat fixed 100%;
   background-size: 100% 100%;
 
 }
