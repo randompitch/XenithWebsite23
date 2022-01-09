@@ -1870,7 +1870,7 @@ time {
 }
 .parallax {
   background: url('../src/post/Digita.png') repeat fixed 100%;
-  background-size: 100% 100%;
+  background-size: 120% 100%;
 
 }
 
@@ -1919,7 +1919,7 @@ time {
 }
 
 .mask {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   left: 0;
   width: 100%;
@@ -1994,4 +1994,8 @@ time {
 
 .border-bottom {
   border-bottom: 0.0625rem solid #e9ecef;
+}
+.timeline ul li.in-view div {
+
+  background: #191b3f;
 }
