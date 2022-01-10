@@ -51,7 +51,7 @@ var refreshIntervalId = setInterval(function(){
         clickable: true,
     }
 });
-clearInterval(refreshIntervalId);},4000);
+clearInterval(refreshIntervalId);},3100);
 var refresh = setInterval(function(){
     (function () {
         "use strict";
@@ -80,6 +80,6 @@ var refresh = setInterval(function(){
         window.addEventListener("resize", callbackFunc);
         window.addEventListener("scroll", callbackFunc);
       })();
-clearInterval(refresh);},4000);
+clearInterval(refresh);},3100);
 
   
