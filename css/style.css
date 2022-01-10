@@ -938,7 +938,7 @@ h1 {
 
 @media only screen and (max-width: 400px) {
 .image-card {
-  width: 95vw !important;;
+  width: 90vw !important;;
   height:350px!important;
   border-radius: var(--radius);
   position: relative;
