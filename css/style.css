@@ -1718,7 +1718,7 @@ section {
 }
 
 .timeline ul li:nth-child(odd) div::before {
-  left: -15px;
+  left: -17px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #172b4d transparent transparent;
 }
@@ -1728,7 +1728,7 @@ section {
 }
 
 .timeline ul li:nth-child(even) div::before {
-  right: -15px;
+  right: -17px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #172b4d;
 }
@@ -1797,7 +1797,7 @@ time {
     left: 45px;
   }
   .timeline ul li:nth-child(even) div::before {
-    left: -15px;
+    left: -17px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #172b4d transparent transparent;
   }
