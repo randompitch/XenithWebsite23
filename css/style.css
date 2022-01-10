@@ -289,7 +289,7 @@ nav {
 }
 
 #about {
-  height: 51vh;
+  height: 70vh;
   overflow: hidden;
   padding: 5%;
 }
@@ -298,7 +298,7 @@ nav {
   height: 117vh;
   overflow: hidden;
   padding-top: 70px;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .event-card {
