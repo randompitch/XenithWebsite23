@@ -22,6 +22,21 @@
   outline: none !important;
 }
 
+@font-face {
+  font-family: Tigerious;
+  src: url("../fonts/TigeriousItalic-9YyJn.otf");
+}
+
+@font-face {
+  font-family: Wynford;
+  src: url("../fonts/WynfordObliqueLineAlt1-4Byx9.otf");
+}
+
+@font-face {
+  font-family: Hyperhelix;
+  src: url("../fonts/HyperHelix-nRR2V.ttf");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -94,12 +109,13 @@ html {
 
 .hero-heading {
   color: white;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Tigerious";
 }
 
 .heading-title {
-  font-family: monospace;
+  font-family: "Hyperhelix";
   position: relative;
+  font-size: 1.25em;
 }
 
 .heading-title::before,
@@ -292,6 +308,13 @@ nav {
   height: 70vh;
   overflow: hidden;
   padding: 5%;
+}
+
+#faqs
+{
+  min-height: 95vh;
+  overflow: hidden;
+  padding: 5%; 
 }
 
 #event {
