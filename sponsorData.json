@@ -43,18 +43,24 @@
     },
     {
         "id": 8,
+        "name": "Squicker",
+        "image": "src/sponsors/squicker.png",
+        "type": "Foreign Education Partner"
+    },
+    {
+        "id": 9,
         "name": "Jamboree",
         "image": "src/sponsors/jamboree.png",
         "type": "Other Sponsors"
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Converge EduTech",
         "image": "src/sponsors/converge.jpg",
         "type": "Other Sponsors"
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "Yocket",
         "image": "src/sponsors/yocket.png",
         "type": "Other Sponsors"
