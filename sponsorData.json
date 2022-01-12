@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Learn for Cause",
+        "image": "src/sponsors/lfc.jfif",
+        "type": "Community Partner"
+    },
+    {
+        "id": 2,
+        "name": "Alpha Builder",
+        "image": "https://via.placeholder.com/150",
+        "type": "Website Partner"
+    },
+    {
+        "id": 3,
+        "name": "Coding Minutes",
+        "image": "src/sponsors/codingminutes.png",
+        "type": "Technical Partner"
+    },
+    {
+        "id": 4,
+        "name": "Garb ON",
+        "image": "https://via.placeholder.com/150",
+        "type": "Saving Partner"
+    },
+    {
+        "id": 5,
+        "name": "Programming PathShala",
+        "image": "src/sponsors/programmingpathshala.jpg",
+        "type": "Teaching Partner"
+    },
+    {
+        "id": 6,
+        "name": "Elearn Markets",
+        "image": "src/sponsors/elearnmarket.png",
+        "type": "Finance Education Partner"
+    },
+    {
+        "id": 7,
+        "name": "Pieces",
+        "image": "src/sponsors/pieces.jpg",
+        "type": "Snippet Partner"
+    },
+    {
+        "id": 8,
+        "name": "Jamboree",
+        "image": "src/sponsors/jamboree.png",
+        "type": "Other Sponsors"
+    },
+    {
+        "id": 9,
+        "name": "Converge EduTech",
+        "image": "src/sponsors/converge.jpg",
+        "type": "Other Sponsors"
+    },
+    {
+        "id": 10,
+        "name": "Yocket",
+        "image": "src/sponsors/yocket.png",
+        "type": "Other Sponsors"
+    }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Shwetank",
+    "designation": "Chairperson",
+    "image": "src/post/shwetank.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Priyanjali",
+    "designation": "Vice Chairperson",
+    "image": "src/post/priyanjali.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ishaan",
+    "designation": "Organising Secretary",
+    "image": "src/post/ishaan.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ayush",
+    "designation": "Treasurer",
+    "image": "src/post/ayush.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Suraj",
+    "designation": "Technical Head CSE",
+    "image": "src/post/suraj.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Tanya",
+    "designation": "Technical Head Ece",
+    "image": "src/post/tanya.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Kartikey",
+    "designation": "Public Relations Head",
+    "image": "src/post/kartikey.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Somya",
+    "designation": "Marketing Head",
+    "image": "src/post/somya.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Akshat",
+    "designation": "Management Head",
+    "image": "src/post/akshat.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Manan",
+    "designation": "Creative Head",
+    "image": "src/post/manan.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Aditya",
+    "designation": "Digital Head",
+    "image": "src/post/aditya.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Radhika",
+    "designation": "WIE Management Head",
+    "image": "src/post/radhika.jpeg"
+  }
+]

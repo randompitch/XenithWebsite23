@@ -1,350 +1,369 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Xenith 2022</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <title>Xenith 2022</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.scss" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--Lottie player-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+    />
+  </head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
 
-  <link rel="stylesheet" href="css/uikit.min.css" />
-  <!-- UIkit CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/style.scss" />
-  <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
-  <!--Lottie player-->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <!-- UIkit JS -->
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
-
-
-</head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<body>
-  <!--Pre Loader-->
-  <div id="preLoader">
-    <div class="uk-position-center">
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      <lottie-player src="src/lf30_editor_2vwxpmet.json" background="transparent" speed="1"
-        style="width: 100%; height: 300px" loop autoplay></lottie-player>
+  <body>
+    <!--Pre Loader-->
+    <div id="preLoader">
+      <div class="uk-position-center">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="src/lf30_editor_2vwxpmet.json"
+          background="transparent"
+          speed="1"
+          style="width: 100%; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
     </div>
-  </div>
 
-  <div id="postLoader" class="uk-hidden">
-    <div class="uk-position-relative" id="pos-rel-1">
-      <!--Hidden For Phone-->
-      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json" background="transparent"
-        speed="1" class="active" loop autoplay></lottie-player>
-      <!--Hidden For Pc-->
-      <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
+    <div id="postLoader" class="uk-hidden">
+      <div class="uk-position-relative" id="pos-rel-1">
+        <!--Hidden For Phone-->
+        <lottie-player
+          src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json"
+          background="transparent"
+          speed="1"
+          class="active"
+          loop
+          autoplay
+        ></lottie-player>
+        <!--Hidden For Pc-->
+        <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
 
-      <!--Hidden For Phone-->
-      <div class="uk-position-top active" uk-scrollspy="cls:uk-animation-fade">
-        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-          <nav class="
-                uk-navbar-container uk-margin uk-navbar-transparent uk-light
-              " uk-navbar="dropbar: true;" id="navbarMain">
-            <div class="uk-navbar-center">
-              <a href="index.html" class="uk-navbar-item uk-logo"><img src="" alt="" /></a>
-              <ul class="uk-navbar-nav">
-                <li><a class="cp-tag" href="#postLoader">Home</a></li>
-                <li><a class="cp-tag" href="#about">About</a></li>
-                <li><a class="cp-tag" href="#event">Events</a></li>
-                <li><a class="cp-tag" href="#timeline">Timeline</a></li>
-                <li><a class="cp-tag" href="#team">Team</a></li>
-                <li><a class="cp-tag" href="#sponsors">Sponsors</a></li>
-                <li><a class="cp-tag" href="#contact">Contact</a></li>
+        <!--Hidden For Phone-->
+        <div
+          class="uk-position-top active"
+          uk-scrollspy="cls:uk-animation-fade"
+        >
+          <div
+            uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
+          >
+            <nav
+              class="uk-navbar-container uk-margin uk-navbar-transparent uk-light"
+              uk-navbar="dropbar: true;"
+              id="navbarMain"
+            >
+              <div class="uk-navbar-center">
+                <a href="index.html" class="uk-navbar-item uk-logo"
+                  ><img src="" alt=""
+                /></a>
+                <ul class="uk-navbar-nav">
+                  <li><a class="cp-tag" href="#postLoader">Home</a></li>
+                  <li><a class="cp-tag" href="#about">About</a></li>
+                  <li><a class="cp-tag" href="#event">Events</a></li>
+                  <li><a class="cp-tag" href="#timeline">Timeline</a></li>
+                  <li><a class="cp-tag" href="#team">Team</a></li>
+                  <li><a class="cp-tag" href="#sponsors">Sponsors</a></li>
+                  <li><a class="cp-tag" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
+          <h4 class="uk-heading-line uk-text-center hero-heading">
+            <span class="largeFont">Beyond The Apex With</span>
+          </h4>
+          <h1 class="uk-heading-large uk-text-center hero-heading">
+            <span class="heading-title">Xenith'22</span>
+          </h1>
+        </div>
+        <!--Hidden for Pc-->
+        <div class="nav-mb hidden">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a class="a-tag" href="#postLoader">Home</a></li>
+                <li><a class="a-tag" href="#about">About</a></li>
+                <li><a class="a-tag" href="#event">Events</a></li>
+                <li><a class="a-tag" href="#timeline">Timeline</a></li>
+                <li><a class="a-tag" href="#team">Team</a></li>
+                <li><a class="a-tag" href="#sponsors">Sponsors</a></li>
+                <li><a class="a-tag" href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
-      <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
-        <h4 class="uk-heading-line uk-text-center hero-heading">
-          <span>Beyond The Apex With</span>
-        </h4>
-        <h1 class="uk-heading-large uk-text-center hero-heading">
-          <span class="heading-title">Xenith'22</span>
-        </h1>
-      </div>
-      <!--Hidden for Pc-->
-      <div class="nav-mb hidden">
-        <nav role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-              <li><a class="a-tag" href="#postLoader">Home</a></li>
-              <li><a class="a-tag" href="#about">About</a></li>
-              <li><a class="a-tag" href="#event">Events</a></li>
-              <li><a class="a-tag" href="#timeline">Timeline</a></li>
-              <li><a class="a-tag" href="#team">Team</a></li>
-              <li><a class="a-tag" href="#sponsors">Sponsors</a></li>
-              <li><a class="a-tag" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
 
-    <!--About section begins-->
+      <!--About section begins-->
 
-    <div class="uk-position-relative" id="about" uk-scrollspy="cls:uk-animation-fade">
-      <div class="uk-section">
-        <div class="uk-container">
-          <div class="uk-position-top-center">
-            <div class="uk-tile uk-tile-default">
-              <h1 class="sectionHead glitch final" data-text="About">About</h1>
-            </div>
-          </div>
-          <div class="uk-position-center">
-            <p class="uk-text-center uk-text-large section-text">
-              Xenith 2021 is the much anticipated online edition of IEEE
-              Student Branch JIIT’s two-day annual fest."Reality is often
-              disappointing" but little did we know back then that Thanos was
-              actually talking about TwentyTwenty. 2020 had been an outlandish
-              and offbeat year. The global pandemic forced us all to be hard
-              stuck at our places and to help us cope up, we went from Ludo to
-              guessing the gibberish, to accusing our best friend of being an
-              imposter and much more. So to Ctrl+Alt+Delete 2020 and escape
-              the ordinary, join the extraordinary IEEE Student Branch JIIT is
-              proud to announce the theme of its annual fest XENITH'21 as
-              "ESCAPE THE REALITY". Grab your seats and make your teams as we
-              are coming with some exciting events, challenges and rewards for
-              you soon. Stay tuned!.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--About section ends-->
-
-    <!--FAQ's section begins-->
-
-    <div class="uk-position-relative" id="faqs" uk-scrollspy="cls:uk-animation-fade">
-      <div class="uk-section">
-        <div class="uk-container">
-          <div class="uk-position-top-center">
-            <div class="uk-tile uk-tile-default">
-              <h1 class="sectionHead glitch final" data-text="FAQ's">FAQ's</h1>
-            </div>
-          </div>
-          <div class="uk-position-center">
-            <ul uk-accordion>
-              <li>
-                  <a class="uk-accordion-title" href="#">Item 1</a>
-                  <div class="uk-accordion-content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                  <hr class="uk-divider-icon">
-              </li>
-              <li>
-                  <a class="uk-accordion-title" href="#">Item 2</a>
-                  <div class="uk-accordion-content">
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
-                  </div>
-                  <hr class="uk-divider-icon">
-              </li>
-              <li>
-                  <a class="uk-accordion-title" href="#">Item 3</a>
-                  <div class="uk-accordion-content">
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                  </div>
-                  <hr class="uk-divider-icon">
-              </li>
-              <li>
-                <a class="uk-accordion-title" href="#">Item 1</a>
-                <div class="uk-accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <hr class="uk-divider-icon">
-            </li>
-            <li>
-                <a class="uk-accordion-title" href="#">Item 2</a>
-                <div class="uk-accordion-content">
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
-                </div>
-                <hr class="uk-divider-icon">
-            </li>
-            <li>
-                <a class="uk-accordion-title" href="#">Item 3</a>
-                <div class="uk-accordion-content">
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                </div>
-                <hr class="uk-divider-icon">
-            </li>
-          </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--FAQ's section ends-->
-
-    <!--Event section begins-->
-
-    <div class="uk-position-relative" id="event" uk-scrollspy="cls:uk-animation-fade">
-      <div class="uk-section ">
-        <div id="universe">
-
-
+      <div
+        class="uk-position-relative"
+        id="about"
+        uk-scrollspy="cls:uk-animation-fade"
+      >
+        <div class="uk-section">
           <div class="uk-container">
             <div class="uk-position-top-center">
-              <div class="uk-tile uk-tile-default" style="background-color: transparent;">
-                <h1 class="sectionHead glitch final" data-text="Events">Events</h1>
+              <div class="uk-tile uk-tile-default">
+                <h1 class="sectionHead glitch final" data-text="About">
+                  About
+                </h1>
               </div>
             </div>
-            <div class="full">
-              <div class="blog-slider">
-                <div class="blog-slider__wrp swiper-wrapper">
-                  <div class="blog-slider__item swiper-slide">
-                    <div class="blog-slider__img">
+            <div class="uk-position-center">
+              <p class="uk-text-center uk-text-large section-text">
+                Xenith 2021 is the much anticipated online edition of IEEE
+                Student Branch JIIT’s two-day annual fest."Reality is often
+                disappointing" but little did we know back then that Thanos was
+                actually talking about TwentyTwenty. 2020 had been an outlandish
+                and offbeat year. The global pandemic forced us all to be hard
+                stuck at our places and to help us cope up, we went from Ludo to
+                guessing the gibberish, to accusing our best friend of being an
+                imposter and much more. So to Ctrl+Alt+Delete 2020 and escape
+                the ordinary, join the extraordinary IEEE Student Branch JIIT is
+                proud to announce the theme of its annual fest XENITH'21 as
+                "ESCAPE THE REALITY". Grab your seats and make your teams as we
+                are coming with some exciting events, challenges and rewards for
+                you soon. Stay tuned!.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                      <img
-                        src="https://images.pexels.com/photos/3420174/pexels-photo-3420174.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                        alt="Gifts">
-                    </div>
-                    <div class="blog-slider__content">
-                      <div class="blog-slider__title">Lorem ipsum dolor sit amet consectetur
+      <!--About section ends-->
+
+      <div class="bg-page">
+        <!--Event section begins-->
+        <div
+          class="uk-position-relative"
+          id="event"
+          uk-scrollspy="cls:uk-animation-fade"
+        >
+          <div class="uk-section">
+            <div id="universe">
+              <div class="uk-container">
+                <div class="uk-position-top-center">
+                  <div
+                    class="uk-tile uk-tile-default"
+                    style="background-color: transparent"
+                  >
+                    <h1 class="sectionHead glitch final" data-text="Events">
+                      Events
+                    </h1>
+                  </div>
+                </div>
+                <div class="full">
+                  <div class="blog-slider">
+                    <div class="blog-slider__wrp swiper-wrapper">
+                      <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                          <img
+                            src="https://images.pexels.com/photos/3420174/pexels-photo-3420174.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="Gifts"
+                          />
+                        </div>
+                        <div class="blog-slider__content">
+                          <div class="blog-slider__title">
+                            Lorem ipsum dolor sit amet consectetur
+                          </div>
+                          <div class="blog-slider__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Recusandae voluptate repellendus magni illo ea
+                            animi?
+                          </div>
+                        </div>
                       </div>
-                      <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Recusandae voluptate repellendus magni illo ea animi? </div>
-                    </div>
-                  </div>
-                  <div class="blog-slider__item swiper-slide">
-                    <div class="blog-slider__img">
-                      <img
-                        src="https://images.pexels.com/photos/6141236/pexels-photo-6141236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                        alt="Xmas tree">
-                    </div>
-                    <div class="blog-slider__content">
-                      <div class="blog-slider__title">Lorem ipsum dolor sit amet consectetur</div>
-                      <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Recusandae voluptate repellendus magni illo ea animi?</div>
-                    </div>
-                  </div>
-                  <div class="blog-slider__item swiper-slide">
-                    <div class="blog-slider__img">
-                      <img
-                        src="https://images.pexels.com/photos/6141236/pexels-photo-6141236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                        alt="Xmas tree">
-                    </div>
-                    <div class="blog-slider__content">
-                      <div class="blog-slider__title">Lorem ipsum dolor sit amet consectetur</div>
-                      <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Recusandae voluptate repellendus magni illo ea animi?</div>
-                      <a href="#" class="blog-slider__button">READ MORE</a>
-                    </div>
-                  </div>
+                      <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                          <img
+                            src="https://images.pexels.com/photos/6141236/pexels-photo-6141236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="Xmas tree"
+                          />
+                        </div>
+                        <div class="blog-slider__content">
+                          <div class="blog-slider__title">
+                            Lorem ipsum dolor sit amet consectetur
+                          </div>
+                          <div class="blog-slider__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Recusandae voluptate repellendus magni illo ea
+                            animi?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                          <img
+                            src="https://images.pexels.com/photos/6141236/pexels-photo-6141236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="Xmas tree"
+                          />
+                        </div>
+                        <div class="blog-slider__content">
+                          <div class="blog-slider__title">
+                            Lorem ipsum dolor sit amet consectetur
+                          </div>
+                          <div class="blog-slider__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Recusandae voluptate repellendus magni illo ea
+                            animi?
+                          </div>
+                          <a href="#" class="blog-slider__button">READ MORE</a>
+                        </div>
+                      </div>
 
-                  <div class="blog-slider__item swiper-slide">
-                    <div class="blog-slider__img">
-                      <img
-                        src="https://images.pexels.com/photos/790916/pexels-photo-790916.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                        alt="Xmas firework">
+                      <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                          <img
+                            src="https://images.pexels.com/photos/790916/pexels-photo-790916.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="Xmas firework"
+                          />
+                        </div>
+                        <div class="blog-slider__content">
+                          <div class="blog-slider__title">
+                            Lorem ipsum dolor sit amet consectetur
+                          </div>
+                          <div class="blog-slider__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Recusandae voluptate repellendus magni illo ea
+                            animi?
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="blog-slider__content">
-                      <div class="blog-slider__title">Lorem ipsum dolor sit amet consectetur</div>
-                      <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Recusandae voluptate repellendus magni illo ea animi?</div>
-                    </div>
+                    <div class="blog-slider__pagination"></div>
                   </div>
-
                 </div>
-                <div class="blog-slider__pagination"></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!--Event section ends-->
+        <!--Event section ends-->
 
-    <!--Timeline section begins-->
+        <!--Timeline section begins-->
 
-    <div class="uk-position-relative" id="timeline" uk-scrollspy="cls:uk-animation-fade">
-      <div class="uk-section">
-        <div class="uk-container time">
-          <div class="uk-position-top-center">
-            <div class="uk-tile uk-tile-transparent">
-              <h1 class="sectionHead glitch final" data-text="Timeline">Timeline</h1>
+        <div
+          class="uk-position-relative"
+          id="timeline"
+          uk-scrollspy="cls:uk-animation-fade"
+        >
+          <div class="uk-section">
+            <div class="uk-container time">
+              <div class="uk-position-top-center">
+                <div class="uk-tile uk-tile-transparent">
+                  <h1 class="sectionHead glitch final" data-text="Timeline">
+                    Timeline
+                  </h1>
+                </div>
+              </div>
+              <div class="timeline parallax">
+                <ul>
+                  <li>
+                    <div
+                      class="timeline-card card-lift--hover cover-bg text-center mt-sm"
+                    >
+                      <span class="mask bg-gradient-default opacity-7"></span>
+
+                      <blockquote class="card-blockquote">
+                        <h2 class="font-weight-bold text-white border-bottom">
+                          event -1
+                        </h2>
+                      </blockquote>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum corporis pariatur facere inventore ab
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      class="timeline-card card-lift--hover cover-bg text-center mt-sm"
+                    >
+                      <span class="mask bg-gradient-default opacity-7"></span>
+
+                      <blockquote class="card-blockquote">
+                        <h2 class="font-weight-bold text-white border-bottom">
+                          event -1
+                        </h2>
+                      </blockquote>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum corporis pariatur facere inventore ab odit nam aut
+                      doloribus.
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      class="timeline-card card-lift--hover cover-bg text-center mt-sm"
+                    >
+                      <span class="mask bg-gradient-default opacity-7"></span>
+
+                      <blockquote class="card-blockquote">
+                        <h2 class="font-weight-bold text-white border-bottom">
+                          event -1
+                        </h2>
+                      </blockquote>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum corporis pariatur facere inventore ab odit nam aut
+                      doloribus.
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      class="timeline-card card-lift--hover cover-bg text-center mt-sm"
+                    >
+                      <span class="mask bg-gradient-default opacity-7"></span>
+
+                      <blockquote class="card-blockquote">
+                        <h2 class="font-weight-bold text-white border-bottom">
+                          event -1
+                        </h2>
+                      </blockquote>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum corporis pariatur voluptate, excepturi odit nam aut
+                      doloribus.
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="timeline parallax">
-            <ul>
-              <li>
-                <div class="timeline-card card-lift--hover cover-bg text-center mt-sm">
-
-                  <span class="mask bg-gradient-default opacity-7"></span>
-
-                  <blockquote class="card-blockquote">
-                    <h2 class="font-weight-bold text-white border-bottom">event -1</h2>
-
-                  </blockquote>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum corporis pariatur facere inventore ab
-
-                </div>
-
-              </li>
-              <li>
-                <div class="timeline-card card-lift--hover cover-bg text-center mt-sm">
-
-                  <span class="mask bg-gradient-default opacity-7"></span>
-
-                  <blockquote class="card-blockquote">
-                    <h2 class="font-weight-bold text-white border-bottom">event -1</h2>
-
-                  </blockquote>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum corporis pariatur facere inventore ab
-                  odit nam aut doloribus.
-                </div>
-              </li>
-              <li>
-                <div class="timeline-card card-lift--hover cover-bg text-center mt-sm">
-
-                  <span class="mask bg-gradient-default opacity-7"></span>
-
-                  <blockquote class="card-blockquote">
-                    <h2 class="font-weight-bold text-white border-bottom">event -1</h2>
-
-                  </blockquote>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum corporis pariatur facere inventore ab
-                  odit nam aut doloribus.
-                </div>
-              </li>
-              <li>
-                <div class="timeline-card card-lift--hover cover-bg text-center mt-sm">
-
-                  <span class="mask bg-gradient-default opacity-7"></span>
-
-                  <blockquote class="card-blockquote">
-                    <h2 class="font-weight-bold text-white border-bottom">event -1</h2>
-
-                  </blockquote>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum corporis pariatur voluptate, excepturi
-                  odit nam aut doloribus.
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
-    </div>
-    <!--Timeline section ends -->
+        <!--Timeline section ends -->
 
-    <!--Team section begins-->
-    <div class="uk-position-relative teamh">
-      <!-- <div >
+        <!--Team section begins-->
+        <div class="uk-position-relative teamh" id="team">
+          <!-- <div >
         <div class="uk-container">
        
           </div>
@@ -352,408 +371,143 @@
             <div>
 
               <div > -->
-      <div class="uk-position-top-center">
-        <div class="uk-tile uk-tile-transparent">
-          <h1 class="sectionHead glitch final" data-text="Team">Team</h1>
+          <div class="uk-position-top-center">
+            <div class="uk-tile uk-tile-transparent">
+              <h1 class="sectionHead glitch final" data-text="Team">Team</h1>
+            </div>
+          </div>
+          <main id="teamContainer">
+            <!-- Content injected via DOM -->
+          </main>
+          <br /><br /><br /><br /><br />
         </div>
+        <!--Team section ends-->
+
+        <!--Sponsor section begins-->
+
+        <div class="uk-position-relative" id="sponsor">
+          <div class="uk-position-top-center">
+            <div class="uk-tile uk-tile-transparent">
+              <h1 class="sectionHead glitch final" data-text="Sponsors">
+                Sponsors
+              </h1>
+            </div>
+          </div>
+          <br /><br />
+          <main id="sponsorContainer">
+            <!-- Content injected via DOM -->
+          </main>
+        </div>
+        <!--footer-->
+        <footer
+          class="uk-position-relative footer-distributed"
+          uk-scrollspy="cls:uk-animation-fade"
+          id="contact"
+        >
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+          </div>
+
+          <div class="footer-left">
+            <p class="footer-company-name">
+              <img
+                src="src/post/ieee-white.png"
+                style="width: 70%; margin-top: -10px"
+              />
+            </p>
+            <br /><br />
+          </div>
+
+          <div class="footer-center">
+            <div class="name">
+              <div class="btn ig-btn" style="float: left ;">
+                <i class="fa fa-map-marker" aria-hidden="true" id="ig"></i>
+              </div>
+              <p style="display: flex; text-align: left">
+                Xenith 2022 <br />
+                Jaypee Institute Of Information Technology<br />
+                Sector-62, Noida <br />
+                India
+              </p>
+            </div>
+
+            <div class="name">
+              <div class="btn ph-btn" style="float: left ;">
+                <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+              </div>
+              <p style="display: flex">Shwetank : +91 7011528526</p>
+            </div>
+
+            <div class="name">
+              <div class="btn ph-btn" style="float: left ;">
+                <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+              </div>
+              <p style="display: flex">Priyanjali : +91 7011528526</p>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <p class="footer-company-about">
+              <span>About the company</span>
+              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+              euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+              <div class="container">
+                <div class="btn fb-btn">
+                  <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
+                </div>
+                <div class="btn ig-btn">
+                  <i class="fa fa-instagram" aria-hidden="true" id="ig"></i>
+                </div>
+                <div class="btn ln-btn">
+                  <i class="fa fa-linkedin" aria-hidden="true" id="ln"></i>
+                </div>
+                <div class="btn gt-btn">
+                  <i class="fa fa-github" aria-hidden="true" id="gt"></i>
+                </div>
+                <div class="btn yt-btn">
+                  <i class="fa fa-youtube-play" aria-hidden="true" id="yt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p class="footer-links" style="text-align: center">
+              <a href="#" class="link-1">Home</a>
+
+              <a href="#">About</a>
+
+              <a href="#">Events</a>
+
+              <a href="#">Timeline</a>
+
+              <a href="#">Team</a>
+
+              <a href="#">Sponser</a>
+
+              <a href="#">Contact</a>
+            </p>
+          </div>
+        </footer>
+        <!--Sponsor section ends-->
       </div>
-      <main>
 
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+      <script src="js/main.js"></script>
 
-            <div class="image-card card" style="background-image: url('src/post/shwetank.jpg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Shwetank</h2><br>
-                <h3>Chairperson</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-            <div class="image-card card" style="background-image: url('src/post/priyanjali.jpg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Priyanjali</h2><br>
-                <h3>Vice Chairperson</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-            <div class="image-card card" style="background-image: url('src/post/ishaan.jpg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Ishaan</h2><br>
-                <h3>Organising Secretary</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-
-            <div class="image-card card" style="background-image: url('src/post/ayush.jpg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Ayush</h2><br>
-                <h3>Treasurer</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-            <div class="image-card card" style="background-image: url('src/post/suraj.jpg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Suraj</h2><br>
-                <h3>Technical Head Cse</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-            <div class="image-card card" style="background-image: url('src/post/tanya.jpg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Tanya</h2><br>
-                <h3>Technical Head Ece</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-            <div class="image-card card" style="background-image: url('src/post/kartikey.jpg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Kartikey</h2><br>
-                <h3>Public Relations Head</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-            <div class="image-card card" style="background-image: url('src/post/somya.jpg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Somya</h2><br>
-                <h3>Marketing Head</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-            <div class="image-card card" style="background-image: url('src/post/akshat.jpg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Akshat</h2><br>
-                <h3>Management Head</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-            <div class="image-card card" style="background-image: url('src/post/manan.jpeg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Manan</h2><br>
-                <h3>Creative Head</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-            <div class="image-card card" style="background-image: url('src/post/aditya.jpg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Aditya</h2><br>
-                <h3>Digital Head</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="dcard">
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-            <div class="trigger"></div>
-
-            <div class="image-card card" style="background-image: url('src/post/radhika.jpeg')">
-              <div class="caption"></div>
-              <div class="content">
-                <br><br><br>
-                <h2>Radhika</h2><br>
-                <h3>WIE Management Head</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <!-- </div>
-              <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-                uk-slider-item="previous"></a>
-              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-                uk-slider-item="next"></a>
-
-            </div>
-
-            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
-          </div>
-        </div>
-      </div> -->
+      <!--/footer-->
     </div>
-
-    <!--Team section ends-->
-
-    <!--Sponsor section begins-->
-
-    <!--Sponsor section ends-->
-
-    <!--footer-->
-    <footer class="uk-position-relative footer-distributed" uk-scrollspy="cls:uk-animation-fade" id="contact">
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
-      </div>
-
-      <div class="footer-left">
-
-        <p class="footer-company-name"><img src="src/post/ieee-white.png" style="width:70%;margin-top: -10px;"></p>
-        <br><br>
-
-
-
-      </div>
-
-      <div class="footer-center">
-
-        <div class="name">
-          <div class="btn ig-btn" style="float: left;;">
-            <i class="fa fa-map-marker" aria-hidden="true" id="ig"></i>
-          </div>
-          <p style="display:flex; text-align: left;">Xenith 2022 <br>
-            Jaypee Institute Of Information Technology<br>
-            Sector-62, Noida <br>
-            India </p>
-        </div>
-
-        <div class="name">
-          <div class="btn ph-btn" style="float: left;;">
-            <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
-          </div>
-          <p style="display:flex">Shwetank : +91 7011528526</p>
-        </div>
-
-        <div class="name">
-          <div class="btn ph-btn" style="float: left;;">
-            <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
-          </div>
-          <p style="display:flex">Priyanjali : +91 7011528526</p>
-        </div>
-
-      </div>
-
-      <div class="footer-right">
-
-        <p class="footer-company-about">
-          <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-          vehicula sit amet.
-        </p>
-
-        <div class="footer-icons">
-
-          <div class="container">
-            <div class="btn fb-btn">
-              <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
-            </div>
-            <div class="btn ig-btn">
-              <i class="fa fa-instagram" aria-hidden="true" id="ig"></i>
-            </div>
-            <div class="btn ln-btn">
-              <i class="fa fa-linkedin" aria-hidden="true" id="ln"></i>
-            </div>
-            <div class="btn gt-btn">
-              <i class="fa fa-github" aria-hidden="true" id="gt"></i>
-            </div>
-            <div class="btn yt-btn">
-              <i class="fa fa-youtube-play" aria-hidden="true" id="yt"></i>
-            </div>
-
-          </div>
-
-
-        </div>
-
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-links " style="text-align: center;">
-          <a href="#" class="link-1">Home</a>
-
-          <a href="#">About</a>
-
-          <a href="#">Events</a>
-
-          <a href="#">Timeline</a>
-
-          <a href="#">Team</a>
-
-          <a href="#">Sponser</a>
-
-          <a href="#">Contact</a>
-
-        </p>
-      </div>
-
-
-    </footer>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/main.js"></script>
-
-    <!--/footer-->
-
-  </div>
-</body>
-
+  </body>
 </html>
