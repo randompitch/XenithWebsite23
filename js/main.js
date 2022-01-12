@@ -82,4 +82,99 @@ var refresh = setInterval(function(){
       })();
 clearInterval(refresh);},3500);
 
-  
+const createTeamCard = (name, designation, imageUrl) => {
+  var parent = document.createElement("div");
+  parent.className = "col-md-4 col-sm-1";
+
+  var card = document.createElement("div");
+  card.className = "dcard";
+
+  for (var i = 0; i < 6; i++) {
+    var triggerDiv = document.createElement("div");
+    triggerDiv.className = "trigger";
+    card.appendChild(triggerDiv);
+  }
+
+  var imageCard = document.createElement("div");
+  imageCard.className = "image-card card";
+  imageCard.style.backgroundImage = `url(${imageUrl})`;
+
+  var caption = document.createElement("div");
+  caption.className = "caption";
+
+  imageCard.appendChild(caption);
+
+  var content = document.createElement("div");
+  content.className = "content";
+
+  for (var i = 0; i < 3; i++) {
+    var br = document.createElement("br");
+    content.appendChild(br);
+  }
+
+  var memberName = document.createElement("h2");
+  memberName.innerHTML = name;
+
+  var desig = document.createElement("h3");
+  desig.innerHTML = designation;
+
+  var br = document.createElement("br");
+
+  content.appendChild(memberName);
+  content.appendChild(br);
+  content.appendChild(desig);
+
+  imageCard.appendChild(content);
+  card.appendChild(imageCard);
+  parent.appendChild(card);
+  document.getElementById("teamContainer").appendChild(parent);
+};
+
+const createSponsorCard = (name, spType, imageUrl) => {
+  var parent = document.createElement("div");
+  parent.className = "col-md-4";
+  parent.style.marginTop = "30px";
+
+  var card = document.createElement('div');
+  card.className = "sponsor-card"
+
+  var cardContainer = document.createElement('div');
+  cardContainer.className = "container"
+
+  var image = document.createElement('img')
+  image.src = imageUrl
+  image.width = 200;
+  image.height = 100;
+
+
+  var heading = document.createElement('h1')
+  heading.innerHTML = name;
+
+  var type = document.createElement('span')
+  type.innerHTML = spType;
+
+  cardContainer.appendChild(image);
+  cardContainer.appendChild(type);
+  cardContainer.appendChild(heading)
+  card.appendChild(cardContainer);
+  parent.appendChild(card);
+  document.getElementById("sponsorContainer").appendChild(parent);
+};
+
+var images = [];
+fetch("./teamData.json")
+  .then((res) => res.json())
+  .then((data) => {
+    data.map((image) =>
+      createTeamCard(image.name, image.designation, image.image)
+    );
+  })
+  .catch((err) => console.error(err));
+
+var sponsors = [];
+fetch("./sponsorData.json")
+  .then((res) => res.json())
+  .then((data) => {
+    data.map((sponsor) => createSponsorCard(sponsor.name, sponsor.type, sponsor.image));
+  })
+  .catch((err) => console.error(err));

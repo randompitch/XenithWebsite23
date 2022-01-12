@@ -16,6 +16,8 @@
   --bg-color: linear-gradient(to right, "#402571", "#311F65");
   --typeSpeed: 2.5s;
   --textLength: 9;
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
 }
 
 *:focus {
@@ -290,7 +292,7 @@ nav {
 }
 
 .background-xenith {
-  background-color: rgba(37, 11, 85, 1);
+  background-color: rgba(0,0,0,0.4);
   transition: all 0.8s ease-in;
 }
 
@@ -339,7 +341,6 @@ nav {
   height: 90vh;
   overflow: hidden;
   padding: 5%;
-  background-color: whitesmoke;
 }
 @media only screen and (max-width: 1439px) {
   #about {
@@ -993,6 +994,10 @@ h1 {
   --radius: calc(var(--size) * 20 / 100);
 }
 
+.largeFont {
+  font-size: 30px;
+  font-weight: bold;
+}
 
 main {
   display: flex;
@@ -1006,7 +1011,6 @@ main {
   overflow: visible;
 }
 .teamh {
-  
   height:auto!important;
 }
 .image-card {
@@ -2021,4 +2025,80 @@ time {
 .timeline ul li.in-view div {
 
   background: #191b3f;
+}
+
+.sponsor-card {
+  position: relative;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.sponsor-card .container {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  color: #000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  transition: 0.5s;
+  
+}
+
+.sponsor-card .container:hover {
+  transform: translateY(-20px);
+}
+
+.sponsor-card .container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  background: linear-gradient(45deg, #C33764, #1D2671);
+}
+
+.sponsor-card .container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #C33764, #1D2671);
+  filter: blur(30px)
+}
+
+.sponsor-card .container span {
+  position: absolute;
+  align-self: baseline;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+.sponsor-card .container h1 {
+  position: absolute;
+  align-self: flex-end;
+  background: transparent;
+  z-index: 2;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.sponsor-card .container img {
+  position: absolute;
+  align-self: center;
+  background: transparent;
+  z-index: 2;
 }
