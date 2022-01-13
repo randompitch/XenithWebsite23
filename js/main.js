@@ -130,7 +130,7 @@ const createTeamCard = (name, designation, imageUrl) => {
   document.getElementById("teamContainer").appendChild(parent);
 };
 
-const createSponsorCard = (name, spType, imageUrl) => {
+const createSponsorCard = (name, spType, imageUrl, link="") => {
   var parent = document.createElement("div");
   parent.className = "col-md-4";
   parent.style.marginTop = "30px";
@@ -145,6 +145,8 @@ const createSponsorCard = (name, spType, imageUrl) => {
   image.src = imageUrl
   image.width = 200;
   image.height = 100;
+  image.onclick = () => window.open(link, "_blank", 'noopener noreferrer');
+  image.style.cursor = "pointer";
 
 
   var heading = document.createElement('h1')
@@ -175,6 +177,6 @@ var sponsors = [];
 fetch("./sponsorData.json")
   .then((res) => res.json())
   .then((data) => {
-    data.map((sponsor) => createSponsorCard(sponsor.name, sponsor.type, sponsor.image));
+    data.map((sponsor) => createSponsorCard(sponsor.name, sponsor.type, sponsor.image, sponsor.link));
   })
   .catch((err) => console.error(err));
