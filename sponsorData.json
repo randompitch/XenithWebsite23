@@ -22,10 +22,10 @@
     },
     {
         "id": 4,
-        "name": "Garb ON",
-        "image": "https://via.placeholder.com/150",
+        "name": "Grab ON",
+        "image": "src/sponsors/grabon.png",
         "type": "Saving Partner",
-        "link": ""
+        "link": "https://www.grabon.in/"
     },
     {
         "id": 5,
