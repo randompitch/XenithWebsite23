@@ -18,7 +18,7 @@
         "name": "Coding Minutes",
         "image": "src/sponsors/codingminutes.png",
         "type": "Technical Partner",
-        "link": ""
+        "link": "https://www.codingminutes.com/"
     },
     {
         "id": 4,
@@ -60,7 +60,7 @@
         "name": "Jamboree",
         "image": "src/sponsors/jamboree.jpeg",
         "type": "Other Sponsors",
-        "link": ""
+        "link": "https://www.jamboreeindia.com/"
     },
     {
         "id": 10,
