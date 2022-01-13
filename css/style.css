@@ -292,7 +292,7 @@ nav {
 }
 
 .background-xenith {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(63,37,112);
   transition: all 0.8s ease-in;
 }
 
