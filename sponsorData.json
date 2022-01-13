@@ -3,66 +3,77 @@
         "id": 1,
         "name": "Learn for Cause",
         "image": "src/sponsors/lfc.jfif",
-        "type": "Community Partner"
+        "type": "Community Partner",
+        "link": "https://github.com/Learn-For-Cause"
     },
     {
         "id": 2,
-        "name": "Alpha Builder",
-        "image": "https://via.placeholder.com/150",
-        "type": "Website Partner"
+        "name": "Alpha Buildr",
+        "image": "src/sponsors/alphabuildr.jpeg",
+        "type": "Website Partner",
+        "link": "https://app.alphabuildr.com/"
     },
     {
         "id": 3,
         "name": "Coding Minutes",
         "image": "src/sponsors/codingminutes.png",
-        "type": "Technical Partner"
+        "type": "Technical Partner",
+        "link": ""
     },
     {
         "id": 4,
         "name": "Garb ON",
         "image": "https://via.placeholder.com/150",
-        "type": "Saving Partner"
+        "type": "Saving Partner",
+        "link": ""
     },
     {
         "id": 5,
         "name": "Programming PathShala",
         "image": "src/sponsors/programmingpathshala.jpg",
-        "type": "Teaching Partner"
+        "type": "Teaching Partner",
+        "link": "https://renaissance.programmingpathshala.com/crack-coding-interviews"
     },
     {
         "id": 6,
         "name": "Elearn Markets",
         "image": "src/sponsors/elearnmarket.png",
-        "type": "Finance Education Partner"
+        "type": "Finance Education Partner",
+        "link": "https://www.elearnmarkets.com/"
     },
     {
         "id": 7,
         "name": "Pieces",
-        "image": "src/sponsors/pieces.jpg",
-        "type": "Snippet Partner"
+        "image": "src/sponsors/pieces.jpeg",
+        "type": "Snippet Partner",
+        "link": "https://code.pieces.app/"
     },
     {
         "id": 8,
         "name": "Squicker",
         "image": "src/sponsors/squicker.png",
-        "type": "Foreign Education Partner"
+        "type": "Foreign Education Partner",
+        "link": "https://squickr.de/"
     },
     {
         "id": 9,
         "name": "Jamboree",
-        "image": "src/sponsors/jamboree.png",
-        "type": "Other Sponsors"
+        "image": "src/sponsors/jamboree.jpeg",
+        "type": "Other Sponsors",
+        "link": ""
     },
     {
         "id": 10,
         "name": "Converge EduTech",
         "image": "src/sponsors/converge.jpg",
-        "type": "Other Sponsors"
+        "type": "Other Sponsors",
+        "link": "https://www.convergeapp.co/"
     },
     {
         "id": 11,
         "name": "Yocket",
         "image": "src/sponsors/yocket.png",
-        "type": "Other Sponsors"
+        "type": "Other Sponsors",
+        "link": "https://yocket.com/"
     }
 ]
