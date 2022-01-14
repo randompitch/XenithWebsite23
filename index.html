@@ -5,17 +5,26 @@
   <title>Xenith 2022</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/uikit.min.css" />
+  <link rel="stylesheet" href="/static/css/uikit.min.css" />
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="stylesheet" href="/static/css/timeline.css" />
+  <link rel="stylesheet" href="/static/css/sponsor.css" />
+  <link rel="stylesheet" href="/static/css/team.css" />
+  <link rel="stylesheet" href="/static/css/footer.css" />
+  <link rel="stylesheet" href="/static/css/navbar.css" />
   <!--Lottie player-->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/static/js/main.js"></script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -23,8 +32,8 @@
   <div id="preLoader">
     <div class="uk-position-center">
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      <lottie-player src="src/lf30_editor_2vwxpmet.json" background="transparent" speed="1"
-        style="width: 300px; height: 300px" loop autoplay></lottie-player>
+      <lottie-player src="static/lf30_editor_2vwxpmet.json" background="transparent" speed="1"
+        style="width: 100%; height: 40vh" loop autoplay></lottie-player>
     </div>
   </div>
 
@@ -34,7 +43,7 @@
       <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_zprb9vzj.json" background="transparent"
         speed="1" class="active" loop autoplay></lottie-player>
       <!--Hidden For Pc-->
-      <img src="./lottie_mb.gif" class="lottie-bg hidden" alt="" />
+      <img src="static/img/lottie_mb.gif" class="lottie-bg hidden" alt="" />
 
       <!--Hidden For Phone-->
       <div class="uk-position-top active" uk-scrollspy="cls:uk-animation-fade">
@@ -277,183 +286,124 @@
               <span class="sectionHead">Team</span>
             </div>
           </div>
-          <div class="uk-position-center" id="team-slider">
-            <div class="uk-slider-container" uk-slider>
-
-              <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
-
-                <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/shwetank.jpg" alt="chairperson" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Shwetank</h3>
-                        <p>Chairperson</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/priyanjali.jpg" alt="vice-chairperson" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Priyanjali</h3>
-                        <p>Vice Chairperson</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/ishaan.jpg" alt="organising-secretary" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Ishaan</h3>
-                        <p>Organising Secretary</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/ayush.jpg" alt="treasurer" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Ayush</h3>
-                        <p>Treasurer</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/akshat.jpg" alt="management-head" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Akshat</h3>
-                        <p>Management Head</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/radhika.jpeg" alt="wie-management-head" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Radhika</h3>
-                        <p>WIE Management Head</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/suraj.jpg" alt="technical-head" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Suraj</h3>
-                        <p>Technical CSE Head</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/tanya.jpg" alt="technical-ece-head" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Tanya</h3>
-                        <p>Technical ECE Head</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/aditya.jpg" alt="digital-head" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Aditya</h3>
-                        <p>Digital Head</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/somya.jpg" alt="marketing-head" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Somya</h3>
-                        <p>Marketing Head</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/manan.jpeg" alt="creative-head" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Manan</h3>
-                        <p>Creative Head</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <img src="src/post/kartikey.jpg" alt="public-relation-head" class="team-members">
-                      </div>
-                      <div class="uk-card-body">
-                        <h3 class="uk-card-title team-name">Kartikey</h3>
-                        <p>Public Relation Head</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-                uk-slider-item="previous"></a>
-              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-                uk-slider-item="next"></a>
-
-            </div>
-
-            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
+          <div class="uk-position-center">
+            <main id="teamContainer"></main>
           </div>
         </div>
       </div>
     </div>
+    <div class="uk-position-relative" id="sponsors" uk-scrollspy="cls:uk-animation-fade">
+      <div class="uk-position-top-center">
+        <div class="uk-tile uk-tile-transparent">
+          <h1 class="sectionHead" data-text="Sponsors">
+            Sponsors
+          </h1>
+        </div>
+      </div>
+      <br /><br />
+      <main id="sponsorContainer">
+        <!-- Content injected via DOM -->
+      </main>
+    </div>
+  
+    <!--Sponsor section ends-->
+    <!-- Footer section -->
+    <footer
+            class="uk-position-relative footer-distributed"
+            uk-scrollspy="cls:uk-animation-fade"
+            id="contact"
+          >
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+  
+            <div class="footer-left">
+              <p class="footer-company-name">
+                <img
+                  src="static/img/ieee-white.png"
+                  style="width: 70%; margin-top: -10px"
+                />
+              </p>
+              <br /><br />
+            </div>
+  
+            <div class="footer-center">
+              <div class="name">
+                <div class="btn ig-btn" style="float: left ;">
+                  <i class="fa fa-map-marker" aria-hidden="true" id="ig"></i>
+                </div>
+                <p style="display: flex; text-align: left">
+                  Xenith 2022 <br />
+                  Jaypee Institute Of Information Technology<br />
+                  Sector-62, Noida <br />
+                  India
+                </p>
+              </div>
+  
+              <div class="name">
+                <div class="btn ph-btn" style="float: left ;">
+                  <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+                </div>
+                <p style="display: flex">Shwetank : +91 7011528526</p>
+              </div>
+  
+              <div class="name">
+                <div class="btn ph-btn" style="float: left ;">
+                  <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+                </div>
+                <p style="display: flex">Priyanjali : +91 7011528526</p>
+              </div>
+            </div>
+  
+            <div class="footer-right">
+              <p class="footer-company-about">
+                <span class="uk-text-center uk-text-large">Our Socials</span>
+              </p>
+  
+              <div class="footer-icons">
+                <div class="container">
+                  <div class="btn fb-btn" onclick='window.open("https://www.facebook.com/ieeesbjiit/", "noopener noreferrer")'>
+                    <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
+                  </div>
+                  <div class="btn ig-btn" onclick="window.open('https://www.instagram.com/ieeesbjiit/', 'noopener noreferrer')">
+                    <i class="fa fa-instagram" aria-hidden="true" id="ig"></i>
+                  </div>
+                  <div class="btn ln-btn" onclick="window.open('https://www.linkedin.com/company/ieee-student-branch-jiit/', 'noopener noreferrer')">
+                    <i class="fa fa-linkedin" aria-hidden="true" id="ln"></i>
+                  </div>
+                  <div class="btn gt-btn" onclick="window.open('https://github.com/ieeesbjiit', 'noopener noreferrer')">
+                    <i class="fa fa-github" aria-hidden="true" id="gt"></i>
+                  </div>
+                  <div class="btn yt-btn" onclick="window.open('https://www.youtube.com/c/IEEESBJIIT', 'noopener noreferrer')">
+                    <i class="fa fa-youtube-play" aria-hidden="true" id="yt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p class="footer-links" style="text-align: center">
+                <a href="#" class="link-1">Home</a>
+  
+                <a href="#about">About</a>
+  
+                <a href="#event">Events</a>
+  
+                <a href="#timeline">Timeline</a>
+  
+                <a href="#team">Team</a>
+  
+                <a href="#sponsors">Sponsors</a>
+  
+                <a href="#contact">Contact</a>
+              </p>
+            </div>
+    </footer>
   </div>
   <!--Team section ends-->
-
-  <!--Sponsor section begins-->
-
-  <!--Sponsor section ends-->
-
-  <!--Contact section begins-->
-
-  <!--Contact section ends-->
-
-  <!-- Footer section -->
-  </div>
+  <!--Sponsor section begins-->  
 </body>
 
 </html>
