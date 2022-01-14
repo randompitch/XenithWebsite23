@@ -158,6 +158,7 @@ html {
 .nav-mb {
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 
 .a-tag {
@@ -255,8 +256,8 @@ nav {
 
 #menu {
   position: absolute;
-  width: 220px;
-  height: 100vh;
+  width: 400px;
+  height: 120vh;
   box-shadow: 0 0 10px #85888c;
   margin: -50px 0 0 -50px;
   padding: 50px;
@@ -283,8 +284,11 @@ nav {
   font-family: "Orbitron", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 5%;
+  margin-bottom: 5%;
   background-color: transparent;
+}
+.abt{
+margin-top: 50px;
 }
 
 #navbarMain {
@@ -344,13 +348,13 @@ nav {
 }
 @media only screen and (max-width: 1439px) {
   #about {
-    min-height: 88vh;
+    min-height: 70vh;
     overflow: hidden;
   }
 }
 @media only screen and (max-width: 1000px) {
   #about {
-    height: 110vh;
+    min-height: 70vh;
     overflow: hidden;
   }
 
@@ -380,8 +384,14 @@ nav {
   }
 }
 @media only screen and (max-width: 700px) {
+  .heading-title {
+    font-size: 1em;
+  }
+  .hidden-mb{
+    display: none;
+  }
   #about {
-    min-height: 151vh;
+    min-height: 60vh !important;
     overflow: hidden;
   }
 
@@ -414,13 +424,13 @@ nav {
 }
 @media only screen and (max-width: 424px) {
   #about {
-    min-height: 171vh;
+    min-height: 75vh;
     overflow: hidden;
   }
 }
 @media only screen and (max-width: 327px) {
   #about {
-    min-height: 274vh;
+    min-height: 75vh;
     overflow: hidden;
   }
 .section-text {
@@ -1080,7 +1090,6 @@ main {
  }
 
  .final{
-   
    padding: 0px 0px 0px 0px;
    color: black;
  }

@@ -36,7 +36,7 @@
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
   />
   <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
 
   <body>
     <!--Pre Loader-->
@@ -129,7 +129,6 @@
       </div>
 
       <!--About section begins-->
-
       <div
         class="uk-position-relative"
         id="about"
@@ -145,20 +144,33 @@
               </div>
             </div>
             <div class="uk-position-center">
-              <p class="uk-text-center uk-text-large section-text">
+              <p class="uk-text-center uk-text-large section-text abt">
                 Xenith 2021 is the much anticipated online edition of IEEE
                 Student Branch JIIT’s two-day annual fest."Reality is often
                 disappointing" but little did we know back then that Thanos was
                 actually talking about TwentyTwenty. 2020 had been an outlandish
-                and offbeat year. The global pandemic forced us all to be hard
-                stuck at our places and to help us cope up, we went from Ludo to
-                guessing the gibberish, to accusing our best friend of being an
-                imposter and much more. So to Ctrl+Alt+Delete 2020 and escape
-                the ordinary, join the extraordinary IEEE Student Branch JIIT is
-                proud to announce the theme of its annual fest XENITH'21 as
-                "ESCAPE THE REALITY". Grab your seats and make your teams as we
-                are coming with some exciting events, challenges and rewards for
-                you soon. Stay tuned!.
+                and offbeat year.
+                <span
+                  class="uk-text-center uk-text-large section-text hidden-mb"
+                >
+                  The global pandemic forced us all to be hard stuck at our
+                  places and to help us cope up, we went from Ludo to guessing
+                  the gibberish, to accusing our best friend of being an
+                  imposter and much more. So to Ctrl+Alt+Delete 2020 and escape
+                  the ordinary, join the extraordinary IEEE Student Branch JIIT
+                  is proud to announce the theme of its annual fest XENITH'21 as
+                  "ESCAPE THE REALITY". Grab your seats and make your teams as
+                  we are coming with some exciting events, challenges and
+                  rewards for you soon. Stay tuned!.</span
+                >
+                <br />
+                <!--  <button
+                  uk-toggle="target: #toggle-abt; animation: uk-animation-slide-top"
+                  type="button"
+                  class="uk-button uk-button-primary"
+                >
+                  TOGGLE
+                </button> -->
               </p>
             </div>
           </div>
@@ -364,7 +376,11 @@
         <!--Timeline section ends -->
 
         <!--Team section begins-->
-        <div class="uk-position-relative teamh" id="team" uk-scrollspy="cls:uk-animation-fade">
+        <div
+          class="uk-position-relative teamh"
+          id="team"
+          uk-scrollspy="cls:uk-animation-fade"
+        >
           <!-- <div >
         <div class="uk-container">
        
@@ -387,7 +403,11 @@
 
         <!--Sponsor section begins-->
 
-        <div class="uk-position-relative" id="sponsors" uk-scrollspy="cls:uk-animation-fade">
+        <div
+          class="uk-position-relative"
+          id="sponsors"
+          uk-scrollspy="cls:uk-animation-fade"
+        >
           <div class="uk-position-top-center">
             <div class="uk-tile uk-tile-transparent">
               <h1 class="sectionHead glitch final" data-text="Sponsors">
@@ -425,7 +445,7 @@
 
           <div class="footer-center">
             <div class="name">
-              <div class="btn ig-btn" style="float: left ;">
+              <div class="btn ig-btn" style="float: left">
                 <i class="fa fa-map-marker" aria-hidden="true" id="ig"></i>
               </div>
               <p style="display: flex; text-align: left">
@@ -437,14 +457,14 @@
             </div>
 
             <div class="name">
-              <div class="btn ph-btn" style="float: left ;">
+              <div class="btn ph-btn" style="float: left">
                 <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
               </div>
               <p style="display: flex">Shwetank : +91 7011528526</p>
             </div>
 
             <div class="name">
-              <div class="btn ph-btn" style="float: left ;">
+              <div class="btn ph-btn" style="float: left">
                 <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
               </div>
               <p style="display: flex">Priyanjali : +91 7011528526</p>
@@ -460,19 +480,34 @@
 
             <div class="footer-icons">
               <div class="container">
-                <div class="btn fb-btn" onclick='window.open("https://www.facebook.com/ieeesbjiit/", "noopener noreferrer")'>
+                <div
+                  class="btn fb-btn"
+                  onclick='window.open("https://www.facebook.com/ieeesbjiit/", "noopener noreferrer")'
+                >
                   <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
                 </div>
-                <div class="btn ig-btn" onclick="window.open('https://www.instagram.com/ieeesbjiit/', 'noopener noreferrer')">
+                <div
+                  class="btn ig-btn"
+                  onclick="window.open('https://www.instagram.com/ieeesbjiit/', 'noopener noreferrer')"
+                >
                   <i class="fa fa-instagram" aria-hidden="true" id="ig"></i>
                 </div>
-                <div class="btn ln-btn" onclick="window.open('https://www.linkedin.com/company/ieee-student-branch-jiit/', 'noopener noreferrer')">
+                <div
+                  class="btn ln-btn"
+                  onclick="window.open('https://www.linkedin.com/company/ieee-student-branch-jiit/', 'noopener noreferrer')"
+                >
                   <i class="fa fa-linkedin" aria-hidden="true" id="ln"></i>
                 </div>
-                <div class="btn gt-btn" onclick="window.open('https://github.com/ieeesbjiit', 'noopener noreferrer')">
+                <div
+                  class="btn gt-btn"
+                  onclick="window.open('https://github.com/ieeesbjiit', 'noopener noreferrer')"
+                >
                   <i class="fa fa-github" aria-hidden="true" id="gt"></i>
                 </div>
-                <div class="btn yt-btn" onclick="window.open('https://www.youtube.com/c/IEEESBJIIT', 'noopener noreferrer')">
+                <div
+                  class="btn yt-btn"
+                  onclick="window.open('https://www.youtube.com/c/IEEESBJIIT', 'noopener noreferrer')"
+                >
                   <i class="fa fa-youtube-play" aria-hidden="true" id="yt"></i>
                 </div>
               </div>
