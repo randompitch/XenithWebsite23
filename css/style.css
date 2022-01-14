@@ -204,6 +204,9 @@ nav {
   z-index: 15 !important;
   -webkit-user-select: none;
   user-select: none;
+  background: white;
+  border-radius: 50%;
+  padding: 20px;
 }
 
 #menuToggle input {
@@ -219,16 +222,16 @@ nav {
 #menuToggle span {
   display: flex;
   width: 29px;
-  height: 2px;
+  height: 3px;
   margin-bottom: 5px;
   position: relative;
-  background: #ffffff;
+  background: black;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 5px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     opacity 0.55s ease;
-  background: white;
+  background: black;
 }
 
 #menuToggle span:first-child {
@@ -361,7 +364,7 @@ margin-top: 50px;
   #event {
     height: 100vh;
     overflow: hidden;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 5%;
   }
 
@@ -380,7 +383,7 @@ margin-top: 50px;
     height: 100vh;
     overflow: hidden;
     padding: 5%;
-    background-color: whitesmoke;
+    background-color: white;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -398,7 +401,7 @@ margin-top: 50px;
   #event {
     height: 100vh;
     overflow: hidden;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 5%;
   }
 
@@ -406,7 +409,7 @@ margin-top: 50px;
     height: 100vh;
     overflow: hidden;
     padding: 5%;
-    background-color: whitesmoke;
+    background-color: white;
   }
 
   .event-card {
@@ -1118,6 +1121,10 @@ main {
 .col-md-12, .col-md-4 {
   margin-bottom: 80px;
   height: var(--size);
+  display: flex;
+  align-self: center;
+  align-content: center;
+  align-items: center;
 }
 .col-md-12 .dcard {
   perspective: 3000px;
