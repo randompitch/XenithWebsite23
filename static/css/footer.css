@@ -433,7 +433,7 @@ section {
   background: rgb(59, 35, 108);
   color: #686868;
 
-  width: 95%;
+  width: 100%;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -577,10 +577,34 @@ i.fa {
   .footer .footer-content .about {
     width: auto;
   }
+  #totop-icon a
+  {
+    border: 3px solid black; 
+    padding: 2%;
+    border-radius: 10px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .footer {
     height: 1100px;
   }
+  #totop-icon a
+{
+  border: 3px solid black; 
+  padding: 2%;
+  border-radius: 10px;
+}
+}
+
+#totop-icon
+{
+  text-align: right;
+}
+
+#totop-icon a
+{
+  border: 3px solid black; 
+  padding: 1%;
+  border-radius: 10px;
 }
