@@ -394,7 +394,7 @@ margin-top: 50px;
     display: none;
   }
   #about {
-    min-height: 60vh !important;
+    min-height: 167vh !important;
     overflow: hidden;
   }
 
@@ -1012,6 +1012,7 @@ h1 {
   font-weight: bold;
 }
 
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -1020,10 +1021,10 @@ main {
  
   width: 100%;
   margin: auto;
-  margin-top: 50px;
   overflow: visible;
 }
 .teamh {
+  
   height:auto!important;
 }
 .image-card {
@@ -1093,6 +1094,7 @@ main {
  }
 
  .final{
+   
    padding: 0px 0px 0px 0px;
    color: black;
  }
@@ -1104,9 +1106,7 @@ main {
    background: white;
    color: black;
  }
- .uk-tile{
-   padding-top: 0px;
- }
+ 
  * {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -1121,10 +1121,6 @@ main {
 .col-md-12, .col-md-4 {
   margin-bottom: 80px;
   height: var(--size);
-  display: flex;
-  align-self: center;
-  align-content: center;
-  align-items: center;
 }
 .col-md-12 .dcard {
   perspective: 3000px;
@@ -1204,6 +1200,13 @@ main {
   transform: perspective(50px) translateZ(2px);
 }
  
+.uk-position-top-center {
+  top:auto !important;
+}
+/* .image-card:hover .content {
+  transform: perspective(50px) translateZ(2px);
+} */
+
 @media (min-width: 960px){
 .uk-section {
      padding-top: 0px; 
@@ -1265,11 +1268,11 @@ body{
   #universe
   {
     padding-top:15vh;
-    height:125vh;
+    height:101vh;
   }
   #event
   {
-    height: 125vh;
+    height: 113vh;
   }
   
 }
@@ -2117,4 +2120,11 @@ time {
   align-self: center;
   background: transparent;
   z-index: 2;
+}
+.temp {
+ padding-top: 0px;
+  
+}
+.uk-tile{
+  padding: 0px;
 }

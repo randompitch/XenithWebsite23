@@ -57,9 +57,9 @@ var refresh = setInterval(function () {
         rect.top >= 0 &&
         rect.left >= 0 &&
         rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
+        (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <=
-          (window.innerWidth || document.documentElement.clientWidth)
+        (window.innerWidth || document.documentElement.clientWidth)
       );
     }
 
@@ -79,53 +79,6 @@ var refresh = setInterval(function () {
   clearInterval(refresh);
 }, 3500);
 
-const createTeamCard = (name, designation, imageUrl) => {
-  var parent = document.createElement("div");
-  parent.className = "col-md-4 col-sm-1";
-
-  var card = document.createElement("div");
-  card.className = "dcard";
-
-  for (var i = 0; i < 6; i++) {
-    var triggerDiv = document.createElement("div");
-    triggerDiv.className = "trigger";
-    card.appendChild(triggerDiv);
-  }
-
-  var imageCard = document.createElement("div");
-  imageCard.className = "image-card card";
-  imageCard.style.backgroundImage = `url(${imageUrl})`;
-
-  var caption = document.createElement("div");
-  caption.className = "caption";
-
-  imageCard.appendChild(caption);
-
-  var content = document.createElement("div");
-  content.className = "content";
-
-  for (var i = 0; i < 3; i++) {
-    var br = document.createElement("br");
-    content.appendChild(br);
-  }
-
-  var memberName = document.createElement("h2");
-  memberName.innerHTML = name;
-
-  var desig = document.createElement("h3");
-  desig.innerHTML = designation;
-
-  var br = document.createElement("br");
-
-  content.appendChild(memberName);
-  content.appendChild(br);
-  content.appendChild(desig);
-
-  imageCard.appendChild(content);
-  card.appendChild(imageCard);
-  parent.appendChild(card);
-  document.getElementById("teamContainer").appendChild(parent);
-};
 
 const createSponsorCard = (name, spType, imageUrl, link = "") => {
   var parent = document.createElement("div");
