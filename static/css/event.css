@@ -63,6 +63,8 @@
   cursor: pointer;
   z-index: 2;
   perspective: 1000px;
+  float: left;
+  margin: 5%;
 }
 
 /* This container is needed to position the front and back side */

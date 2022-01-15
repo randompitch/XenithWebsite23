@@ -13,6 +13,7 @@ $(document).ready(function () {
       nav.removeClass("background-xenith");
     }
   });
+
 });
 const signs = document.querySelectorAll("x-sign");
 const randomIn = (min, max) =>
