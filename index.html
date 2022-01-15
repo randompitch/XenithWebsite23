@@ -67,7 +67,7 @@
           autoplay
         ></lottie-player>
         <!--Hidden For Pc-->
-        <img src="static/img/lottie_mb.gif" class="lottie-bg hidden" alt="" />
+        <img src="static/img/lottie_mb.gif" class="hidden lottie-bg" alt="" />
 
         <!--Hidden For Phone-->
         <div
@@ -108,7 +108,7 @@
           </h1>
         </div>
         <!--Hidden for Pc-->
-        <div class="nav-mb hidden">
+        <div class="hidden nav-mb">
           <nav role="navigation">
             <div id="menuToggle">
               <input type="checkbox" />
@@ -156,7 +156,7 @@
                 uk-toggle="target: #toggle-abt; animation: uk-animation-slide-top"
                 class="toggle-text self"
               >
-                ..toggle
+                ..Read More
               </span>
             </p>
           </div>
@@ -238,58 +238,68 @@
 
       <!--Timeline section begins-->
 
-      <div
-        class="uk-position-relative"
-        id="timeline"
-        uk-scrollspy="cls:uk-animation-fade"
-      >
-        <div class="uk-section">
-          <div class="uk-container">
-            <div class="uk-position-top-center">
-              <div class="uk-tile uk-tile-transparent">
-                <span class="sectionHead">Timeline</span>
-              </div>
+      <div class="uk-position-relative" id="timeline" uk-scrollspy="cls:uk-animation-fade">
+        <div class="uk-section timeline-main">
+          <div class="uk-position-top-center">
+            <div class="uk-tile uk-tile-transparent">
+              <span class="sectionHead">Timeline</span>
             </div>
-            <div class="timeline">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus voluptas id inventore exercitationem esse nobis minima
-                laborum non, debitis accusantium deleniti enim similique
-                reiciendis quaerat voluptates! Laborum molestiae pariatur
-                temporibus!
-              </p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
-                consectetur aspernatur voluptas consequuntur tenetur dolore
-                voluptates sunt enim a nam accusantium aut distinctio,
-                repellendus incidunt, tempore hic magni quasi tempora.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                perspiciatis harum quia laudantium est. Voluptatibus quos
-                perspiciatis, quam praesentium ratione velit magni nobis, enim
-                quae odio doloremque explicabo neque expedita.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                quos impedit odio, placeat culpa necessitatibus. Quae omnis
-                obcaecati, sit reprehenderit perferendis consequuntur sint
-                cumque quod modi natus iste quaerat. Omnis quidem eaque odio sed
-                magnam fugiat ut quaerat atque dignissimos.
-              </p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-                quis a consequuntur et nobis? Ad quaerat perspiciatis error cum,
-                enim repellendus, assumenda, veritatis libero adipisci
-                laudantium sequi vitae necessitatibus dolore delectus mollitia.
-                Eos perferendis velit architecto veritatis, dolorem quibusdam,
-                doloremque, aut voluptatibus adipisci natus animi accusamus?
-                Vitae accusantium quidem dicta.
-              </p>
-            </div>
+          </div>
+          <div class="timeline-container">
+            <ul>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+              <li class="timeline-content">
+                <h3 class="timeline-content__title">Event 1</h3>
+                <p class="timeline-content__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis minima molestiae labore, exercitationem delectus?</p>
+                <span class="circle"></span>
+                <span class="timeline-content__date">Sample Date</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      
       <!--Timeline section ends -->
 
       <!--Team section begins-->

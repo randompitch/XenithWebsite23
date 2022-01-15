@@ -178,8 +178,6 @@ html {
   margin: 0 5%;
 }
 
-@media only screen and (max-width: 1439px) {
-}
 @media only screen and (max-width: 1000px) {
   #event {
     height: 150vh;
@@ -200,6 +198,7 @@ html {
     background-color: whitesmoke;
   }
 }
+
 @media only screen and (max-width: 700px) {
 
   #event {
@@ -221,6 +220,7 @@ html {
     margin: 0% 3%;
   }
 }
+
 @media only screen and (max-width: 327px) {
   .section-text {
     margin: 0 auto;
