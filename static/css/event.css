@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 .sectionHeadW {
     font-size: 2em;
     color: white;
@@ -109,4 +111,22 @@
     background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: wheat;    
   transform: rotateY(180deg);
+}
+
+.flip-card-front-text
+{
+  height: 100%;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.flip-card-front-text span
+{
+  font-family: 'Audiowide', cursive;
+  color: white;
+  font-size: 2.5em;
 }
