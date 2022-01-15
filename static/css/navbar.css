@@ -131,6 +131,7 @@ nav {
   opacity: 0.75;
   font-weight: bold;
   font-family: "Orbitron", sans-serif;
+  color: white !important;
 }
 
 .cp-tag::before {
