@@ -15,6 +15,8 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/about.css" />
+    <link rel="stylesheet" href="/static/css/scroll.css" />
     <link rel="stylesheet" href="/static/css/timeline.css" />
     <link rel="stylesheet" href="/static/css/sponsor.css" />
     <link rel="stylesheet" href="/static/css/team.css" />
@@ -128,40 +130,38 @@
       </div>
 
       <!--About section begins-->
-
-      <div
-        class="uk-position-relative"
-        id="about"
-        uk-scrollspy="cls:uk-animation-fade"
-      >
-        <div class="uk-section">
-          <div class="uk-container">
-            <div class="uk-position-top-center">
-              <div class="uk-tile uk-tile-default">
-                <span class="sectionHead">About</span>
-              </div>
-            </div>
-            <div class="uk-position-center">
-              <p class="uk-text-justify uk-text-large section-text">
-                Xenith 2021 is the much anticipated online edition of IEEE
-                Student Branch JIIT’s two-day annual fest."Reality is often
-                disappointing" but little did we know back then that Thanos was
-                actually talking about TwentyTwenty. 2020 had been an outlandish
-                and offbeat year. The global pandemic forced us all to be hard
-                stuck at our places and to help us cope up, we went from Ludo to
-                guessing the gibberish, to accusing our best friend of being an
-                imposter and much more. So to Ctrl+Alt+Delete 2020 and escape
-                the ordinary, join the extraordinary IEEE Student Branch JIIT is
-                proud to announce the theme of its annual fest XENITH'21 as
-                "ESCAPE THE REALITY". Grab your seats and make your teams as we
-                are coming with some exciting events, challenges and rewards for
-                you soon. Stay tuned!.
-              </p>
-            </div>
+      <div id="about" uk-scrollspy="cls:uk-animation-fade">
+        <div style="text-align: center; width: 100%">
+          <span class="sectionHead">About</span>
+          <div class="about-container">
+            <p class="uk-text-justify uk-text-large section-text">
+              In the last few years, we have come to terms with the fact that
+              there can be nothing in real life which isn't possible and there
+              is nothing which we can Ctrl+ delete from the existence of our
+              history. Good, bad, endearing - all sorts of memories within our
+              heart, we always tend to look forward to what is yet to come with
+              infinite dreams and aspirations along with a ray of hope to go
+              beyond the "zenith" of the knowns and unknowns and discover new
+              forms with our creative and curious minds.
+              <span id="toggle-abt" hidden
+                >With this hope and motto in our thoughts, IEEE Student Branch
+                JIIT is thrilled to announce the second online edition of our
+                most anticipated and largely awaited two days annual fest ~
+                "XENITH-22" , with the theme being "Beyond The Apex", where we
+                explore the young minds and promote them to think beyond the
+                reasonable.
+              </span>
+              <span
+                data-uk-toggle="{target:'.my-class'}"
+                uk-toggle="target: #toggle-abt; animation: uk-animation-slide-top"
+                class="toggle-text self"
+              >
+                ..toggle
+              </span>
+            </p>
           </div>
         </div>
       </div>
-
       <!--About section ends-->
 
       <!--Event section begins-->
