@@ -608,3 +608,13 @@ i.fa {
   padding: 1%;
   border-radius: 10px;
 }
+
+.contact-row {
+  display: flex;
+  flex-direction: flex-row;
+}
+
+.name {
+  margin-left: auto;
+  margin-right: auto;
+}
