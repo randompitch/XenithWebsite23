@@ -180,6 +180,10 @@ html {
   margin: 0% 3%;
 }
 
+.section-text {
+  margin: 0 5%;
+}
+
 @media only screen and (max-width: 1439px) {
   #about {
     min-height: 88vh;
