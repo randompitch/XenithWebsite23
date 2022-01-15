@@ -76,32 +76,6 @@ html {
   height: 100vh;
 }
 
-.cp-tag {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  opacity: 0.75;
-  font-weight: bold;
-  font-family: "Orbitron", sans-serif;
-}
-
-.cp-tag::before {
-  transition: 300ms;
-  height: 3px;
-  content: "";
-  position: absolute;
-  background-color: white;
-  width: 0%;
-  bottom: 20px;
-}
-
-.cp-tag:hover::before {
-  width: 100%;
-}
-
-.cp-tag:hover {
-  opacity: 1;
-}
 
 .hero-heading {
   color: white;
