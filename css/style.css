@@ -291,7 +291,7 @@ nav {
   background-color: transparent;
 }
 .abt{
-margin-top: 50px;
+margin-top: 79px;
 }
 
 #navbarMain {
@@ -327,10 +327,9 @@ margin-top: 50px;
 }
 
 #event {
-  height: 117vh;
+  height: 79vh;
   overflow: hidden;
   padding-top: 70px;
-  background-color: white;
 }
 
 .event-card {
@@ -386,60 +385,7 @@ margin-top: 50px;
     background-color: white;
   }
 }
-@media only screen and (max-width: 700px) {
-  .heading-title {
-    font-size: 1em;
-  }
-  .hidden-mb{
-    display: none;
-  }
-  #about {
-    min-height: 167vh !important;
-    overflow: hidden;
-  }
 
-  #event {
-    height: 100vh;
-    overflow: hidden;
-    background-color: white;
-    padding: 5%;
-  }
-
-  #team {
-    height: 100vh;
-    overflow: hidden;
-    padding: 5%;
-    background-color: white;
-  }
-
-  .event-card {
-    height: 100vh;
-    margin: 0% 3%;
-  }
-
-  #timeline {
-    /* min-height: 188vh; */
-    overflow: hidden;
-    /* padding: 5%; */
-  }
-  
-
-}
-@media only screen and (max-width: 424px) {
-  #about {
-    min-height: 75vh;
-    overflow: hidden;
-  }
-}
-@media only screen and (max-width: 327px) {
-  #about {
-    min-height: 75vh;
-    overflow: hidden;
-  }
-.section-text {
-  margin: 0% 5%;
-}
-}
 
 #team-slider {
   padding: 10% 5%;
@@ -830,7 +776,6 @@ h1 {
   text-shadow: -1px 0 red;
   top: 0;
   color: white;
-  background: #3b236c;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim 2s infinite linear alternate-reverse;
@@ -907,7 +852,6 @@ h1 {
   text-shadow: 1px 0 blue;
   top: 0;
   color: white;
-  background: #3b236c;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
@@ -927,7 +871,7 @@ h1 {
   width: 78%;
 }
 #universe{
-  height:110vh;
+  height:72vh;
   width: 100%;
 }
 @media only screen and (max-width: 1200px) {
@@ -971,6 +915,15 @@ h1 {
   .name{
     /* padding: 0px 82px 30px; */
   }
+  #universe
+  {
+    padding-top:15vh;
+    height:101vh;
+  }
+  #event
+  {
+    height: 113vh;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -984,7 +937,7 @@ h1 {
   margin:0px !important;
 }
 #universe{
-  height:350vh;
+  height:150vh;
 }
 .footer
 {
@@ -1034,9 +987,12 @@ main {
   position: relative;
   background-size: cover;
   margin: calc(var(--size) * 20 / 100);
+  border:5px solid white;
+
   
 }
 .image-card:before {
+
   content: "";
   position: absolute;
   top:90%;
@@ -1047,7 +1003,7 @@ main {
   border-radius: var(--radius);
   z-index:-1;
   filter: blur(12px);
-  opacity: 0.6;
+  opacity: 0;
   left: 50%;
   transform: translate(-50%, 10%);
 }
@@ -1072,7 +1028,7 @@ main {
   color: white;
   background: none;
   height: 50px;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   border: none;
   text-align: center;
   top: 58%;
@@ -1084,8 +1040,11 @@ main {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  display: inline;
   color: white;
+  font-size: 25px;
 }
 .content h3 {
+  font-size: 20px;
+
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: inline;
    color: white;
@@ -1093,20 +1052,18 @@ main {
 
  }
 
- .final{
+ /* .final{
    
    padding: 0px 0px 0px 0px;
-   color: black;
+   
  }
  .final:before{
- background: white;
- color: black;
+ 
  }
  .final:after{
-   background: white;
-   color: black;
+  
  }
- 
+  */
  * {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -1234,8 +1191,7 @@ body{
 .full{
   display:flex;
   justify-content:center;
-   align-items:center;
-  height:650px;
+  height:757px;
   padding: 30px;
   
 }
@@ -1246,12 +1202,13 @@ body{
    display:flex;
    justify-content:center;
    align-items:center;
-	 margin: auto;
+	 margin:8vh;
 	 background: #fff;
    box-shadow: var(--shadowgreen);
 	 border-radius: 1em;
 	 height: 65%;
 	 transition: all 0.3s;
+   margin-left: 15vw;
 }
  @media screen and (max-width: 992px) {
 	 .blog-slider {
@@ -1265,15 +1222,7 @@ body{
 		 height: auto;
 		 margin: 180px auto;
 	}
-  #universe
-  {
-    padding-top:15vh;
-    height:101vh;
-  }
-  #event
-  {
-    height: 113vh;
-  }
+  
   
 }
  @media screen and (max-height: 500px) and (min-width: 992px) {
@@ -1446,17 +1395,20 @@ body{
 	}
   .blog-slider__img {
    
-    height: 199px;
+    height: 218px;
+   
+
   }
+
   .blog-slider__pagination {
     
-    top: 26vh;
+    top: 20vh;
   }
   #universe {
     padding-top: 3vh;
   }
   .blog-slider {
-    width: 115%;
+    width: 135%;
   }
 }
  .blog-slider__pagination .swiper-pagination-bullet {
@@ -1712,13 +1664,10 @@ section {
 {
   margin-top: 10vh;
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-  background: 	#0e1111;
   color: #fff;
   padding-bottom: 50px;
 }
-.timeline ul {
-  padding: 50px 0;
-}
+
 
 .timeline ul li {
   list-style-type: none;
@@ -1909,16 +1858,7 @@ time {
   }
 }
 
-#universe{
-  background: url('../src/post/91656.jpg') repeat fixed 100%;
-  background-size: 100% 100%;
 
-}
-.parallax {
-  background: url('../src/post/Digita.png') repeat fixed 100%;
-  background-size: 120% 100%;
-
-}
 
 
 @media screen and (max-width: 600px) {
@@ -2045,14 +1985,28 @@ time {
 
   background: #191b3f;
 }
-
+#sponsors{
+  margin-top: 18vh;
+}
 .sponsor-card {
   position: relative;
   display: flex;  
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 68px 0;
   flex-wrap: wrap;
+}
+.spons{
+  margin-top: 86px;
+
+}
+ @media screen and (max-width: 400px) {
+  .sponsor-card{
+    width: 106vw;
+
+  }
+  
+  
 }
 
 .sponsor-card .container {
@@ -2127,4 +2081,70 @@ time {
 }
 .uk-tile{
   padding: 0px;
+}
+@media only screen and (max-width: 700px) {
+  .heading-title {
+    font-size: 1em;
+  }
+  .hidden-mb{
+    display: none;
+  }
+  #about {
+    min-height: 167vh !important;
+    overflow: hidden;
+  }
+
+  #event {
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    padding: 5%;
+  }
+
+  #team {
+    height: 100vh;
+    overflow: hidden;
+    padding: 5%;
+    background-color: white;
+  }
+
+  .event-card {
+    height: 100vh;
+    margin: 0% 3%;
+  }
+
+  #timeline {
+    /* min-height: 188vh; */
+    overflow: hidden;
+    /* padding: 5%; */
+  }
+  
+
+}
+@media only screen and (max-width: 424px) {
+  #about {
+    min-height: 75vh;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 327px) {
+  #about {
+    min-height: 75vh;
+    overflow: hidden;
+  }
+
+}
+@media only screen and (max-width: 400px){
+#event {
+    height: 128vh;
+}
+.final{
+  margin-bottom: 1px;
+}
+}
+.parallax {
+  background: url('../src/post/Digita.png') repeat fixed 100%;
+  background-size: 120% 100%;
+  z-index: 999;
+
 }
