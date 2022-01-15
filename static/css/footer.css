@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 /* Footer Animations and Waves */
 .footer {
@@ -13,7 +13,7 @@
   align-items: center;
   flex-direction: column;
   height: 370px;
-  font-family: Georgia, serif !important;
+  font-family: 'Satisfy', cursive;
   font-size: 20px;
   bottom: 0;
   margin-top: 300px;
@@ -184,6 +184,9 @@ section {
   font-weight: 400;
   text-decoration: none;
   color: inherit;
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+  margin: 0 1%;
 }
 
 .footer-distributed .footer-company-name {
@@ -233,7 +236,7 @@ section {
 }
 
 .footer-distributed .footer-links a:before {
-  content: "|";
+  content: "";
   font-weight: 300;
   font-size: 20px;
   left: 0;
@@ -263,8 +266,9 @@ section {
 .footer-distributed .footer-company-about span {
   display: block;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 30 px;
   font-weight: bold;
+  font-family: 'Satisfy', cursive;
   margin-bottom: 20px;
 }
 
