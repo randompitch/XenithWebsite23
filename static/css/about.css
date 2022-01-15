@@ -3,4 +3,6 @@
 }
 .toggle-text{
     cursor: pointer;
+    font-weight: bold;
+    color: #6441A5;
 }
