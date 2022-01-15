@@ -272,6 +272,15 @@ nav {
   margin-top: 5%;
   background-color: transparent;
 }
+.sectionHeadW {
+  font-size: 2em;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5%;
+  background-color: transparent;
+}
 
 #navbarMain {
   transition: all 0.5s ease-out;
