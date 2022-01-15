@@ -3,7 +3,7 @@
 }
 
 #team {
-  height: 220vh;
+  height: 300vh;
   overflow: hidden;
   padding: 5%;
   /* background: linear-gradient(45deg, #743ad5 0%, #d53a9d 100%); */
@@ -94,4 +94,12 @@
   align-self: center;
   background: transparent;
   z-index: 2;
+}
+
+.team-card-img
+{
+  width: 200px;
+  height: 35vh;
+  border-radius: 20px;
+  border: 3px solid black;
 }

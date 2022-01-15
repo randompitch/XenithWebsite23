@@ -123,9 +123,8 @@ const createTeamCard = (name, designation, imageUrl) => {
   cardContainer.className = "container";
 
   var image = document.createElement("img");
+  image.className = "team-card-img";
   image.src = imageUrl;
-  image.width = 200;
-  image.height = 50;
 
   var heading = document.createElement("h1");
   heading.innerHTML = name;
