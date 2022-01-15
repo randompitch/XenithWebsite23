@@ -19,6 +19,11 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .event-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
 
   .box {
     position: relative;
@@ -40,7 +45,7 @@
     height: calc(100% + 5px);
     z-index: -1;
     animation: glower 20s linear infinite !important;
-  }
+}
   
   @keyframes glower {
     0% {
@@ -58,13 +63,13 @@
 
   .flip-card {
   background-color: transparent;
-  height:  400px;
+  height:  350px;
   width: 300px;
   cursor: pointer;
   z-index: 2;
   perspective: 1000px;
   float: left;
-  margin: 5%;
+  margin: 30px;
 }
 
 /* This container is needed to position the front and back side */
@@ -80,6 +85,7 @@
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  transition-delay: 0.3s;
 }
 
 /* Position the front and back side */
