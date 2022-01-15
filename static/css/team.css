@@ -3,7 +3,7 @@
 }
 
 #team {
-  height: 300vh;
+  min-height: 230vh;
   overflow: hidden;
   padding: 5%;
   /* background: linear-gradient(45deg, #743ad5 0%, #d53a9d 100%); */
@@ -12,6 +12,32 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 700px) {
+
+  #team {
+    min-height: 1050vh;
+    overflow: hidden;
+    padding: 5%;
+    /* background: linear-gradient(45deg, #743ad5 0%, #d53a9d 100%); */
+    background: url('/static/img/bgtemp.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .team-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    border-radius: 10%;
+  }
+
 }
 
 #team .sectionHead {
