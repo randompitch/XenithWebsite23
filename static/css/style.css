@@ -85,7 +85,7 @@ html {
 .heading-title {
   font-family: "Hyperhelix";
   position: relative;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 .heading-title::before,
