@@ -3,6 +3,7 @@
 }
 #sponsorContainer {
     height: auto!important;
+    margin-top: 60px;
 }
 .sponsor-card {
   position: relative;
@@ -13,7 +14,10 @@
   flex-wrap: wrap;
   border-radius: 10%;
 }
-
+.col-md-5 {
+  margin-top: 10vh;
+  height: var(--size);
+}
 .sponsor-card .container {
   position: relative;
   width: 320px;
@@ -80,4 +84,18 @@
   align-self: center;
   background: transparent;
   z-index: 2;
+}
+@media screen and (max-width:700px) 
+{
+  #sponsorContainer {
+    margin-top: 0;
+}
+  
+}
+@media screen and (max-width:400px) 
+{
+  .col-md-5
+  {
+    width:100vw;
+  }
 }

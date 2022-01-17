@@ -6,6 +6,7 @@
 #timeline
 {
   color: white;
+  overflow: hidden;
 }
 .timeline-main {
   width: 100%;
