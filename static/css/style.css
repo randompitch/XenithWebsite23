@@ -140,7 +140,6 @@ html {
   height: 150vh;
   overflow: hidden;
   padding-top: 70px;
-  background-color: white;
 }
 
 .event-card {
@@ -156,7 +155,7 @@ html {
   #event {
     height: 150vh;
     overflow: hidden;
-    background-color: whitesmoke;
+    
     padding: 5%;
   }
 
@@ -169,7 +168,6 @@ html {
     height: 100vh;
     overflow: hidden;
     padding: 5%;
-    background-color: whitesmoke;
   }
 }
 
@@ -178,7 +176,6 @@ html {
   #event {
     height: 150vh;
     overflow: hidden;
-    background-color: whitesmoke;
     padding: 5%;
   }
 
@@ -186,7 +183,6 @@ html {
     height: 100vh;
     overflow: hidden;
     padding: 5%;
-    background-color: whitesmoke;
   }
 
   .event-card {
