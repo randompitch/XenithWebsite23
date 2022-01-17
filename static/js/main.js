@@ -18,7 +18,7 @@ $(document).ready(function () {
 const setActive = (id) => {
   if (id > 7) return;
   if (id < 1) return;
-  
+
   var ids = [1, 2, 3, 4, 5, 6, 7];
   ids.map((id) =>
     document.getElementById(`ni-${id}`).classList.remove("active")
@@ -122,3 +122,66 @@ fetch("./sponsorData.json")
     );
   })
   .catch((err) => console.error(err));
+// var header = document.getElementById('1');
+
+// function fadeOutOnScroll(element) {
+//   if (!element) {
+//     return;
+//   }
+
+//   var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+//   var elementHeight = element.offsetHeight;
+//   var scrollTop = document.documentElement.scrollTop;
+
+//   var opacity = 1;
+
+//   if (scrollTop > distanceToTop) {
+//     opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+//   }
+
+//   if (opacity >= 0) {
+//     element.style.opacity = opacity;
+//   }
+// }
+
+// function scrollHandler() {
+//   fadeOutOnScroll(header);
+//   animateIfInView();
+// }
+
+// window.addEventListener('scroll', scrollHandler);
+
+function animateIfInView() {
+  $.each($('.wow'), function (key, value) {
+    if (isElementInViewport($(value))) {
+      $(value).addClass('wow-in-view');
+    }
+  });
+}
+// http://stackoverflow.com/a/7557433/5628
+function isElementInViewport(el) {
+
+  //special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+
+  var rect = el.getBoundingClientRect();
+
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+  );
+}
+$('#menu li').click(function () {
+  var check = document.getElementById("menuclose");
+  if (check.checked == true) {
+    check.checked = false;
+  }
+});
+
+$('input[type="checkbox"]').click(function (e) {
+  e.stopPropagation();
+});
