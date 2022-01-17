@@ -154,6 +154,15 @@ from {
   
 }
 @media  screen and (max-width:400px) {
+  .text_1{
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 4s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count:1;
+  }
   @keyframes text1 {
     from {
               width:0px;
