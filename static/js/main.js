@@ -82,7 +82,7 @@ fetch("./sponsorData.json")
       createSponsorCard(sponsor.name, sponsor.type, sponsor.image, sponsor.link)
     );
   })
-  .catch((err) => console.error(err));
+  .catch((err) => console.log(err));
 // var header = document.getElementById('1');
 
 // function fadeOutOnScroll(element) {
