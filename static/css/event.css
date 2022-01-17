@@ -15,6 +15,7 @@
     overflow: hidden;
     padding: 5%;
     z-index: -1;
+    color: white;
    
   }
   .event-container{
