@@ -40,12 +40,14 @@
     </div>
   </div>
 
-  <div id="postLoader" class="uk-hidden">
+  <div id="postLoader" class="uk-hidden" style="background: url('./static/img/team/wallpaperflare.com_wallpaper.jpg') repeat fixed 100%;background-size: cover;">
     <div class="uk-position-relative" id="pos-rel-1">
       <!--Hidden For Phone-->
-      <img src="./wallpaperflare.com_wallpaper (1).jpg" class="active" />
+      <video autoplay muted loop id="myVideo" style="width: 100vw;height: 100vh;object-fit: cover;">
+        <source src="./static/landing.mp4" type="video/mp4" class="active">
+      </video>
       <!--Hidden For Pc-->
-      <img src="./wallpaperflare.com_wallpaper (1).jpg" class="hidden lottie-bg" alt="" id="1" />
+      <!-- <img src="./wallpaperflare.com_wallpaper (1).jpg" class="hidden lottie-bg" alt="" id="1" /> -->
 
       <!--Hidden For Phone-->
       <div class="uk-position-top active" uk-scrollspy="cls:uk-animation-fade">
