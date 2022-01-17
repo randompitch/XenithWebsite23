@@ -46,8 +46,8 @@ signs.forEach((el) => {
 const createSponsorCard = (name, spType, imageUrl, link = "") => {
   var parent = document.createElement("div");
   parent.className = "col-md-4";
-  parent.style.marginTop = "30px";
-
+  parent.style.marginBottom = "120px";
+  parent.style.marginTop = "0px";
   var card = document.createElement("div");
   card.className = "sponsor-card";
 
@@ -74,17 +74,6 @@ const createSponsorCard = (name, spType, imageUrl, link = "") => {
   parent.appendChild(card);
   document.getElementById("sponsorContainer").appendChild(parent);
 };
-
-var images = [];
-fetch("./teamData.json")
-  .then((res) => res.json())
-  .then((data) => {
-    data.map((image) =>
-      createTeamCard(image.name, image.designation, image.image)
-    );
-  })
-  .catch((err) => console.error(err));
-
 var sponsors = [];
 fetch("./sponsorData.json")
   .then((res) => res.json())
@@ -116,12 +105,11 @@ fetch("./sponsorData.json")
 //   }
 // }
 
-// function scrollHandler() {
-//   fadeOutOnScroll(header);
-//   animateIfInView();
-// }
+function scrollHandler() {
+  animateIfInView();
+}
 
-// window.addEventListener('scroll', scrollHandler);
+window.addEventListener('scroll', scrollHandler);
 
 function animateIfInView() {
   $.each($('.wow'), function (key, value) {

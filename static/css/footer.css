@@ -298,19 +298,11 @@ section {
     width: 60% !important;
     margin: auto;
   }
-
-  :root {
-    --size: 300px;
-  }
 }
 @media (max-width: 410px) {
   .footer-center {
     width: 100% !important;
     margin: auto;
-  }
-
-  :root {
-    --size: 300px;
   }
 }
 #event {

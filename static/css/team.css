@@ -1,11 +1,22 @@
 #teamContainer {
   height: auto !important;
 }
+:root {
+  --size: 350px;
+  --radius: calc(var(--size) * 20 / 100);
+}
 
+.largeFont {
+  font-size: 30px;
+  font-weight: bold;
+}
+.teamh {
+  
+  height:auto!important;
+}
 #team {
-  min-height: 250vh;
   overflow: hidden;
-  padding: 5%;
+  /* padding: 5%; */
   /* background: linear-gradient(45deg, #743ad5 0%, #d53a9d 100%); */
   background: url('/static/img/bgtemp.png');
   background-attachment: fixed;
@@ -14,20 +25,24 @@
   background-size: cover;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 550px) {
 
-  #team {
-    min-height: 1050vh;
-    overflow: hidden;
-    padding: 5%;
-    /* background: linear-gradient(45deg, #743ad5 0%, #d53a9d 100%); */
-    background: url('/static/img/bgtemp.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  :root {
+    --size: 300px;
   }
 
+
+}
+@media (max-width: 410px)
+ {
+  :root {
+    --size: 290px;
+  }
+  .image-card {
+    margin-left:0px !important;
+    margin-right:0px !important;
+  }
+  
 }
 
 #team .sectionHead {
@@ -137,80 +152,35 @@
   perspective: 3000px;
 }
 
-.trigger {
-  position: absolute;
-  height: 33.333333%;
-  width: 33.333333%;
-  display: block;
-  z-index: 2;
-}
-.trigger:nth-child(1) {
-  left: 0%;
-  top: 0%;
-}
-.trigger:nth-child(1):hover ~ .card {
-  transform: rotateY(8deg) rotateX(-5deg);
-}
-.trigger:nth-child(2) {
-  left: 33.333333%;
-  top: 0%;
-}
-.trigger:nth-child(2):hover ~ .card {
-  transform: rotateY(0deg) rotateX(-5deg);
-}
-.trigger:nth-child(3) {
-  left: 66.666666%;
-  top: 0%;
-}
-.trigger:nth-child(3):hover ~ .card {
-  transform: rotateY(-8deg) rotateX(-5deg);
-}
-.trigger:nth-child(4) {
-  left: 0%;
-  top: 33.333333%;
-}
-.trigger:nth-child(4):hover ~ .card {
-  transform: rotateY(8deg);
-}
-.trigger:nth-child(5) {
-  left: 33.333333%;
-  top: 33.333333%;
-}
-.trigger:nth-child(5):hover ~ .card {
-  transform: rotateY(0deg) rotateX(0deg);
-}
-.trigger:nth-child(6) {
-  left: 66.666666%;
-  top: 33.333333%;
-}
-.trigger:nth-child(6):hover ~ .card {
-  transform: rotateY(-8deg) rotateX(0deg);
-}
-.trigger:nth-child(7) {
-  left: 0%;
-  top: 66.666666%;
-}
-.trigger:nth-child(7):hover ~ .card {
-  transform: rotateY(8deg) rotateX(5deg);
-}
-.trigger:nth-child(8) {
-  left: 33.333333%;
-  top: 66.666666%;
-}
-.trigger:nth-child(8):hover ~ .card {
-  transform: rotateY(0deg) rotateX(5deg);
-}
-.trigger:nth-child(9) {
-  left: 66.666666%;
-  top: 66.666666%;
-}
-.trigger:nth-child(9):hover ~ .card {
-  transform: rotateY(-8deg) rotateX(5deg);
-}
-.dcard:hover .content {
+.dcard:hover .teamcontent {
   transform: perspective(50px) translateZ(2px);
 }
  
 .uk-position-top-center {
   top:0px!important;
+}
+.wow {
+  opacity: 0;
+  -webkit-transform: translate(0,50px);
+  -moz-transform: translate(0,50px);
+  -ms-transform: translate(0,50px);
+  transform: translate(0,50px);
+  -webkit-transition: opacity 1s .1s,transform .1s ease;
+  transition: opacity 1s .1s,transform 0.1s ease;
+  transition-delay: 0ms;
+}
+
+.wow-in-view {
+  opacity: 1!important;
+  -webkit-transform: translate(0,0)!important;
+  -moz-transform: translate(0,0)!important;
+  -ms-transform: translate(0,0)!important;
+  transform: translate(0,0)!important;
+}
+@media  screen and (min-width:300px) and (max-width:550px) 
+{
+  .teamcontent
+  {
+    top:54%;
+  }
 }
