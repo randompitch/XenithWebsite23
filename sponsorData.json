@@ -1,123 +1,79 @@
 [
-    {
-        "id": 1,
-        "name": "Learn for Cause",
-<<<<<<< HEAD
-        "image": "src/sponsors/lfc.jfif",
-=======
-        "image": "static/img/sponsors/lfc.jfif",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Community Partner",
-        "link": "https://github.com/Learn-For-Cause"
-    },
-    {
-        "id": 2,
-        "name": "Alpha Buildr",
-<<<<<<< HEAD
-        "image": "src/sponsors/alphabuildr.jpeg",
-=======
-        "image": "static/img/sponsors/alphabuildr.jpeg",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Website Partner",
-        "link": "https://app.alphabuildr.com/"
-    },
-    {
-        "id": 3,
-        "name": "Coding Minutes",
-<<<<<<< HEAD
-        "image": "src/sponsors/codingminutes.png",
-=======
-        "image": "static/img/sponsors/codingminutes.png",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Technical Partner",
-        "link": "https://www.codingminutes.com/"
-    },
-    {
-        "id": 4,
-        "name": "Grab ON",
-<<<<<<< HEAD
-        "image": "src/sponsors/grabon.png",
-=======
-        "image": "static/img/sponsors/grabon.png",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Saving Partner",
-        "link": "https://www.grabon.in/"
-    },
-    {
-        "id": 5,
-        "name": "Programming PathShala",
-<<<<<<< HEAD
-        "image": "src/sponsors/programmingpathshala.jpg",
-=======
-        "image": "static/img/sponsors/programmingpathshala.jpg",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Teaching Partner",
-        "link": "https://renaissance.programmingpathshala.com/crack-coding-interviews"
-    },
-    {
-        "id": 6,
-        "name": "Elearn Markets",
-<<<<<<< HEAD
-        "image": "src/sponsors/elearnmarket.png",
-=======
-        "image": "static/img/sponsors/elearnmarket.png",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Finance Education Partner",
-        "link": "https://www.elearnmarkets.com/"
-    },
-    {
-        "id": 7,
-        "name": "Pieces",
-<<<<<<< HEAD
-        "image": "src/sponsors/pieces.jpeg",
-=======
-        "image": "static/img/sponsors/pieces.jpeg",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Snippet Partner",
-        "link": "https://code.pieces.app/"
-    },
-    {
-        "id": 8,
-        "name": "Squicker",
-<<<<<<< HEAD
-        "image": "src/sponsors/squicker.png",
-=======
-        "image": "static/img/sponsors/squicker.png",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Foreign Education Partner",
-        "link": "https://squickr.de/"
-    },
-    {
-        "id": 9,
-        "name": "Jamboree",
-<<<<<<< HEAD
-        "image": "src/sponsors/jamboree.jpeg",
-=======
-        "image": "static/img/sponsors/jamboree.jpeg",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Other Sponsors",
-        "link": "https://www.jamboreeindia.com/"
-    },
-    {
-        "id": 10,
-        "name": "Converge EduTech",
-<<<<<<< HEAD
-        "image": "src/sponsors/converge.jpg",
-=======
-        "image": "static/img/sponsors/converge.jpg",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Other Sponsors",
-        "link": "https://www.convergeapp.co/"
-    },
-    {
-        "id": 11,
-        "name": "Yocket",
-<<<<<<< HEAD
-        "image": "src/sponsors/yocket.png",
-=======
-        "image": "static/img/sponsors/yocket.png",
->>>>>>> 382141abcb4f283b4769e0562a3ad9273bbcfe52
-        "type": "Other Sponsors",
-        "link": "https://yocket.com/"
-    }
+        {
+                "id": 1,
+                "name": "Learn for Cause",
+                "image": "static/img/sponsors/lfc.jfif",
+                "type": "Community Partner",
+                "link": "https://github.com/Learn-For-Cause"
+        },
+        {
+                "id": 2,
+                "name": "Alpha Buildr",
+                "image": "static/img/sponsors/alphabuildr.jpeg",
+                "type": "Website Partner",
+                "link": "https://app.alphabuildr.com/"
+        },
+        {
+                "id": 3,
+                "name": "Coding Minutes",
+                "image": "static/img/sponsors/codingminutes.png",
+                "type": "Technical Partner",
+                "link": "https://www.codingminutes.com/"
+        },
+        {
+                "id": 4,
+                "name": "Grab ON",
+                "image": "static/img/sponsors/grabon.png",
+                "type": "Saving Partner",
+                "link": "https://www.grabon.in/"
+        },
+        {
+                "id": 5,
+                "name": "Programming PathShala",
+                "image": "static/img/sponsors/programmingpathshala.jpg",
+                "type": "Teaching Partner",
+                "link": "https://renaissance.programmingpathshala.com/crack-coding-interviews"
+        },
+        {
+                "id": 6,
+                "name": "Elearn Markets",
+                "image": "static/img/sponsors/elearnmarket.png",
+                "type": "Finance Education Partner",
+                "link": "https://www.elearnmarkets.com/"
+        },
+        {
+                "id": 7,
+                "name": "Pieces",
+                "image": "static/img/sponsors/pieces.jpeg",
+                "type": "Snippet Partner",
+                "link": "https://code.pieces.app/"
+        },
+        {
+                "id": 8,
+                "name": "Squicker",
+                "image": "static/img/sponsors/squicker.png",
+                "type": "Foreign Education Partner",
+                "link": "https://squickr.de/"
+        },
+        {
+                "id": 9,
+                "name": "Jamboree",
+                "image": "static/img/sponsors/jamboree.jpeg",
+                "type": "Other Sponsors",
+                "link": "https://www.jamboreeindia.com/"
+        },
+        {
+                "id": 10,
+                "name": "Converge EduTech",
+                "image": "static/img/sponsors/converge.jpg",
+                "type": "Other Sponsors",
+                "link": "https://www.convergeapp.co/"
+        },
+        {
+                "id": 11,
+                "name": "Yocket",
+                "image": "static/img/sponsors/yocket.png",
+                "type": "Other Sponsors",
+                "link": "https://yocket.com/"
+        }
 ]
