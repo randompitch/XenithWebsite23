@@ -29,10 +29,6 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon" />
 </head>
-<link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<!-- Favicon -->
-<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
 
 <body>
   <!--Pre Loader-->
@@ -44,13 +40,10 @@
     </div>
   </div>
 
-  <div id="postLoader" class="uk-hidden"
-    style="background: url('./static/img/team/wallpaperflare.com_wallpaper.jpg') repeat fixed 100%;background-size: cover;">
+  <div id="postLoader" class="uk-hidden">
     <div class="uk-position-relative" id="pos-rel-1">
       <!--Hidden For Phone-->
-      <video autoplay muted loop id="myVideo" style="width: 100vw;height: 100vh;object-fit: cover;">
-        <source src="./static/landing.mp4" type="video/mp4" class="active">
-      </video>
+      <img src="./wallpaperflare.com_wallpaper (1).jpg" class="active" />
       <!--Hidden For Pc-->
       <img src="./wallpaperflare.com_wallpaper (1).jpg" class="hidden lottie-bg" alt="" id="1" />
 
@@ -75,10 +68,10 @@
       </div>
       <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
         <h4 class="uk-heading-line uk-text-center hero-heading">
-          <span class="largeFont">Beyond The Apex With</span>
+          <span>Beyond The Apex With</span>
         </h4>
         <h1 class="uk-heading-large uk-text-center hero-heading">
-          <span class="heading-title">Xenith'22</span>
+          <span class="text_1">Xenith'22</span>
         </h1>
       </div>
       <!--Hidden for Pc-->
@@ -535,20 +528,23 @@
           </p>
         </div>
 
-        <div class="name">
-          <div class="btn ph-btn" style="float: left">
-            <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+        <div class="contact-row">
+          <div class="name">
+            <div class="btn ph-btn" style="float: left">
+              <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+            </div>
+            <p>Shwetank : +91 9852244157</p>
           </div>
-          <p style="display: flex">Shwetank : +91 9852244157</p>
-        </div>
 
-        <div class="name">
-          <div class="btn ph-btn" style="float: left">
-            <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+          <div class="name">
+            <div class="btn ph-btn" style="float: left">
+              <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+            </div>
+            <p>Priyanjali : +91 7011528526</p>
           </div>
-          <p style="display: flex">Priyanjali : +91 7983760053</p>
         </div>
       </div>
+
       <div class="footer-right">
         <p class="footer-company-about">
           <span class="uk-text-center uk-text-large">Our Socials</span>
@@ -578,7 +574,7 @@
           </div>
         </div>
       </div>
-      
+      <!--
           <div class="footer-bottom">
           <p class="footer-links" style="text-align: center">
             <a href="#postLoader" class="link-1">Home</a>
@@ -596,7 +592,7 @@
             <a href="#contact">Contact</a>
           </p>
         </div>
-       
+        -->
 
       <div id="totop-icon">
         <a href="#postLoader" uk-totop></a>
@@ -605,8 +601,9 @@
   </div>
   <!--Team section ends-->
   <!--Sponsor section begins-->
-  <script src="./static/js/main.js"></script>
+  <script src="static/js/main.js"></script>
 </body>
+<script src="/static/js/main.js"></script>
 
 
 </html>

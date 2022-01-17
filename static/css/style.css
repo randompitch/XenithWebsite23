@@ -106,6 +106,85 @@ html {
   );
   animation: animateTyping var(--typeSpeed) steps(var(--textLength)) forwards;
 }
+.text_1 {
+  font-family: "Hyperhelix";
+  position: relative;
+  font-size: 1em;
+  animation: text1;
+}
+.text_1{
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 2s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count:1;
+}
+
+.text_1::after{
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+
+@keyframes text1 {
+from {
+					width:0px;
+				}
+
+				to {
+					width:35vw;
+				}
+}
+@media  screen and (max-width:700px) {
+  @keyframes text1 {
+    from {
+              width:0px;
+            }
+    
+            to {
+              width:70vw;
+            }
+    }
+  
+}
+@media  screen and (max-width:400px) {
+  @keyframes text1 {
+    from {
+              width:0px;
+            }
+    
+            to {
+              width:80vw;
+            }
+    }
+  
+}
+@media  screen and (max-width:350px) {
+  @keyframes text1 {
+    from {
+              width:0px;
+            }
+    
+            to {
+              width:90vw;
+            }
+    }
+  
+}
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 
 .heading-title::after {
   width: 0.125em;
