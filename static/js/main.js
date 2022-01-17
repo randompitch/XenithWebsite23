@@ -42,34 +42,6 @@ signs.forEach((el) => {
   });
 });
 
-const createTeamCard = (name, designation, imageUrl) => {
-  var parent = document.createElement("div");
-  parent.className = "col-md-4";
-  parent.style.marginTop = "30px";
-
-  var card = document.createElement("div");
-  card.className = "team-card";
-
-  var cardContainer = document.createElement("div");
-  cardContainer.className = "container";
-
-  var image = document.createElement("img");
-  image.className = "team-card-img";
-  image.src = imageUrl;
-
-  var heading = document.createElement("h1");
-  heading.innerHTML = name;
-
-  var type = document.createElement("span");
-  type.innerHTML = designation;
-
-  cardContainer.appendChild(image);
-  cardContainer.appendChild(type);
-  cardContainer.appendChild(heading);
-  card.appendChild(cardContainer);
-  parent.appendChild(card);
-  document.getElementById("teamContainer").appendChild(parent);
-};
 
 const createSponsorCard = (name, spType, imageUrl, link = "") => {
   var parent = document.createElement("div");
