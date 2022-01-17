@@ -1,0 +1,13 @@
+.about-container{
+padding: 5%;
+padding-top: 1%;
+}
+.toggle-text{
+    cursor: pointer;
+    font-weight: bold;
+    color: #6441A5;
+}
+#about{
+    padding-top: 6%;
+    
+}
