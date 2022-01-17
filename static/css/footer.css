@@ -16,7 +16,7 @@
   font-family: 'Satisfy', cursive;
   font-size: 20px;
   bottom: 0;
-  margin-top: 300px;
+  margin-top: 450px;
 }
 
 .social-icon,
@@ -142,7 +142,7 @@ section {
   text-align: left;
   font: normal 16px "Open Sans", cursive;
   padding: 25px 20px;
-  margin-top: 150px;
+  margin-top: 250px;
 }
 
 .footer-distributed .footer-left,
@@ -178,17 +178,26 @@ section {
   padding: 0;
 }
 
-.footer-distributed .footer-links a {
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
   display: inline-block;
-  line-height: 1.8;
-  font-weight: 400;
-  text-decoration: none;
-  color: inherit;
-  font-family: 'Satisfy', cursive;
-  font-size: 25px;
-  margin: 0 1%;
+  padding-right: 5px;
 }
 
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
 .footer-distributed .footer-company-name {
   color: #222;
   font-size: 14px;
@@ -235,20 +244,6 @@ section {
   text-decoration: none;
 }
 
-.footer-distributed .footer-links a:before {
-  content: "";
-  font-weight: 300;
-  font-size: 20px;
-  left: 0;
-  color: #fff;
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
 /* Footer Right */
 
 .footer-distributed .footer-right {
@@ -266,7 +261,7 @@ section {
 .footer-distributed .footer-company-about span {
   display: block;
   color: #ffffff;
-  font-size: 30 px;
+  font-size: 30px !important;
   font-weight: bold;
   font-family: 'Satisfy', cursive;
   margin-bottom: 20px;
