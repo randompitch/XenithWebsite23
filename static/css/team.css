@@ -18,7 +18,7 @@
   overflow: hidden;
   /* padding: 5%; */
   /* background: linear-gradient(45deg, #743ad5 0%, #d53a9d 100%); */
-  background: url('/static/img/bgtemp.png');
+  background: url('../img/bgtemp.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
