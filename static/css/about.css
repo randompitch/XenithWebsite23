@@ -12,3 +12,10 @@ padding-top: 1%;
     background: linear-gradient(to bottom, #170239, #771672);
     color: white;
 }
+#about .uk-h3, h3 {
+   
+    line-height: 0.8;
+}
+#about .uk-h2, h2 {
+    line-height: 1.1;
+}
