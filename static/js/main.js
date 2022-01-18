@@ -42,6 +42,19 @@ signs.forEach((el) => {
   });
 });
 
+const toggleAbout = () => {
+  const aboutToggle = document.getElementById("readtoggle");
+  if (aboutToggle.classList.contains("more")) {
+    aboutToggle.classList.remove("more");
+    aboutToggle.classList.add("less");
+    aboutToggle.innerHTML = ".Read Less";
+  } else {
+    aboutToggle.classList.remove("less");
+    aboutToggle.classList.add("more");
+    aboutToggle.innerHTML = "...Read More";
+  }
+};
+
 
 const createSponsorCard = (name, spType, imageUrl, link = "") => {
   var parent = document.createElement("div");
