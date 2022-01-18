@@ -78,28 +78,28 @@
 }
 
 .wave#wave1 {
-  z-index: 1000;
+  z-index: 10;
   opacity: 1;
   bottom: 0;
   animation: animateWaves 4s linear infinite;
 }
 
 .wave#wave2 {
-  z-index: 999;
+  z-index: 10;
   opacity: 0.5;
   bottom: 10px;
   animation: animate 4s linear infinite !important;
 }
 
 .wave#wave3 {
-  z-index: 1000;
+  z-index: 10;
   opacity: 0.2;
   bottom: 15px;
   animation: animateWaves 3s linear infinite;
 }
 
 .wave#wave4 {
-  z-index: 999;
+  z-index: 10;
   opacity: 0.7;
   bottom: 20px;
   animation: animate 3s linear infinite;
@@ -263,7 +263,7 @@ section {
   color: #ffffff;
   font-size: 30px !important;
   font-weight: bold;
-  font-family: 'Satisfy', cursive;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   margin-bottom: 20px;
 }
 
