@@ -9,5 +9,6 @@ padding-top: 1%;
 }
 #about{
     padding-top: 6%;
-    background: linear-gradient(90deg, #170239, #771672);
+    background: linear-gradient(to bottom, #170239, #771672);
+    color: white;
 }
