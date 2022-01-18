@@ -253,7 +253,7 @@ time {
 .card-lift--hover:hover {
   transition: all 0.15s ease;
   transform: translateY(-20px);
-  box-shadow: 0 0 2rem 0 gold;
+  box-shadow: 0 0 2rem 0 rgb(152, 10, 180);
   cursor: pointer;
 }
 
