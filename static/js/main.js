@@ -42,6 +42,38 @@ signs.forEach((el) => {
   });
 });
 
+const navMap = {
+  'postLoader': 1,
+  'about': 2,
+  'event':3,
+  'timeline': 4,
+  'faq': 5,
+  'sponsors': 6,
+  'prizes': 7,
+  'contact': 8
+}
+
+window.addEventListener("scroll", () => {
+  let current = "postLoader";
+  const sections = [
+    document.getElementById("postLoader"),
+    document.getElementById("about"),
+    document.getElementById("event"),
+    document.getElementById("timeline"),
+    document.getElementById("sponsors"),
+    document.getElementById("contact")
+  ];
+
+  sections.forEach(section => {
+    const secTop = section.offsetTop;
+    const secHt = section.clientHeight;
+    if (scrollY >= (secTop - secHt / 4)) {
+      current = section.getAttribute('id')
+    }
+  })
+  setActive(navMap[current]);
+});
+
 const toggleAbout = () => {
   const aboutToggle = document.getElementById("readtoggle");
   if (aboutToggle.classList.contains("more")) {
