@@ -15,19 +15,18 @@
   border-radius: 10%;
 }
 .col-md-5 {
-  margin-top: 10vh;
-  height: var(--size);
+  height: calc(var(--size)*0.6);
 }
 .sponsor-card .container {
   position: relative;
-  width: 320px;
-  height: 400px;
+  width: 250px;
+  height: 300px;
   color: #000;
   /* background-color: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 30px;
+  margin: 10px 20px;
   transition: 0.5s;
   border-radius: 10%;
 }
@@ -63,7 +62,7 @@
   text-align: center;
   font-weight: bold;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   z-index: 2;
 }
 
@@ -72,7 +71,7 @@
   align-self: flex-end;
   background: transparent;
   z-index: 2;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   color: white;
 }

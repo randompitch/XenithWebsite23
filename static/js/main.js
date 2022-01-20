@@ -101,8 +101,8 @@ const createSponsorCard = (name, spType, imageUrl, link = "") => {
 
   var image = document.createElement("img");
   image.src = imageUrl;
-  image.width = 200;
-  image.height = 100;
+  image.width = 100;
+  image.height = 50;
   image.onclick = () => window.open(link, "_blank", "noopener noreferrer");
   image.style.cursor = "pointer";
 

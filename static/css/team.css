@@ -1,5 +1,5 @@
 #teamContainer {
-  height: auto !important;
+  max-height: auto !important;
 }
 :root {
   --size: 350px;
@@ -16,6 +16,7 @@
 }
 #team {
   overflow: hidden;
+  padding-top: 10%;
   /* padding: 5%; */
   /* background: linear-gradient(45deg, #743ad5 0%, #d53a9d 100%); */
   
@@ -47,15 +48,13 @@
 }
 
 .image-card {
-  width: var(--size);
-  height: var(--size);
+  width: calc(var(--size)*0.8);
+  height: calc(var(--size)*0.8);
   border-radius: var(--radius);
   position: relative;
   background-size: cover;
-  margin: calc(var(--size) * 20 / 100);
+  margin: calc(var(--size) * 10 / 100);
   border:5px solid white;
-
-  
 }
 .image-card:before {
 
@@ -97,7 +96,7 @@
   /* margin-top: 200px; */
   border: none;
   text-align: center;
-  top: 58%;
+  top: 55%;
  
  
  
@@ -106,10 +105,10 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  display: inline;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 .teamcontent h3 {
-  font-size: 20px;
+  font-size: 15px;
 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: inline;
@@ -142,7 +141,6 @@
   perspective: 500px;
 }
 .col-md-12, .col-md-4 {
-  margin-top:10vh;
   height: var(--size);
 }
 .col-md-12 .dcard {
@@ -178,6 +176,13 @@
 {
   .teamcontent
   {
-    top:54%;
+    top:48%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #team
+  {
+    min-height: 1500vh;
   }
 }
