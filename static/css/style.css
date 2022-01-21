@@ -253,7 +253,7 @@ from {
   }
 
   #team {
-    height: 100vh;
+    max-height: 310vh;
     overflow: hidden;
     padding: 5%;
   }
@@ -268,7 +268,7 @@ from {
   }
 
   #team {
-    height: 100vh;
+    max-height: 570vh;
     overflow: hidden;
     padding: 5%;
   }
@@ -291,7 +291,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   margin: auto;
   overflow: visible;
