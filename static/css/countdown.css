@@ -1,0 +1,51 @@
+.countdown * {
+    font-family: Impact, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .countdown {
+    display: flex;
+    margin: 0 auto;
+    width: 700px;
+    height: auto;
+  }
+  
+  /* (B) DAY/HR/MIN/SEC CELLS */
+  .countdown .cell {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+  }
+  .countdown .digits {
+    font-size: 24px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .countdown .text {
+    margin-top: 10px;
+    color: #ddd;
+  }
+  
+  /* WIDGET */
+  .widget-wrap {
+    padding: 10% 5%;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+  }
+  
+  /* FOOTER */
+  #code-boxx {
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  #code-boxx a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    background: #b90a0a;
+    color: #fff;
+  }
