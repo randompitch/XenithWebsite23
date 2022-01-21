@@ -1,73 +1,73 @@
 [
   {
     "id": 1,
-    "name": "Shwetank",
+    "name": "Shwetank Verma",
     "designation": "Chairperson",
     "image": "static/img/team/shwetank.jpg"
   },
   {
     "id": 2,
-    "name": "Priyanjali",
+    "name": "Priyanjali Chaudhary",
     "designation": "Vice Chairperson",
     "image": "static/img/team/priyanjali_resize.jpg"
   },
   {
     "id": 3,
-    "name": "Ishaan",
+    "name": "Ishaan Raj Mishra",
     "designation": "Organising Secretary",
     "image": "static/img/team/ishaan.jpg"
   },
   {
     "id": 4,
-    "name": "Ayush",
+    "name": "Ayush Raj",
     "designation": "Treasurer",
     "image": "static/img/team/ayush.jpg"
   },
   {
     "id": 5,
-    "name": "Suraj",
+    "name": "Suraj Ajay Dwivedi",
     "designation": "Technical Head CSE",
     "image": "static/img/team/suraj.jpg"
   },
   {
     "id": 6,
-    "name": "Tanya",
+    "name": "Tanya Goyal",
     "designation": "Technical Head Ece",
     "image": "static/img/team/tanya.jpg"
   },
   {
     "id": 7,
-    "name": "Kartikey",
+    "name": "Kartikey Singh",
     "designation": "Public Relations Head",
     "image": "static/img/team/kartikey.jpg"
   },
   {
     "id": 8,
-    "name": "Somya",
+    "name": "Somya Singhal",
     "designation": "Marketing Head",
     "image": "static/img/team/somya.jpg"
   },
   {
     "id": 9,
-    "name": "Akshat",
+    "name": "Akshat Upadhyay",
     "designation": "Management Head",
     "image": "static/img/team/akshat.jpg"
   },
   {
     "id": 10,
-    "name": "Manan",
+    "name": "Manan Agarwal",
     "designation": "Creative Head",
     "image": "static/img/team/manan.jpeg"
   },
   {
     "id": 11,
-    "name": "Aditya",
+    "name": "Aditya Jain",
     "designation": "Digital Head",
     "image": "static/img/team/aditya_resize.jpg"
   },
   {
     "id": 12,
-    "name": "Radhika",
+    "name": "Radhika Agarwal",
     "designation": "WIE Management Head",
     "image": "static/img/team/radhika.jpeg"
   }

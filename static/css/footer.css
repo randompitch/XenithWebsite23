@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap');
 
 /* Footer Animations and Waves */
 .footer {
@@ -13,7 +14,7 @@
   align-items: center;
   flex-direction: column;
   height: 370px;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Domine', serif;
   font-size: 20px;
   bottom: 0;
   margin-top: 450px;
@@ -230,6 +231,7 @@ section {
   vertical-align: middle;
   margin: 0;
   line-height: 2;
+  font-family: 'Domine', serif;
 }
 
 .footer-distributed .footer-center p span {
@@ -237,11 +239,13 @@ section {
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
+  font-family: 'Domine', serif;
 }
 
 .footer-distributed .footer-center p a {
   color: lightseagreen;
   text-decoration: none;
+  font-family: 'Domine', serif;
 }
 
 /* Footer Right */
@@ -263,7 +267,6 @@ section {
   color: #ffffff;
   font-size: 30px !important;
   font-weight: bold;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   margin-bottom: 20px;
 }
 
@@ -434,6 +437,7 @@ section {
   height: 100%;
   margin-top: 15px;
 }
+/*
 .btn {
   width: 35px;
   height: 35px;
@@ -520,7 +524,7 @@ i.fa {
   transform: scale(1.2);
   box-shadow: 0 20px 35px -9px rgba(0, 111, 255, 0.6);
 }
-
+*/
 .name {
   margin-bottom: 25px;
 }
@@ -604,4 +608,15 @@ i.fa {
 .name {
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn i{
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+.footer-right
+{
+  font-family: 'Domine', serif;
 }

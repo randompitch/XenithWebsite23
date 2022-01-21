@@ -47,10 +47,9 @@ const navMap = {
   'about': 2,
   'event':3,
   'timeline': 4,
-  'faq': 5,
+  'team': 5,
   'sponsors': 6,
-  'prizes': 7,
-  'contact': 8
+  'contact': 7
 }
 
 window.addEventListener("scroll", () => {
@@ -60,6 +59,7 @@ window.addEventListener("scroll", () => {
     document.getElementById("about"),
     document.getElementById("event"),
     document.getElementById("timeline"),
+    document.getElementById("team"),
     document.getElementById("sponsors"),
     document.getElementById("contact")
   ];
