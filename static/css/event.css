@@ -127,3 +127,9 @@
   color: white;
   font-size: 2.5em;
 }
+
+.flip-card-back h1
+{
+  color: white;
+  margin-top: 5%;
+}
