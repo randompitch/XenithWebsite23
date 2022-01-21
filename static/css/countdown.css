@@ -5,11 +5,13 @@
   }
   .countdown {
     display: flex;
-    margin: 0 auto;
-    width: 700px;
+    margin: 0 15%;
+    width: auto;
     height: auto;
   }
   
+
+
   /* (B) DAY/HR/MIN/SEC CELLS */
   .countdown .cell {
     flex-grow: 1;
