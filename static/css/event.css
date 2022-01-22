@@ -1,68 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 .sectionHeadW {
-    font-size: 2em;
-    color: white;
-    font-family: "Orbitron", sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 5%;
-    background-color: transparent;
+  font-size: 2em;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5%;
+  background-color: transparent;
 }
 
 #event {
-    height: 100%;
-    overflow: hidden;
-    padding: 5%;
-    z-index: -1;
-    color: white;
-   
-  }
-  .event-container{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-   }
+  height: 100%;
+  overflow: hidden;
+  padding: 5%;
+  z-index: -1;
+  color: white;
 
-  .box {
-    position: relative;
-    height:  400px;
-    width: 300px;
-    display: block;
-    background: linear-gradient(0deg, black, #444444);
-  }
-  
-  .glowing::before{
-    z-index: 2;
-    content: '';
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
-    background-size: 400%;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    z-index: -1;
-    animation: glower 20s linear infinite !important;
 }
-  
-  @keyframes glower {
-    0% {
-      background-position: 0 0;
-    }
-    
-    50% {
-      background-position: 400% 0;
-    }
-    
-    100% {
-      background-position: 0 0;
-    }
+
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  display: block;
+  background: linear-gradient(0deg, black, #444444);
+}
+
+.glowing::before {
+  z-index: 2;
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: glower 20s linear infinite !important;
+}
+
+@keyframes glower {
+  0% {
+    background-position: 0 0;
   }
 
-  .flip-card {
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.flip-card {
   background-color: transparent;
-  height:  350px;
+  height: 350px;
   width: 300px;
   cursor: pointer;
   z-index: 2;
@@ -88,11 +89,13 @@
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
 
@@ -103,15 +106,17 @@
 
 /* Style the back side */
 .flip-card-back {
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: wheat;    
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #414345, #232526);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #414345, #232526);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: wheat;
   transform: rotateY(180deg);
 }
 
-.flip-card-front-text
-{
+.flip-card-front-text {
   height: 100%;
   margin: auto 0;
   display: flex;
@@ -121,15 +126,13 @@
   align-self: center;
 }
 
-.flip-card-front-text span
-{
+.flip-card-front-text span {
   font-family: 'Audiowide', cursive;
   color: white;
   font-size: 2.5em;
 }
 
-.flip-card-back h1
-{
+.flip-card-back h1 {
   color: white;
   margin-top: 5%;
 }

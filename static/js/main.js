@@ -79,11 +79,11 @@ const toggleAbout = () => {
   if (aboutToggle.classList.contains("more")) {
     aboutToggle.classList.remove("more");
     aboutToggle.classList.add("less");
-    aboutToggle.innerHTML = ".Read Less";
+    aboutToggle.innerHTML = "...read less";
   } else {
     aboutToggle.classList.remove("less");
     aboutToggle.classList.add("more");
-    aboutToggle.innerHTML = "...Read More";
+    aboutToggle.innerHTML = "...read more";
   }
 };
 
@@ -311,3 +311,15 @@ window.onload = () => {
     after : () => { alert("TIMER HAS ENDED!"); }
   });
 };
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("menuToggle").style.top = "0";
+  } else {
+    document.getElementById("menuToggle").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
