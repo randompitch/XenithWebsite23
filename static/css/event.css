@@ -63,7 +63,7 @@
 
 .flip-card {
   background-color: transparent;
-  height: 350px;
+  height: 300px;
   width: 300px;
   cursor: pointer;
   z-index: 2;
@@ -101,18 +101,16 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background: linear-gradient(0deg, black, #444444);
+  background: linear-gradient(0deg, black, #011339);
 }
 
 /* Style the back side */
 .flip-card-back {
   background: #232526;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #414345, #232526);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #414345, #232526);
+  background: linear-gradient(0deg, black, #011339);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: wheat;
+  color: white;
   transform: rotateY(180deg);
 }
 

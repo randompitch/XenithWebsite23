@@ -1,21 +1,30 @@
-.about-container{
-padding: 5%;
-padding-top: 1%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
+.about-container {
+    padding: 5%;
+    padding-top: 1%;
 }
-.toggle-text{
+
+.toggle-text {
     cursor: pointer;
     font-weight: bold;
     color: #fff;
 }
-#about{
+
+#about {
+    font-size: 1.3rem;
+    font-family: Roboto;
     padding-top: 6%;
-    background: linear-gradient(to bottom, #170239, #771672);
+    background: linear-gradient(to bottom, #101944, #000000);
     color: white;
 }
-#about .uk-h3, h3 {
-   
+
+#about .uk-h3,
+h3 {
     line-height: 0.8;
 }
-#about .uk-h2, h2 {
+
+#about .uk-h2,
+h2 {
     line-height: 1.1;
 }
