@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap');
 
 /* Footer Animations and Waves */
+#contact {
+  position: absolute;
+  bottom: -50px;
+}
+
 .footer {
   line-height: 1;
   position: relative !important;
@@ -16,8 +21,7 @@
   height: 370px;
   font-family: 'Domine', serif;
   font-size: 20px;
-  bottom: 0;
-  margin-top: 450px;
+  margin-top: 500px;
 }
 
 .social-icon,
@@ -42,6 +46,7 @@
   display: inline-block;
   transition: 0.5s;
 }
+
 .social-icon__link:hover {
   transform: translateY(-10px);
 }
@@ -74,7 +79,8 @@
   left: 0;
   width: 100%;
   height: 100px;
-  background: url("../img/wave.png"); /*add css/wave.png instead*/
+  background: url("../img/wave.png");
+  /*add css/wave.png instead*/
   background-size: 1000px 100px;
 }
 
@@ -110,6 +116,7 @@
   0% {
     background-position-x: 1000px;
   }
+
   100% {
     background-positon-x: 0px;
   }
@@ -119,6 +126,7 @@
   0% {
     background-position-x: -1000px;
   }
+
   100% {
     background-positon-x: 0px;
   }
@@ -179,16 +187,17 @@ section {
   padding: 0;
 }
 
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-  font-weight:400;
-	text-decoration: none;
-	color:  inherit;
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
 }
+
 .footer-distributed .footer-links a:before {
   content: "|";
-  font-weight:300;
+  font-weight: 300;
   font-size: 20px;
   left: 0;
   color: #fff;
@@ -199,6 +208,7 @@ section {
 .footer-distributed .footer-links .link-1:before {
   content: none;
 }
+
 .footer-distributed .footer-company-name {
   color: #222;
   font-size: 14px;
@@ -283,30 +293,36 @@ section {
     margin-bottom: 40px;
     text-align: center;
   }
+
   .footer-center {
     width: 45% !important;
     margin: auto;
   }
+
   .footer-distributed .footer-center i {
     margin-left: 0;
   }
 }
+
 @media (max-width: 550px) {
   .footer-center {
     width: 60% !important;
     margin: auto;
   }
 }
+
 @media (max-width: 410px) {
   .footer-center {
     width: 100% !important;
     margin: auto;
   }
 }
+
 #event {
   padding-left: 0px;
   padding-right: 0px;
 }
+
 .footer-distributed a {
   color: white;
   display: inline-block;
@@ -314,6 +330,7 @@ section {
   font-size: 1.2em;
   transition: all 0.3s;
 }
+
 .footer-distributed a:hover {
   color: rgb(244, 136, 248);
   margin-left: 15px;
@@ -430,6 +447,7 @@ section {
   padding-top: 20px;
   margin-bottom: 40px;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -437,6 +455,7 @@ section {
   height: 100%;
   margin-top: 15px;
 }
+
 /*
 .btn {
   width: 35px;
@@ -545,6 +564,7 @@ i.fa {
   .footer .footer-content h3 {
     font-size: 1.4rem !important;
   }
+
   .footer .footer-content .links {
     width: 0px;
     /* margin-right: 100px; */
@@ -555,22 +575,26 @@ i.fa {
   .footer {
     height: 1000px;
   }
+
   .footer .footer-content {
     flex-direction: column;
     /* margin-left:35%; */
   }
+
   .footer .footer-content .links {
     width: auto;
   }
+
   .footer .footer-bottom {
     width: 100%;
   }
+
   .footer .footer-content .about {
     width: auto;
   }
-  #totop-icon a
-  {
-    border: 3px solid black; 
+
+  #totop-icon a {
+    border: 3px solid black;
     padding: 2%;
     border-radius: 10px;
   }
@@ -580,22 +604,20 @@ i.fa {
   .footer {
     height: 1100px;
   }
-  #totop-icon a
-{
-  border: 3px solid black; 
-  padding: 2%;
-  border-radius: 10px;
-}
+
+  #totop-icon a {
+    border: 3px solid black;
+    padding: 2%;
+    border-radius: 10px;
+  }
 }
 
-#totop-icon
-{
+#totop-icon {
   text-align: right;
 }
 
-#totop-icon a
-{
-  border: 3px solid black; 
+#totop-icon a {
+  border: 3px solid black;
   padding: 1%;
   border-radius: 10px;
 }
@@ -610,13 +632,12 @@ i.fa {
   margin-right: auto;
 }
 
-.btn i{
+.btn i {
   color: white;
   margin: 0 10px;
   font-size: 1.5em;
 }
 
-.footer-right
-{
+.footer-right {
   font-family: 'Domine', serif;
 }
