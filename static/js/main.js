@@ -61,7 +61,7 @@ window.addEventListener("scroll", () => {
     document.getElementById("timeline"),
     document.getElementById("team"),
     document.getElementById("sponsors"),
-    document.getElementById("contact")
+    document.getElementById("contact"),
   ];
 
   sections.forEach(section => {
@@ -228,7 +228,7 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("menuToggle").style.top = "0";
   } else {
-    document.getElementById("menuToggle").style.top = "-100px";
+    document.getElementById("menuToggle").style.top = "0";
   }
   prevScrollpos = currentScrollPos;
 }

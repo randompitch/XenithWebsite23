@@ -37,7 +37,6 @@ nav {
   flex-direction: column;
   position: relative;
   top: 15px;
-  left: 15px;
   z-index: 15 !important;
   -webkit-user-select: none;
   user-select: none;
