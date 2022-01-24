@@ -70,6 +70,14 @@ window.addEventListener("scroll", () => {
     if (scrollY >= (secTop - secHt / 4)) {
       current = section.getAttribute('id')
     }
+    if(section.getAttribute('id')=='sponsors')
+    {
+      if(scrollY >= (secTop + section.clientHeight/1.3))
+      {
+        console.log('hi');
+        current = 'contact'
+      }
+    }
   })
   setActiveNav(navMap[current]);
 });
