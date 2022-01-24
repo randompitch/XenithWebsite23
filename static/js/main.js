@@ -15,13 +15,13 @@ $(document).ready(function () {
   });
 });
 
-const setActive = (id) => {
+const setActiveNav = (id) => {
   if (id > 7) return;
   if (id < 1) return;
 
   var ids = [1, 2, 3, 4, 5, 6, 7];
-  ids.map((id) =>
-    document.getElementById(`ni-${id}`).classList.remove("active")
+  ids.map((i) =>
+    document.getElementById(`ni-${i}`).classList.remove("active")
   );
   document.getElementById(`ni-${id}`).classList.add("active");
 };
@@ -71,7 +71,7 @@ window.addEventListener("scroll", () => {
       current = section.getAttribute('id')
     }
   })
-  setActive(navMap[current]);
+  setActiveNav(navMap[current]);
 });
 
 const toggleAbout = () => {
@@ -221,96 +221,6 @@ var refresh = setInterval(function () {
   })();
   clearInterval(refresh);
 }, 3500);
-
-
-var counter = {
-  // (A) HELPER - CREATE HR/MIN/SEC CELL
-  //  txt : text for the cell (all small letters)
-  square : (txt) => {
-    let cell = document.createElement("div");
-    cell.className = `cell ${txt}`;
-    cell.innerHTML = `<div class="digits">0</div><div class="text">${txt}</div>`;
-    return cell;
-  },
-
-  // (B) INITIALIZE COUNTDOWN TIMER
-  //  target : target html container
-  //  remain : seconds to countdown
-  //  after : function, do this when countdown end (optional)
-  attach : (instance) => {
-    // (B1) GENERATE HTML
-    instance.target.className = "countdown";
-    if (instance.remain >= 86400) {
-      instance.target.appendChild(counter.square("Days"));
-      instance.days = instance.target.querySelector(".Days .digits");
-    }
-    if (instance.remain >= 3600) {
-      instance.target.appendChild(counter.square("Hours"));
-      instance.hours = instance.target.querySelector(".Hours .digits");
-    }
-    if (instance.remain >= 60) {
-      instance.target.appendChild(counter.square("Minutes"));
-      instance.mins = instance.target.querySelector(".Minutes .digits");
-    }
-    instance.target.appendChild(counter.square("Seconds"));
-    instance.secs = instance.target.querySelector(".Seconds .digits");
-
-    // (B2) TIMER
-    instance.timer = setInterval(() => { counter.ticker(instance); }, 1000);
-  },
-
-  // (C) COUNTDOWN TICKER
-  ticker : (instance) => {
-    // (C1) TIMER STOP
-    instance.remain--;
-    if (instance.remain<=0) {
-      clearInterval(instance.timer);
-      instance.remain = 0;
-      if (typeof instance.after == "function") { instance.after(); }
-    }
-
-    // (C2) CALCULATE REMAINING DAYS/HOURS/MINS/SECS
-    // 1 day = 60 secs * 60 mins * 24 hrs = 86400 secs
-    // 1 hr = 60 secs * 60 mins = 3600 secs
-    // 1 min = 60 secs
-    let secs = instance.remain;
-    let days = Math.floor(secs / 86400);
-    secs -= days * 86400;
-    let hours = Math.floor(secs / 3600);
-    secs -= hours * 3600;
-    let mins  = Math.floor(secs / 60);
-    secs -= mins * 60;
-
-    // (C3) UPDATE HTML
-    instance.secs.innerHTML = secs;
-    if (instance.mins !== undefined) { instance.mins.innerHTML = mins; }
-    if (instance.hours !== undefined) { instance.hours.innerHTML = hours; }
-    if (instance.days !== undefined) { instance.days.innerHTML = days; }
-  },
-
-  // (D) HELPER - CONVERT DATE/TIME TO REMAINING SECONDS
-  //  till : (date object) countdown to this date/time
-  toSecs : (till) => {
-    till = Math.floor(till / 1000);
-    let remain = till - Math.floor(Date.now() / 1000);
-    return remain<0 ? 0 : remain;
-  }
-};
-
-// (E) ATTACH COUNTDOWN TIMER
-window.onload = () => {
-  counter.attach({
-    // TARGET + REMAINING TIME
-    target : document.getElementById("demo"),
-    //emain : 86500,
-    
-    // COUNTDOWN TO SPECIFIC DATE
-     remain : counter.toSecs(new Date("2022-01-26")),
-    
-    // OPTIONAL - RUN THIS ON TIMER END
-    after : () => { alert("TIMER HAS ENDED!"); }
-  });
-};
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
