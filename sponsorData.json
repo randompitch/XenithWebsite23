@@ -51,7 +51,7 @@
   {
     "id": 8,
     "name": "Skill Arena",
-    "image": "static/img/sponsors/skillarena.jfif",
+    "image": "static/img/sponsors/skillarena.jpeg",
     "type": "Skill Development Partner",
     "link": "https://www.skillarena.in/"
   },
@@ -82,5 +82,12 @@
     "image": "static/img/sponsors/yocket.png",
     "type": "Sponsor",
     "link": "https://yocket.com/"
+  },
+  {
+    "id": 13,
+    "name": "Notice Bard",
+    "image": "static/img/sponsors/noticebard.png",
+    "type": "Media Partner",
+    "link": "https://www.noticebard.com/"
   }
 ]
