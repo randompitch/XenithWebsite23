@@ -16,10 +16,10 @@ $(document).ready(function () {
 });
 
 const setActiveNav = (id) => {
-  if (id > 7) return;
+  if (id > 8) return;
   if (id < 1) return;
 
-  var ids = [1, 2, 3, 4, 5, 6, 7];
+  var ids = [1, 2, 3, 4, 5, 6, 7, 8];
   ids.map((i) =>
     document.getElementById(`ni-${i}`).classList.remove("active")
   );
@@ -47,9 +47,10 @@ const navMap = {
   'about': 2,
   'event':3,
   'timeline': 4,
-  'team': 5,
-  'sponsors': 6,
-  'contact': 7
+  'gallery': 5,
+  'team': 6,
+  'sponsors': 7,
+  'contact': 8
 }
 
 window.addEventListener("scroll", () => {
@@ -59,6 +60,7 @@ window.addEventListener("scroll", () => {
     document.getElementById("about"),
     document.getElementById("event"),
     document.getElementById("timeline"),
+    document.getElementById("gallery"),
     document.getElementById("team"),
     document.getElementById("sponsors"),
     document.getElementById("contact"),
@@ -136,27 +138,6 @@ fetch("./sponsorData.json")
     );
   })
   .catch((err) => console.error(err));
-// var header = document.getElementById('1');
-
-// function fadeOutOnScroll(element) {
-//   if (!element) {
-//     return;
-//   }
-
-//   var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
-//   var elementHeight = element.offsetHeight;
-//   var scrollTop = document.documentElement.scrollTop;
-
-//   var opacity = 1;
-
-//   if (scrollTop > distanceToTop) {
-//     opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
-//   }
-
-//   if (opacity >= 0) {
-//     element.style.opacity = opacity;
-//   }
-// }
 
 function scrollHandler() {
   animateIfInView();
