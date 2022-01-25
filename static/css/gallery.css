@@ -1,13 +1,14 @@
 .img-gal {
-    height: 400px;
+    width: 800px;
+    height: 300px;
     object-fit: cover;
 }
 
 @media only screen and (max-width: 800px) {
     .img-gal {
-        min-width: 200px;
-        height: 300px;
+        min-width: 90%;
+        height: 200px;
         object-fit: cover;
-        padding: 30px;
+        margin: 0 60px;
     }
 }
