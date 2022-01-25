@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="static/css/footer.css" />
   <link rel="stylesheet" href="static/css/navbar.css" />
   <link rel="stylesheet" href="static/css/event.css" />
+  <link rel="stylesheet" href="static/css/gallery.css" />
   <link rel="stylesheet" href="static/css/neonbtn.css" />
   <link rel="stylesheet" href="static/css/countdown.css">
   <!--Lottie player-->
@@ -62,14 +63,13 @@
             id="navbarMain">
             <div class="uk-navbar-center">
               <ul class="uk-navbar-nav">
-                <li id="ni-1" onclick="setActiveNav(1)" class="active"><a class="cp-tag" href="#postLoader">Home</a>
-                </li>
-                <li id="ni-2" onclick="setActiveNav(2)"><a class="cp-tag" href="#about">About</a></li>
-                <li id="ni-3" onclick="setActiveNav(3)"><a class="cp-tag" href="#event">Events</a></li>
-                <li id="ni-4" onclick="setActiveNav(4)"><a class="cp-tag" href="#timeline">Timeline</a></li>
-                <li id="ni-5" onclick="setActiveNav(5)"><a class="cp-tag" href="#team">Team</a></li>
-                <li id="ni-6" onclick="setActiveNav(6)"><a class="cp-tag" href="#sponsors">Sponsors</a></li>
-                <li id="ni-7" onclick="setActiveNav(7)"><a class="cp-tag" href="#contact">Contact</a></li>
+                <li id="ni-1" onclick="setActive(1)" class="active"><a class="cp-tag" href="#postLoader">Home</a></li>
+                <li id="ni-2" onclick="setActive(2)"><a class="cp-tag" href="#about">About</a></li>
+                <li id="ni-3" onclick="setActive(3)"><a class="cp-tag" href="#event">Events</a></li>
+                <li id="ni-4" onclick="setActive(4)"><a class="cp-tag" href="#timeline">Timeline</a></li>
+                <li id="ni-5" onclick="setActive(5)"><a class="cp-tag" href="#team">Team</a></li>
+                <li id="ni-6" onclick="setActive(6)"><a class="cp-tag" href="#sponsors">Sponsors</a></li>
+                <li id="ni-7" onclick="setActive(7)"><a class="cp-tag" href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -118,17 +118,19 @@
             heart, we always tend to look forward to what is yet to come with
             infinite dreams and aspirations along with a ray of hope to go
             beyond the "zenith" of the knowns and unknowns and discover new
-            forms with our creative and curious minds.With this hope and motto in our thoughts,
-            IEEE Student Branch JIIT <span id="toggle-abt" hidden>is thrilled to announce the second online edition of
-              our
+            forms with our creative  and curious minds.With this hope and motto in our thoughts, 
+            IEEE Student Branch JIIT <span id="toggle-abt" hidden>is thrilled to announce the second online edition of our
               most anticipated and largely awaited two days annual fest ~
               "XENITH-22" , with the theme being "Beyond The Apex", where we
               explore the young minds and promote them to think beyond the
               reasonable.
             </span>
             <span data-uk-toggle="{target:'.my-class'}"
-              uk-toggle="target: #toggle-abt; animation: uk-animation-slide-top" class="toggle-text more self"
-              id="readtoggle" onclick="toggleAbout()">
+              uk-toggle="target: #toggle-abt; animation: uk-animation-slide-top" 
+              class="toggle-text more self"
+              id="readtoggle"
+              onclick="toggleAbout()"
+              >
               ..read more
             </span>
           </p>
@@ -150,9 +152,8 @@
             </div>
             <div class="flip-card-back">
               <h1>METAVERSE</h1>
-              <p class="uk-text-justify uk-text-small section-text">Collaborate intensively with one another in groups
-                to create new software or service, which can help solve problems of any complexity</p>
-              <a class="neon-btn" href="https://metaverse-xenith22.tech/" target="_blank">
+              <p class="uk-text-justify uk-text-small section-text">Collaborate intensively with one another in groups to create new software or service, which can help solve problems of any complexity</p>
+              <a  class="neon-btn" href="https://metaverse-xenith22.tech/">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -172,8 +173,7 @@
               </div>
             </div>
             <div class="flip-card-back">
-              <p class="uk-text-justify uk-text-small section-text">We know you have waited long enough, but we are
-                still working on it.</p>
+              <p class="uk-text-justify uk-text-small section-text">We know you have waited long enough, but we are still working on it.</p>
               <p>Hang on!</p>
             </div>
           </div>
@@ -188,8 +188,7 @@
               </div>
             </div>
             <div class="flip-card-back">
-              <p class="uk-text-justify uk-text-small section-text">We know you have waited long enough, but we are
-                still working on it.</p>
+              <p class="uk-text-justify uk-text-small section-text">We know you have waited long enough, but we are still working on it.</p>
               <p>Hang on!</p>
             </div>
           </div>
@@ -204,8 +203,7 @@
               </div>
             </div>
             <div class="flip-card-back">
-              <p class="uk-text-justify uk-text-small section-text">We know you have waited long enough, but we are
-                still working on it.</p>
+              <p class="uk-text-justify uk-text-small section-text">We know you have waited long enough, but we are still working on it.</p>
               <p>Hang on!</p>
             </div>
           </div>
@@ -220,8 +218,7 @@
               </div>
             </div>
             <div class="flip-card-back">
-              <p class="uk-text-justify uk-text-small section-text">We know you have waited long enough, but we are
-                still working on it.</p>
+              <p class="uk-text-justify uk-text-small section-text">We know you have waited long enough, but we are still working on it.</p>
               <p>Hang on!</p>
             </div>
           </div>
@@ -236,8 +233,7 @@
               </div>
             </div>
             <div class="flip-card-back">
-              <p class="uk-text-justify uk-text-small section-text">We know you have waited long enough, but we are
-                still working on it.</p>
+              <p class="uk-text-justify uk-text-small section-text">We know you have waited long enough, but we are still working on it.</p>
               <p>Hang on!</p>
             </div>
           </div>
@@ -246,6 +242,23 @@
     </div>
 
     <!--Event section ends-->
+
+<!-- Countdown section begins -->
+<!--
+<div class="uk-position-relative" id="sponsors" uk-scrollspy="cls:uk-animation-fade">
+  <div class="uk-position-top-center">
+    <div class="uk-tile uk-tile-transparent">
+      <h1 class="sectionHead" data-text="Journey Begins">Journey begins</h1>
+    </div>
+  </div>
+  <br /><br />
+  <main id="countdownContainer">
+    <div class="widget-wrap">
+      <div id="demo"></div>
+  </main>
+</div>
+-->
+<!--Countdown section ends-->
 
     <!--Timeline section begins-->
 
@@ -271,11 +284,94 @@
                 Thank you for your patience.
               </div>
             </li>
+          </ul>
         </div>
       </div>
     </div>
 
     <!--Timeline section ends -->
+
+    <!--gallery-->
+    <div class="uk-position-relative" id="timeline" uk-scrollspy="cls:uk-animation-fade">
+      <div class="uk-section timeline-main">
+        <div class="uk-position-top-center">
+          <div class="uk-tile uk-tile-transparent">
+            <span class="sectionHead">gallery</span>
+          </div>
+        </div>
+        <br/><br/><br/><br/>
+        
+
+
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true; autoplay: true; autoplay-interval: 2000; finite: true ">
+
+          <ul class="uk-slider-items uk-grid">
+              <li class="uk-width-1-3">
+                  <div class="uk-panel">
+                      <img src="./static/img/gallery/_5.jpeg" class="img-gal" alt="">
+                  </div>
+              </li>
+              <li class="uk-width-1-3">
+                <div class="uk-panel">
+                    <img src="./static/img/gallery/_6.jpeg" class="img-gal" alt="">
+                </div>
+              </li>
+              <li class="uk-width-1-3">
+                  <div class="uk-panel">
+                      <img src="./static/img/gallery/_4.jpeg"  class="img-gal" alt="">
+                  </div>
+              </li>
+              <li class="uk-width-1-3">
+                  <div class="uk-panel">
+                      <img src="./static/img/gallery/_3.jpeg" class="img-gal" alt="">
+                  </div>
+              </li>
+              <li class="uk-width-1-3">
+                  <div class="uk-panel">
+                      <img src="./static/img/gallery/_2.jpeg" class="img-gal" alt="">
+                  </div>
+              </li>
+              <li class="uk-width-1-3">
+                  <div class="uk-panel">
+                      <img src="./static/img/gallery/_1.jpeg" class="img-gal" alt="">
+                  </div>
+              </li>
+              <li class="uk-width-1-3">
+                <div class="uk-panel">
+                    <img src="./static/img/gallery/_5.jpeg" class="img-gal" alt="">
+                </div>
+              </li>
+              <li class="uk-width-1-3">
+                <div class="uk-panel">
+                    <img src="./static/img/gallery/_6.jpeg" class="img-gal" alt="">
+                </div>
+              </li>
+              <li class="uk-width-1-3">
+                <div class="uk-panel">
+                    <img src="./static/img/gallery/_4.jpeg"  class="img-gal" alt="">
+                </div>
+            </li>
+              <li class="uk-width-1-3">
+                <div class="uk-panel">
+                    <img src="./static/img/gallery/_3.jpeg" class="img-gal" alt="">
+                </div>
+              </li>
+            <li class="uk-width-1-3">
+                <div class="uk-panel">
+                  <img src="./static/img/gallery/_2.jpeg" class="img-gal" alt="">
+                </div>
+            </li>
+          </ul>
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+  
+      </div>
+
+      </div>
+    </div>
+   <!--gallery ends-->
+
 
     <!--Team section begins-->
     <div class="uk-position-relative teamh" id="team" uk-scrollspy="cls:uk-animation-fade">
@@ -328,9 +424,6 @@
         </div>
         <div class="col-md-4">
           <div class="dcard wow">
-
-
-
             <div class="image-card card " style="background-image: url('static/img/team/ayush.jpg')">
               <div class="caption"></div>
               <div class="teamcontent">
@@ -469,6 +562,7 @@
     </div>
 
     <!--Sponsor section ends-->
+
     <!-- Footer section -->
     <footer class="uk-position-relative footer-distributed" uk-scrollspy="cls:uk-animation-fade" id="contact">
       <div class="waves">
@@ -519,8 +613,8 @@
         </div>
       </div>
 
-
-
+      
+    
 
       <div class="footer-right">
         <p class="footer-company-about">
