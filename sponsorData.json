@@ -77,28 +77,28 @@
     "link": "http://www.myndyourfitness.com/"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Jamboree",
     "image": "static/img/sponsors/jamboree.jpeg",
     "type": "Sponsor",
     "link": "https://www.jamboreeindia.com/"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Converge EduTech",
     "image": "static/img/sponsors/converge.jpg",
     "type": "Sponsor",
     "link": "https://www.convergeapp.co/"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Yocket",
     "image": "static/img/sponsors/yocket.png",
     "type": "Sponsor",
     "link": "https://yocket.com/"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Notice Bard",
     "image": "static/img/sponsors/noticebard.png",
     "type": "Media Partner",
