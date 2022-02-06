@@ -70,6 +70,13 @@
     "link": "https://geekster.in/?utm_source=sponser_jiit"
   },
   {
+    "id":11,
+    "name": "Mynd Your Fitness",
+    "image": "static/img/sponsors/myndurfitness.png",
+    "type": "Fitness Partner",
+    "link": "http://www.myndyourfitness.com/"
+  },
+  {
     "id": 11,
     "name": "Jamboree",
     "image": "static/img/sponsors/jamboree.jpeg",
