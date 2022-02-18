@@ -103,5 +103,31 @@
     "image": "static/img/sponsors/noticebard.png",
     "type": "Media Partner",
     "link": "https://www.noticebard.com/"
+  },
+  {
+    "id": 16,
+    "name": "The Hindu",
+    "image": "static/img/sponsors/hindu.jpeg",
+    "type": "Media Sponsor",
+    "link": ""
+  },
+  {
+    "id": 17,
+    "name": "Youth Incorporated",
+    "image": "static/img/sponsors/youthinc.png",
+    "type": "Media Sponsor",
+    "link": ""
+  },
+  {
+    "id": 18,
+    "name": "Delhi Now",
+    "image": "static/img/sponsors/delhinow.jpeg",
+    "link": ""
+  },
+  {
+    "id": 19,
+    "name": "Dehradun Now",
+    "image": "static/img/sponsors/dehradunNow.jpeg",
+    "link": ""
   }
 ]
