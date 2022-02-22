@@ -122,18 +122,21 @@
     "id": 18,
     "name": "Delhi Now",
     "image": "static/img/sponsors/delhinow.jpeg",
+    "type": "Media Sponsor",
     "link": ""
   },
   {
     "id": 19,
     "name": "Dehradun Now",
     "image": "static/img/sponsors/dehradunNow.jpeg",
+    "type": "Media Sponsor",
     "link": ""
   },
   {
     "id": 20,
     "name": "Startup News",
     "image": "static/img/sponsors/startupnews.jpeg",
+    "type": "Media Sponsor",
     "link": ""
   }
 ]
