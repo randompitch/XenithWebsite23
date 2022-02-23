@@ -78,62 +78,69 @@
   },
   {
     "id": 12,
+    "name":"1Password",
+    "image": "static/img/sponsors/1password.jpeg",
+    "type": "Security Partner",
+    "link": ""
+  },
+  {
+    "id": 13,
     "name": "Jamboree",
     "image": "static/img/sponsors/jamboree.jpeg",
     "type": "Sponsor",
     "link": "https://www.jamboreeindia.com/"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Converge EduTech",
     "image": "static/img/sponsors/converge.jpg",
     "type": "Sponsor",
     "link": "https://www.convergeapp.co/"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Yocket",
     "image": "static/img/sponsors/yocket.png",
     "type": "Sponsor",
     "link": "https://yocket.com/"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Notice Bard",
     "image": "static/img/sponsors/noticebard.png",
     "type": "Media Partner",
     "link": "https://www.noticebard.com/"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "The Hindu",
     "image": "static/img/sponsors/hindu.jpeg",
     "type": "Media Sponsor",
     "link": ""
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Youth Incorporated",
     "image": "static/img/sponsors/youthinc.png",
     "type": "Media Sponsor",
     "link": ""
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Delhi Now",
     "image": "static/img/sponsors/delhinow.jpeg",
     "type": "Media Sponsor",
     "link": ""
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Dehradun Now",
     "image": "static/img/sponsors/dehradunNow.jpeg",
     "type": "Media Sponsor",
     "link": ""
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Startup News",
     "image": "static/img/sponsors/startupnews.jpeg",
     "type": "Media Sponsor",
