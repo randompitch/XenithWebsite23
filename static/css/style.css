@@ -9,6 +9,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0%;
@@ -35,7 +37,23 @@
   font-family: Tigerious;
   src: url("../fonts/TigeriousItalic-9YyJn.otf");
 }
+@font-face {
+  font-family: LoveAmourBlank;
+  src: url("../fonts/LoveAmourBlank-ZVRpm.ttf");
+}
+@font-face {
+  font-family: Logistra;
+  src: url("../fonts/Logistra-0WJOR.ttf");
+}
+@font-face {
+  font-family: realdelight;
+  src: url("../fonts/RealDelight-6YwJA.ttf");
+}
 
+@font-face {
+  font-family: drip;
+  src: url("../fonts/DripOctober-vm0JA.ttf");
+}
 @font-face {
   font-family: Wynford;
   src: url("../fonts/WynfordObliqueLineAlt1-4Byx9.otf");
@@ -320,11 +338,18 @@ main {
 
 .content1 h2{
     position: absolute;
+   
     color: #fff;
     transform: translate(-50%, -50%);
     font-size: 100px;
     -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
-    font-family: "Hyperhelix";}
+    font-family: "drip";
+  }
+  .preLoader{
+   padding-right: 500px;
+   margin-right: 200px;
+  }
+
 
 .content1 h2:nth-child(1){
     color: #fff;
@@ -332,7 +357,7 @@ main {
 }
 
 .content1 h2:nth-child(2){
-    color: #A3C7D6;
+    color: #81C6E8;
     animation: animate123 4s ease-in-out infinite;
 }
 .textcheck{
@@ -393,6 +418,113 @@ main {
     0 0 80px #03bcf4,
     0 0 160px #03bcf4,
    }
+
+
+} */
+.content2
+{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.content2 h1 {
+  padding-top: 160px;
+  padding-top: 400px;
+
+  font-size: 1.5em;
+  font-size: 2.5em;
+
+  color: #7DE5ED;
+  font-weight: 500;
+  letter-spacing: 5px;
+  cursor: pointer;
+  font-family: "LoveAmourBlank";
+  -webkit-text-stroke:1px #0A2647;
+
+
+  }
+  .content2 h1 span
+  {
+   transition: 0.5s;
+
+  }
+  .content2 h1:hover span:nth-child(1)
+  {
+    margin-right: 10px;
+
+  }
+  .content2 h1:hover span:nth-child(1)::after{
+    content: "";
+  }
+  .content2 h1:hover span:nth-child(2)
+  {
+    margin-left: 30px;
+  }
+  .content2 h1:hover span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff,
+    0 0 120px #fff,
+    0 0 160px #fff,
+
+
+  }
+/* navbar */
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+header .logo{
+  color: #fff;
+  
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+}
+
+/* header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+header ul li 
+{
+  list-style: none;
+  margin-left: 20px;
+
+
+}
+header ul li a{
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right:10px;
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  color: #181D31;
+  border-radius: 20px;
+  
+
+}
+header ul li a:hover,.active{
+  background:transparent;
+  color: #181D31;
 
 
 } */
