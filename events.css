@@ -8,7 +8,7 @@ body
 #timeline 
 {
     display: flex;
-    background-color: #031625;
+    /* background-color: #031625; */
 }
 #timeline:hover.tl-item 
 {

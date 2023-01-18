@@ -15,8 +15,20 @@
     font-size: 1.3rem;
     font-family: Roboto;
     padding-top: 6%;
-    background: linear-gradient(to bottom, #101944, #000000);
+    /* background: transparent; */
+    background: #151C36;
+    /* background: linear-gradient(to bottom, #122B4E, #000000); */
     color: white;
+}
+#about::before
+{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px; 
+    background: linear-gradient(to top,#181D31,transparent);
+    z-index: 1000;
 }
 
 #about .uk-h3,
