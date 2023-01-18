@@ -22,7 +22,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  --bg-color: linear-gradient(to right, "#402571", "#311F65");
+  --bg-color: linear-gradient(to right, "#0D1C3C", "#0D1C3C");
   --typeSpeed: 2.5s;
   --textLength: 9;
   --card-height: 65vh;
@@ -57,6 +57,10 @@
 @font-face {
   font-family: Wynford;
   src: url("../fonts/WynfordObliqueLineAlt1-4Byx9.otf");
+}
+@font-face {
+  font-family: Crota;
+  src: url("../fonts/CrotahFreeVersionItalic-z8Ev3.ttf");
 }
 
 @font-face {
@@ -495,6 +499,7 @@ header .logo{
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+ 
   
 }
 
@@ -528,3 +533,9 @@ header ul li a:hover,.active{
 
 
 } */
+
+
+#aboutit
+{
+  font-family:"Crota";
+}
