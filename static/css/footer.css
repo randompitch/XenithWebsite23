@@ -11,7 +11,7 @@
   line-height: 1;
   position: relative !important;
   width: 100%;
-  background: rgb(59, 35, 108);
+  background: rgb(24, 46, 117);
   min-height: 100px;
   padding: -5px 50px;
   display: flex;
@@ -144,7 +144,7 @@ section {
 }
 
 .footer-distributed {
-  background: rgb(59, 35, 108);
+  background: rgb(24, 46, 117);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -437,7 +437,7 @@ section {
 /* Social Icons Styling */
 
 .footer .footer-bottom {
-  background: rgb(59, 35, 108);
+  background: rgb(24, 46, 117);
   color: #686868;
 
   width: 100%;
@@ -456,94 +456,6 @@ section {
   margin-top: 15px;
 }
 
-/*
-.btn {
-  width: 35px;
-  height: 35px;
-  background-color: #fafafa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 5px;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: all 0.3s;
-  border-radius: 10px;
-  min-width: 5vh;
-  min-height: 5vh;
-}
-i.fa {
-  font-size: 25px;
-}
-#fb {
-  color: #006fff;
-  text-shadow: 0 0 20px #006fff;
-}
-#ig {
-  color: #ff5f40;
-  text-shadow: 0 0 20px #ff5f40;
-}
-#ln {
-  color: #00acff;
-  text-shadow: 0 0 20px #00acff;
-}
-#yt {
-  color: #ff0000;
-  text-shadow: 0 0 30px #ff0000;
-}
-#gt {
-  color: #860c0c;
-  text-shadow: 0 0 15px #860c0c;
-}
-#ph {
-  color: #16cc34;
-  text-shadow: 0 0 15px #16cc34;
-}
-.btn.ph-btn {
-  box-shadow: 0 15px 15px -11px rgba(7, 192, 47, 0.53);
-}
-.btn.ph-btn:hover {
-  transform: scale(1.2);
-  box-shadow: 0 20px 35px -9px rgba(14, 235, 14, 0.65);
-}
-.btn.fb-btn {
-  box-shadow: 0 15px 15px -11px rgba(0, 111, 255, 0.53);
-}
-.btn.fb-btn:hover {
-  transform: scale(1.2);
-  box-shadow: 0 20px 35px -9px rgba(0, 111, 255, 0.65);
-}
-.btn.ig-btn {
-  box-shadow: 0 15px 15px -11px rgba(255, 16, 39, 0.5);
-}
-.btn.ig-btn:hover {
-  transform: scale(1.2);
-  box-shadow: 0 20px 35px -9px rgba(255, 16, 39, 0.57);
-}
-.btn.gt-btn {
-  box-shadow: 0 15px 15px -11px #be1818;
-}
-.btn.gt-btn:hover {
-  transform: scale(1.2);
-  box-shadow: 0 20px 35px -9px #860c0c;
-}
-
-.btn.yt-btn {
-  box-shadow: 0 15px 15px -11px rgba(255, 47, 47, 0.53);
-}
-.btn.yt-btn:hover {
-  transform: scale(1.2);
-  box-shadow: 0 20px 35px -9px rgba(236, 5, 5, 0.6);
-}
-
-.btn.ln-btn {
-  box-shadow: 0 15px 15px -11px rgba(0, 255, 255, 0.53);
-}
-.btn.ln-btn:hover {
-  transform: scale(1.2);
-  box-shadow: 0 20px 35px -9px rgba(0, 111, 255, 0.6);
-}
-*/
 .name {
   margin-bottom: 25px;
 }
