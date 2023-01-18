@@ -1,0 +1,142 @@
+body
+ {
+    font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+#timeline 
+{
+    display: flex;
+    background-color: #031625;
+}
+#timeline:hover.tl-item 
+{
+     width: 23.3333%;
+ }
+ 
+.tl-item {
+    position: relative;
+    width: 25%;
+    height: 100vh;
+    min-height: 600px;
+    color: rgb(248, 241, 241);
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+.tl-item::before,.tl-item::after 
+{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+}
+.tl-item::after
+{
+        background: transparentize(#031625, 0.15);
+        opacity: 1;
+        transition: opacity 0.5s ease;
+}
+
+ .tl-item::before 
+ {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tl-item:hover ,.t1-content
+{
+        width: 30% !important;
+}
+ .tl-item:hover::after
+{
+  opacity: 0;
+}
+
+.tl-item:hover::before 
+{
+    opacity: 1;
+    transform: translate3d(0, 0, 0) translateY(0);
+    transition: opacity 1s ease, transform 1s ease 0.25s;
+ }
+
+        
+ .tl-content:hover,.t1-item:hover .t1-content
+ {
+    opacity: 1;
+    transition: all 0.75s ease 0.5s;
+ }
+      
+.tl-content 
+{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+}
+.t1-content h1
+{
+    font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.728rem;
+    line-height: 0;
+}
+.t1-content:hover ~ .t1-year
+  {
+    opacity:0;
+    transition: all 0.75s ease 0.5s;
+  }
+.tl-year {
+    opacity:1;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.tl-year p 
+{
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.728rem;
+  line-height: 0;
+}
+
+.tl-bg {
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    transition: opacity 0.5s ease;
+  opacity:0.6;
+}
+.t1-bg :hover::after{
+    transition: opacity 0.5s ease;
+   opacity:20;
+}
+.register {
+    border-color: rgb(229, 234, 233);
+    border-radius:50px;
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgb(243, 244, 237);
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 7);
+}
+
+.register:hover {
+    border-radius:50px;
+    background-color: rgb(5, 6, 42);
+    color: aqua;
+    border-color:rgb(1, 255, 255);
+    box-shadow: 0 0 20px rgb(0, 255, 255);
+    text-shadow: 0 0 50px rgb(5, 14, 14);
+}
