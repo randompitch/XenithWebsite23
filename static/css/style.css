@@ -537,4 +537,13 @@ header ul li a:hover,.active{
 #aboutit
 {
   font-family:"Crota";
+} 
+@media(max-width: 768px)
+{
+  .textcheck2{
+    font-size: 2px;
+  }
+  .textcheck{
+    font-size: 2px;
+  }
 }
