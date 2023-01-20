@@ -33,6 +33,7 @@
 
 .sponsor-card .container:hover {
   transform: translateY(-20px);
+  box-shadow: 0 0 20px rgb(253, 236, 2);
 }
 
 .sponsor-card .container::before {
@@ -44,6 +45,7 @@
   height: 100%;
   border-radius: 5%;
   background: none;
+  box-shadow: 0 0 20px rgb(250, 250, 252);
 }
 
 .sponsor-card .container::after {
