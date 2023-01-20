@@ -52,6 +52,7 @@
   backface-visibility: hidden;
   position: relative;
   background-size: cover;
+  border-radius: var(--radius);
   margin: calc(var(--size) * 10 / 100);
 }
 
@@ -63,6 +64,7 @@
   border:3px solid white;
   transition: .5s ease;
   backface-visibility: hidden;
+  border-radius: var(--radius);
   margin: calc(var(--size) * 10 / 100);
 }
 
