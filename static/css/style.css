@@ -22,7 +22,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  --bg-color: linear-gradient(to right, "#402571", "#311F65");
+  --bg-color: linear-gradient(to right, "#0D1C3C", "#0D1C3C");
   --typeSpeed: 2.5s;
   --textLength: 9;
   --card-height: 65vh;
@@ -57,6 +57,10 @@
 @font-face {
   font-family: Wynford;
   src: url("../fonts/WynfordObliqueLineAlt1-4Byx9.otf");
+}
+@font-face {
+  font-family: Crota;
+  src: url("../fonts/CrotahFreeVersionItalic-z8Ev3.ttf");
 }
 
 @font-face {
@@ -481,7 +485,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 100px;
+  padding: 5px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -489,13 +493,11 @@ header{
 }
 header .logo{
   color: #fff;
-  
   font-weight: 700;
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
-  
 }
 
 /* header ul{
@@ -528,3 +530,17 @@ header ul li a:hover,.active{
 
 
 } */
+
+#aboutit
+{
+  font-family:"Crota";
+} 
+@media(max-width: 768px)
+{
+  .textcheck2{
+    font-size: 2px;
+  }
+  .textcheck{
+    font-size: 2px;
+  }
+}

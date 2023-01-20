@@ -163,7 +163,7 @@ nav {
 }
 
 .background-xenith {
-  background: linear-gradient(to right, #330092, #000b1e);
+  background: linear-gradient(to right,#000b1e, #182e75, #000b1e);
   transition: all 0.8s ease-in-out;
 }
 

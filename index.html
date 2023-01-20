@@ -1,10 +1,11 @@
-<!-- here u go changes okay again-->
+<!-- here u go changes okay pppagain-->
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Xenith 2022</title>
+  <title>Xenith 2023</title>
   <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Source+Sans+Pro:400" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="static/css/uikit.min.css" />
   <!-- UIkit CSS -->
@@ -18,10 +19,10 @@
   <link rel="stylesheet" href="static/css/team.css" />
   <link rel="stylesheet" href="static/css/footer.css" />
   <link rel="stylesheet" href="static/css/navbar.css" />
-  <link rel="stylesheet" href="static/css/event.css" />
   <link rel="stylesheet" href="static/css/gallery.css" />
   <link rel="stylesheet" href="static/css/neonbtn.css" />
   <link rel="stylesheet" href="static/css/countdown.css">
+  <link rel="stylesheet" href="static/css/events.css">
   <!--Lottie player-->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <!-- UIkit JS -->
@@ -48,11 +49,11 @@
   </div>
 
   <div id="postLoader" class="uk-hidden"
-    style="background: url('./static/img/team/wallpaperflare.com_wallpaper.jpg') repeat fixed 100%;background-size: cover;">
+    style="background: url('./static/img/team/underwater-texture-macro-blue-water-backgrounds-water-textures-blue-backgrounds.jpg') repeat fixed 100%;background-size: cover;">
     <div class="uk-position-relative" id="pos-rel-1">
       <!--Hidden For Phone-->
       <video autoplay muted loop id="myVideo" style="width: 100vw;height: 100vh;object-fit: cover;">
-        <source src="./static/underwater-ocean-fish-and-turtle.mp4" type="video/mp4" class="active">
+        <source src="./static/video-output-4B85B99F-1103-4EC2-B56C-8AC54CC55F34.mov" type="video/mp4" class="active video123">
       </video>
       <!--Hidden For Pc-->
       <!-- <img src="./wallpaperflare.com_wallpaper (1).jpg" class="hidden lottie-bg" alt="" id="1" /> -->
@@ -63,33 +64,24 @@
           <nav class="uk-navbar-container uk-margin uk-navbar-transparent uk-light" uk-navbar="dropbar: true;"
             id="navbarMain">
             <header>
-              <a href="#" class="logo"> Xentih</a>
-              
-              
-          </header>
-          
-            <div class="uk-navbar-center">
-              <ul class="uk-navbar-nav">
-                <li id="ni-1" onclick="setActive(1)" class="active"><a class="cp-tag" href="#postLoader">Home</a></li>
-                <li id="ni-2" onclick="setActive(2)"><a class="cp-tag" href="#about">About</a></li>
-                <li id="ni-3" onclick="setActive(3)"><a class="cp-tag" href="#event">Events</a></li>
-                <li id="ni-4" onclick="setActive(4)"><a class="cp-tag" href="#timeline">Timeline</a></li>
-                <li id="ni-5" onclick="setActive(5)"><a class="cp-tag" href="#gallery">Gallery</a></li>
-                <li id="ni-6" onclick="setActive(6)"><a class="cp-tag" href="#team">Team</a></li>
-                <li id="ni-7" onclick="setActive(7)"><a class="cp-tag" href="#sponsors">Sponsors</a></li>
-                <li id="ni-8" onclick="setActive(8)"><a class="cp-tag" href="#contact">Contact</a></li>
-              </ul>
-            </div>
+              <a href="#" class="logo"> Xenith</a>
+              <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                  <li id="ni-1" onclick="setActive(1)"><a class="cp-tag" href="#postLoader">Home</a></li>
+                  <li id="ni-2" onclick="setActive(2)"><a class="cp-tag" href="#about">About</a></li>
+                  <li id="ni-3" onclick="setActive(3)"><a class="cp-tag" href="#event">Events</a></li>
+                  <li id="ni-4" onclick="setActive(4)"><a class="cp-tag" href="#timeline">Timeline</a></li>
+                  <li id="ni-5" onclick="setActive(5)"><a class="cp-tag" href="#gallery">Gallery</a></li>
+                  <li id="ni-6" onclick="setActive(6)"><a class="cp-tag" href="#team">Team</a></li>
+                  <li id="ni-7" onclick="setActive(7)"><a class="cp-tag" href="#sponsors">Sponsors</a></li>
+                  <li id="ni-8" onclick="setActive(8)"><a class="cp-tag" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </header>
           </nav>
         </div>
       </div>
-      <!-- <div class="uk-position-center conten2">
-        <h2 class="try2">Xenith’23
-
-        </h2>
-        
-        
-      </div> -->
+     
       <div class="uk-position-center content1">
        
         <h2 class="textcheck2">Xenith’23</h2>
@@ -99,19 +91,11 @@
 
       </div>
       <div class="uk-position-center content2">
-	  <h1 class="check1"><span>Persuit </span>Of <span>Abyss</span></h1>
+	  <h1 class="check1"><span>Pursuit </span>of <span>Abyss</span></h1>
 
 
       </div>
-      
-      <!-- <div class="uk-position-center" uk-scrollspy="cls:uk-animation-fade">
-        <h4 class="uk-heading-line uk-text-center hero-heading">
-          <span>Beyond The Apex With</span>
-        </h4>
-        <h1 class="uk-heading-large uk-text-center hero-heading">
-          <span class="text_1">Xenith'22</span>
-        </h1>
-      </div> -->
+
       <!--Hidden for Pc-->
       <div class="hidden nav-mb">
         <nav role="navigation">
@@ -136,9 +120,10 @@
     </div>
 
     <!--About section begins-->
+    
     <div id="about" uk-scrollspy="cls:uk-animation-fade">
       <div style="text-align: center; width: 100%">
-        <span class="sectionHead" style="color: whitesmoke;">About</span>
+        <span class="sectionHead" id="aboutit" style="color: whitesmoke;">About</span>
         <div class="about-container">
           <p class="uk-text-justify uk-text-large section-text">
             In the last few years, we have come to terms with the fact that
@@ -152,7 +137,7 @@
             IEEE Student Branch JIIT <span id="toggle-abt" hidden>is thrilled to announce the second online edition of
               our
               most anticipated and largely awaited two days annual fest ~
-              "XENITH-22" , with the theme being "Beyond The Apex", where we
+              "XENITH-23" , with the theme being "Beyond The Apex", where we
               explore the young minds and promote them to think beyond the
               reasonable.
             </span>
@@ -165,203 +150,79 @@
         </div>
       </div>
     </div>
+  
     <!--About section ends-->
 
     <!--Event section begins-->
-    <div id="event" uk-scrollspy="cls:uk-animation-fade">
-      <div style="text-align: center; width: 100%">
-        <span class="sectionHeadW">Events</span>
-      </div>
-      <div class="event-container">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glowing">
-              <img src="./static/img/events/metaverse.png" alt="Metaverse">
-            </div>
-            <div class="flip-card-back">
-              <h1>METAVERSE</h1>
-              <p class="uk-text-justify uk-text-small section-text">Collaborate intensively with one another in groups
-                to create new software or service, which can help solve problems of any complexity</p>
-              <a class="neon-btn" href="https://metaverse-xenith22.tech/" target="_blank">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                METAVERSE
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glowing">
-              <div class="flip-card-front-text">
-                <img src="./static/img/events/denseEclipseResize.jpg" alt="Dense Eclipse">
-              </div>
-            </div>
-            <div class="flip-card-back">
-              <h1>Dense Eclipse</h1>
-              <p class="uk-text-justify uk-text-small section-text">"The sky is not the limit.
-                Beyond the universe is."
-                <br>
-                -Suzy Kassem. 
-                <br>
-                Do you have what it takes to navigate through the darkness as coding questions are bombarded to reach the bright side? If yes, then we have some exciting news for you!
-                <br>
-                Buckle your seatbelts, Fire your laptops and put your minds to use as IEEE SB JIIT brings to you our Xenith'22 coding event.
-                <br><br>
-                Date:26th February
-                <br>
-                Time:8-10 p.m.</p>
-              <a class="neon-btn" href="https://bit.ly/3Bxc17z" target="_blank">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                REGISTER HERE
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glowing">
-              <div class="flip-card-front-text">
-                <img src="./static/img/events/spiralForgeResize.jpg" alt="Spiral Forge">
-              </div>
-            </div>
-            <div class="flip-card-back">
-              <h1>SPIRAL FORGE</h1>
-              <p class="uk-text-justify uk-text-small section-text">
-                "Iron is full of impurities that weaken it; through forging, it becomes steel and is transformed into
-                razor-sharped swords. Human beings develop in the same fashion."-Morihei Ueshiba
-                <br>
-                Bored of coding contests where seniors always outperform the freshers? Lack of dsa knowledge always
-                ranking you low. A contest that ground for everyone, where your puzzle and problem solving values more
-                than your DSA knowledge!
-                <br>
-                If you have enough vigor to face the heat of mind-boggling questions then grab a seat as IEEE SB JIIT
-                presents to you an exhilarating aptitude-based coding event- Spiral forge, where the test cases are out
-                in open just waiting to be cracked by you!
-                <br>
-                <br>
-                Date:February 27th 2022
-                <br>
-                Time: 8p.m.-10p.m.
-                <br><br>
-                Put your logical and analytical skills to the test and see if you turn out to be better than the rest,
-                for there is a chance to win prizes worth 25k! 🔥
-              </p>
-              <a class="neon-btn" href="https://bit.ly/3HfJioW" target="_blank">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                REGISTER NOW
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glowing">
-              <div class="flip-card-front-text">
-                <span>
-                  <img src="./static/img/events/techTalkResize.jpg" alt="Tech Talk">
-                </span>
-              </div>
-            </div>
-            <div class="flip-card-back">
-              <h1>TECH TALK 1</h1>
-              <p class="uk-text-justify uk-text-small section-text">
-                “As engineers, we are going to be in a position to change the world, not just study it.”-Henry Petroski
-                <br>
-                She is well known for her youtube channel @ForMyScholars. Apart from this, she is a mentor, a plus educator at unacademy, a Corporate Trainer with UR Services Pvt. and was also a former Assistant Professor at IMS Engg. College, Ghaziabad.
-                <br>
-                Date: 27th February, 2022 <br>
-                Time: 3 p.m.-4 p.m.
-                <br>
-              </p>
-                <a class="neon-btn" href="https://bit.ly/3JCtKNC" target="_blank">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                  REGISTER HERE
-                </a>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glowing">
-              <div class="flip-card-front-text">
-                <span>
-                  <img src="./static/img/events/tch3.jpg" alt="Wire Trap">
-                </span>
-              </div>
-            </div>
-            <div class="flip-card-back">
-              <h1>TECH TALK 2</h1>
-              <p class="uk-text-justify uk-text-small section-text">
-                “As engineers, we are going to be in a position to change the world, not just study it.”-Henry Petroski
-                <br>
-                IEEE SB JIIT invites all budding engineers to yet another enthralling tech talk event under Xenith’22 by Ms. Deepali Agarwal!<br>
-                She is well known for her youtube channel @ForMyScholars. Apart from this, she is a mentor, a plus educator at unacademy, a Corporate Trainer with UR Services Pvt. and was also a former Assistant Professor at IMS Engg. College, Ghaziabad.
-                <br>
-                IEEE SB JIIT now announces its last event for Xenith'22-"Wire Trap", a competition based on aptitude about electronics and bifurcated into 3 rounds, to provide you an opportunity to stand out in your own area of expertise. <br>
-                Date: 27th February, 2022<br> Time: 3 p.m.-4 p.m.<br>
-                <br>
-              </p>
-                <a class="neon-btn" href="https://bit.ly/3h6YIRY" target="_blank">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                  REGISTER HERE
-                </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glowing">
-              <div class="flip-card-front-text">
-                <span>
-                  <img src="./static/img/events/wire.png" alt="Tech Talk">
-                </span>
-              </div>
-            </div>
-            <div class="flip-card-back">
-              <h1>WIRE TRAP</h1>
-              <p class="uk-text-justify uk-text-small section-text">
-                "Trapped in a vase, Felt like a cage, Yet embracing the girth of the wire like a sage."
-                <br>
-                Felt the need to enhance and show your knowledge related to the electronics around? Well, we are here with yet another event for you, but this time it's about connections and communication, where you can design the logical circuits of your brain and make that switch on without going through any programming procedure!!
-                <br>
-                IEEE SB JIIT now announces its last event for Xenith'22-"Wire Trap", a competition based on aptitude about electronics and bifurcated into 3 rounds, to provide you an opportunity to stand out in your own area of expertise. <br>
-                Date: 27th February, 2022<br> Time: 11-2 pm<br>
-                <br>
-              </p>
-                <a class="neon-btn" href="https://bit.ly/3Hchula" target="_blank">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                  REGISTER HERE
-                </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class=eventheading>
+    <h1><Strong>EVENTS</Strong></h1>
     </div>
-
+    <div class="part">
+    <section id="EVENTS">
+      <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(https://media.istockphoto.com/id/1152237432/photo/underwater-scene-tropical-seabed-with-reef-and-sunshine.jpg?s=612x612&w=0&k=20&c=qAe3eZ_bwmrq6CW5IoddV2icSDKsO7vkbQKwqy3ma0o=)">
+        </div>
+          <div class="eventname">
+             <p>HACKSTREET</p>
+          </div>
+          <div class="tl-content">
+            <img src="https://cdn.pixabay.com/photo/2015/07/19/15/45/sun-851659__340.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            <button class="register">Register now</button>
+          </div>
+      </div>
+      
+      <div class="tl-item"> 
+        <div class="tl-bg" style="background-image: url(https://cdn.pixabay.com/photo/2018/03/18/19/03/underwater-3237936__340.jpg)">
+          </div>
+        <div class="eventname">          
+          <p>RUNTIME_TERROR</p>
+        </div>
+        <div class="tl-content">
+            <img src="https://cdn.pixabay.com/photo/2015/07/19/15/45/sun-851659__340.jpg">
+            <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+            <button class="register">Register now</button>
+        </div>
+      </div>
+      <div class="tl-item">
+          <div class="tl-bg" style="background-image: url(https://cdn.pixabay.com/photo/2017/03/24/03/54/mar-2170110__340.jpg)">
+          </div>
+          <div class="eventname">
+            <p>TECH_TALK</p>
+          </div>
+          <div class="tl-content">
+            <img src="https://cdn.pixabay.com/photo/2015/07/19/15/45/sun-851659__340.jpg">
+            <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce . Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+             <button class="register">Register now</button>
+          </div>
+      </div>
+      <div class="tl-item"> 
+          <div class="tl-bg" style="background-image: url(https://media.istockphoto.com/id/1254096178/photo/ocean-water.jpg?b=1&s=170667a&w=0&k=20&c=5SYKTDX56PPiFVpjHah6SeiqmGPRDDCySvpdfRVbVE0=)">
+          </div>
+          <div class="eventname">
+              <p>TRIDENT_ARC</p>
+          </div>
+          <div class="tl-content">
+            <img src="https://cdn.pixabay.com/photo/2015/07/19/15/45/sun-851659__340.jpg">
+            <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+             <button class="register">Register now</button>
+          </div>
+      </div>
+        <div class="tl-item">
+          <div class="tl-bg" style="background-image: url(https://cdn.pixabay.com/photo/2019/06/20/09/26/underwater-4286600__340.jpg)">
+          </div>
+          <div class="eventname">
+          <p>TREASURE_TRIAL</p>
+          </div>
+          <div class="tl-content">
+            <img src="https://cdn.pixabay.com/photo/2015/07/19/15/45/sun-851659__340.jpg">
+            <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+             <button class="register">Register now</button>
+          </div>
+        </div>
+    </section>
+   </div>
     <!--Event section ends-->
-
-    <!-- Countdown section begins -->
-
-    <!--Countdown section ends-->
 
     <!--Timeline section begins-->
 
@@ -779,7 +640,7 @@
 
       <div class="footer-center">
         <div class="name">
-          <div class="btn ig-btn" style="float: left">
+          <div style="float: left">
             <i class="fa fa-map-marker" aria-hidden="true" id="ig"></i>
           </div>
           <p style="display: flex; text-align: left">
@@ -789,35 +650,34 @@
             India
           </p>
         </div>
-
+      </div>
+      <div class="footer-center1">
         <div class="name">
-          <div class="btn ph-btn" style="float: left">
+          <div style="float: left">
             <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
           </div>
           <p style="display: flex">Shwetank Verma : +91 9852244157</p>
         </div>
 
         <div class="name">
-          <div class="btn ph-btn" style="float: left">
+          <div style="float: left">
             <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
           </div>
           <p style="display: flex">Priyanjali Chaudhary : +91 7983760053</p>
         </div>
         <div class="name">
-          <div class="btn ph-btn" style="float: left">
+          <div style="float: left">
             <i class="fa fa-at" aria-hidden="true" id="ph"></i>
           </div>
           <p style="display: flex">Email - ieeesbjiitweb@gmail.com</p>
         </div>
       </div>
 
-
-
-
       <div class="footer-right">
         <p class="footer-company-about">
           <span class="uk-text-center uk-text-large">Find us here</span>
         </p>
+        <hr style="margin: -15px 0 5px 0;color:lightslategray;">
 
         <div class="footer-icons">
           <div class="container">
