@@ -94,10 +94,10 @@
   transition: all 0.5s ease-in-out;
 }
 .timeline ul li:nth-of-type(odd) div {
-  transform: translate3d(100px, -10px, 0) rotate(5deg);
+  transform: translate3d(100px, -5px, 0) rotate(5deg);
 }
 .timeline ul li:nth-of-type(even) div {
-  transform: translate3d(-100px, -10px, 0) rotate(5deg);
+  transform: translate3d(-100px, -5px, 0) rotate(5deg);
 }
 .timeline ul li.in-view div{
     transform: none;
