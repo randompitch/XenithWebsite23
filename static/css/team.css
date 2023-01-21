@@ -41,6 +41,11 @@
 
 #team .sectionHead {
     color: white;
+    text-align: center;
+}
+.uk-tile
+{
+  text-align: center;
 }
 
 .image-card {
@@ -65,7 +70,7 @@
   transition: .5s ease;
   backface-visibility: hidden;
   border-radius: var(--radius);
-  margin: calc(var(--size) * 10 / 100);
+  /* margin: calc(var(--size) * 10 / 100); */
 }
 
 .image-card:before {
@@ -94,8 +99,6 @@
   margin-top: 85px;
   border: none;
   text-align: center;
-  bottom: 455%;
-  left: 25%;
   font-weight: bold;
 }
 
@@ -125,9 +128,9 @@
   display: block;
   perspective: 500px;
 }
-.col-md-12, .col-md-4 {
+/* .col-md-12, .col-md-4 {
   height: var(--size);
-}
+} */
 .col-md-12 .dcard {
   perspective: 3000px;
 }
@@ -174,7 +177,7 @@
     width: 100%;
     margin: auto;
     overflow: visible;
-    margin-top: 10%;
+    margin-top: 30%;
   }
   
 }
