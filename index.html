@@ -36,6 +36,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
   <link rel="manifest" href="static/favicon/site.webmanifest">
+  <script> 
+    $(function(){
+      $("#landingpage").load("./parallax.html"); 
+    });
+    </script>
 </head>
 
 <body>
@@ -57,14 +62,14 @@
       </video>
       <!--Hidden For Pc-->
       <!-- <img src="./wallpaperflare.com_wallpaper (1).jpg" class="hidden lottie-bg" alt="" id="1" /> -->
-
+      <div id="landingpage"></div>
       <!--Hidden For Phone-->
       <div class="uk-position-top active" uk-scrollspy="cls:uk-animation-fade">
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
           <nav class="uk-navbar-container uk-margin uk-navbar-transparent uk-light" uk-navbar="dropbar: true;"
             id="navbarMain">
             <header>
-              <a href="#" class="logo"> Xenith</a>
+              <a href="#" class="logo" style="display:flex"> Xenith</a>
               <div class="uk-navbar-center">
                 <ul class="uk-navbar-nav">
                   <li id="ni-1" onclick="setActive(1)"><a class="cp-tag" href="#postLoader">Home</a></li>
@@ -82,7 +87,7 @@
         </div>
       </div>
      
-      <div class="uk-position-center content1">
+      <!-- <div class="uk-position-center content1">
        
         <h2 class="textcheck2">Xenith’23</h2>
         <h2 class="textcheck">Xenith’23</h2>
@@ -94,8 +99,8 @@
 	  <h1 class="check1"><span>Pursuit </span>of <span>Abyss</span></h1>
 
 
-      </div>
-
+      </div> -->
+      
       <!--Hidden for Pc-->
       <div class="hidden nav-mb">
         <nav role="navigation">
@@ -641,11 +646,11 @@
 
     <!-- Footer section -->
     <footer class="uk-position-relative footer-distributed" uk-scrollspy="cls:uk-animation-fade" id="contact">
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
+      <div class="wves">
+        <div class="wve" id="wve1"></div>
+        <div class="wve" id="wve2"></div>
+        <div class="wve" id="wve3"></div>
+        <div class="wve" id="wve4"></div>
       </div>
 
       <div class="footer-left">
