@@ -379,7 +379,7 @@ main {
 }
 
 .textcheck {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 
 }
 
@@ -449,6 +449,10 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+.content2 span
+{
+  font-family: "LoveAmourBlank";
 }
 
 .content2 h1 {
@@ -556,9 +560,11 @@ header ul li a:hover,.active{
 @media(max-width: 768px) {
   .textcheck2 {
     font-size: 2px;
+    
   }
 
   .textcheck {
     font-size: 2px;
+   
   }
 }
