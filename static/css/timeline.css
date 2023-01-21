@@ -39,7 +39,7 @@
   bottom: 0;
   width: 400px;
   padding: 20px;
-  background: rgba(98, 70, 237, 0.082);
+  background: rgba(98, 70, 237, 0.244);
   border: 2px solid rgba(255, 255, 255, 0.443);
   box-shadow: 4px 13px 30px 1px
    rgba(0, 0, 0, 0.8);
@@ -107,10 +107,10 @@
 @media screen and (max-width: 900px){
     .timeline ul li div{
         width: 250px;
-        flex-direction: column;
+
     }
     .timeline ul li div div{
-        width: 80%;
+        width: 60%;
         margin: 10px;
     }
     .timeline ul li:nth-of-type(even) > div{
@@ -118,9 +118,7 @@
     }
 }
 @media screen and (max-width:600px){
-    body{
-        background: #8bfff4;
-    }
+    
     .timeline ul li{
         margin-left: 20px;
 
@@ -130,5 +128,10 @@
     }
     .timeline ul li:nth-of-type(even) > div{
         left: 45px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+      left: -17px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent #191b3f transparent transparent;
     }
 }
