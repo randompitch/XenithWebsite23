@@ -210,6 +210,12 @@ pointer-events: none;
 .containerevent .card .box .content12{
     padding: 20px;
     text-align:center;
+    opacity: 0;
+}
+.containerevent .card:hover .box .content12{
+    padding: 20px;
+    text-align:center;
+    opacity: 1;
 }
 .containerevent .card .box .content12 h2{
     position: absolute;
@@ -263,6 +269,7 @@ pointer-events: none;
 .containerevent .card:hover .box
 {
     transform: translateY(-50px);
+    opacity: 1;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
     background: linear-gradient(45deg, #b95ce4,#4f29cd);
 
