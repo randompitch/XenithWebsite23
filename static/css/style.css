@@ -808,3 +808,17 @@ header ul li a:hover,.active{
 .dot:nth-child(4) {
   animation: showInvisible 500ms linear 1900ms infinite alternate;
 }
+
+.sponsorimage
+{
+  max-height:20vmin;
+  width:90% !important;
+}
+@media only screen and (max-width: 600px) {
+  .sponsorimage
+{
+  max-height:50vmin;
+  width:90% !important;
+}
+}
+  
