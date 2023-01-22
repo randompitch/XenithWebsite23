@@ -196,7 +196,7 @@ window.onscroll = function () {
 
 jQuery(document).on('scroll', function(){
   jQuery('.check1').css("padding-top", Math.max(5 + 0.15*window.scrollY, 1) + "vh");
-  console.log('hi')
+  document.getElementById("landingpage").style.height = "110vh";
   })
 var items = document.querySelectorAll(".timeline li");
 
