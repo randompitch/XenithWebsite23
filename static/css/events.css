@@ -10,7 +10,6 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background:transparent;
 
 }
@@ -19,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width:100vw;
     flex-wrap: wrap;
     padding: 40px 0%;
 }
