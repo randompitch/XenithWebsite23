@@ -106,31 +106,43 @@
 }
 @media screen and (max-width: 900px){
     .timeline ul li div{
-        width: 250px;
+        width: 40vw;
     }
     .timeline ul li div div{
-        width: 60%;
+        width:50%;
         margin: auto;
     }
     .timeline ul li:nth-of-type(even) > div{
-        left: -289px;
+        left: -45vw;
     }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
+  
+  .timeline ul li div{
+    width: 75vw;
+}
     
     .timeline ul li{
-        margin-left: 20px;
+        margin-left:10vw;
 
     }
-    .timeline ul li div{
-        width: calc(100vw - 91px);
-    }
+    
     .timeline ul li:nth-of-type(even) > div{
-        left: 45px;
+        left: 8vw;
+    }
+    .timeline ul li:nth-of-type(odd) > div {
+      left: 8vw;
     }
     .timeline ul li:nth-child(even) div::before {
       left: -17px;
       border-width: 8px 16px 8px 0;
       border-color: transparent #191b3f transparent transparent;
+    }
+    .timeline ul li div h2 {
+      font-size: 8vmin;
+    }
+    .timeline ul li div div span
+    {
+      font-size: 6vmin;
     }
 }
