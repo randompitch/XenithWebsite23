@@ -10,6 +10,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     background:transparent;
 
 }
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width:100vw;
+    max-width: 1200px;
     flex-wrap: wrap;
     padding: 40px 0%;
 }
@@ -56,13 +57,7 @@
     text-align:center;
     opacity: 0;
 }
-.containerevent .card:hover .box .content12,
-.containerevent .card:active .box .content12
-{
-    padding: 20px;
-    text-align:center;
-    opacity: 1;
-}
+
 .containerevent .card .box .content12 h2{
     position: absolute;
     
@@ -74,12 +69,7 @@
     transition: 0.5s;
     pointer-events: none;
 }
-.containerevent .card:hover .box .content12 h2,
-.containerevent .card:active .box .content12 h2
-{
-    color: rgba(0,0, 0,0.05);
 
-}
 .containerevent .card .box .content12 h3
 {
     font-size: 1.8em;
@@ -108,14 +98,26 @@
     font-weight: 400;
     box-shadow: 0 10px 20px rgba(0,0, 0,0.2); 
 }
-.containerevent .card:hover .box .content12 a,
-.containerevent .card:active .box .content12 a
+
+
+
+@media(hover: hover) and (pointer: fine) {
+    .containerevent .card:hover .box .content12{
+        padding: 20px;
+        text-align:center;
+        opacity: 1;
+    }
+    .containerevent .card:hover .box .content12 h2
+{
+    color: rgba(0,0, 0,0.05);
+
+}
+    .containerevent .card:hover .box .content12 a
 {
     background: #ff568f;
 
 }
-.containerevent .card:hover .box,
-.containerevent .card:active .box
+.containerevent .card:hover .box
 {
     transform: translateY(-50px);
     opacity: 1;
@@ -123,12 +125,11 @@
     background: linear-gradient(45deg, #b95ce4,#4f29cd);
 
 }
-.containerevent .card:hover .box .content12 h3,
-.containerevent .card:hover .box .content12 p,
-.containerevent .card:active .box .content12 h3,
-.containerevent .card:active .box .content12 p
-{
+    .containerevent .card:hover .box .content12 h3,
+    .containerevent .card:hover .box .content12 p
+    {
+        
+        color: #fff;
     
-    color: #fff;
-
+    }
 }
