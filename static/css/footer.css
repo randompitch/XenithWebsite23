@@ -22,6 +22,7 @@
   font-family: 'Domine', serif;
   font-size: 20px;
   margin-top: 500px;
+  justify-content: space-between;
 }
 
 .social-icon,
