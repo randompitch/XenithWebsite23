@@ -2,7 +2,7 @@ $(document).ready(function () {
   setTimeout(function () {
     $("#preLoader").addClass("uk-hidden");
     $("#postLoader").removeClass("uk-hidden");
-  }, 3000);
+  }, 4000);
 
   $(window).scroll(function () {
     var nav = $("#navbarMain");
@@ -192,6 +192,10 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 }
 
+jQuery(document).on('scroll', function(){
+  jQuery('.check1').css("padding-top", Math.max(5 + 0.05*window.scrollY, 1) + "vw");
+  console.log('hi')
+  })
 var items = document.querySelectorAll(".timeline li");
 
 function isElementInViewport(el){

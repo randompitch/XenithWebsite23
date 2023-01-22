@@ -1,4 +1,4 @@
-<!-- changes done-->
+<!-- final codedone  -->
 <!DOCTYPE html>
 <html>
 
@@ -29,6 +29,11 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      var context = new AudioContext();
+    }
+    </script>
 
   <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
   <!-- Favicon -->
@@ -36,20 +41,56 @@
   <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
   <link rel="manifest" href="static/favicon/site.webmanifest">
+  <script> 
+    $(function(){
+      $("#landingpage").load("./parallax.html"); 
+    });
+    </script>
 </head>
 
 <body>
   <!--Pre Loader-->
   <div id="preLoader">
     <div class="uk-position-center preLoader">
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <lottie-player src="static/106788-water.json" background="transparent" speed="1"
-        style="width: 100%; height: 40vh" loop autoplay></lottie-player>
+        style="width: 100%; height: 40vh" loop autoplay></lottie-player> -->
+        <div class="dolphin">
+          <div class="line line__size1"></div>
+          <div class="line line__size2"></div>
+          <div class="line line__size3"></div>
+          <div class="line line__size4"></div>
+          <div class="line line__size5"></div>
+          <div class="line line__size6"></div>
+          <div class="line line__size7"></div>
+          <div class="line line__size8"></div>
+          <div class="line line__size9"></div>
+          <div class="line line__size10"></div>
+          <div class="line line__size11"></div>
+          <div class="line line__size12"></div>
+          <div class="line line__size13"></div>
+          <div class="line line__size14"></div>
+          <div class="line line__size15"></div>
+          <div class="line line__size16"></div>
+          <div class="line line__size17"></div>
+          <div class="line line__size18"></div>
+          <div class="line line__size19"></div>
+          <div class="line line__size20"></div>
+          <div class="line line__size21"></div>
+          <div class="line line__size22"></div>
+          <div class="line line__size23"></div>
+          <div class="line line__size24"></div>
+          <div class="line line__size25"></div>
+          <div class="line line__size26"></div>
+          <div class="line line__size27"></div>
+          <div class="line line__size28"></div>
+</div>
     </div>
   </div>
 
   <div id="postLoader" class="uk-hidden"
     style="background: url('./static/img/team/underwater-texture-macro-blue-water-backgrounds-water-textures-blue-backgrounds.jpg') repeat fixed 100%;background-size: cover;">
+    <div id="scroll"></div>
     <div class="uk-position-relative" id="pos-rel-1">
       <!--Hidden For Phone-->
       <video autoplay muted loop id="myVideo" style="width: 100vw;height: 100vh;object-fit: cover;">
@@ -57,14 +98,18 @@
       </video>
       <!--Hidden For Pc-->
       <!-- <img src="./wallpaperflare.com_wallpaper (1).jpg" class="hidden lottie-bg" alt="" id="1" /> -->
-
+      <div id="landingpage"></div>
+      <audio controls autoplay loop style="display:none" id="audio">
+        <source src="./assets/audio.mp3" type="audio/mpeg">
+      </audio>
+      
       <!--Hidden For Phone-->
       <div class="uk-position-top active" uk-scrollspy="cls:uk-animation-fade">
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
           <nav class="uk-navbar-container uk-margin uk-navbar-transparent uk-light" uk-navbar="dropbar: true;"
             id="navbarMain">
             <header>
-              <a href="#" class="logo"> Xenith</a>
+              <a href="#" class="logo" style="display:flex"> Xenith</a>
               <div class="uk-navbar-center">
                 <ul class="uk-navbar-nav">
                   <li id="ni-1" onclick="setActive(1)"><a class="cp-tag" href="#postLoader">Home</a></li>
@@ -82,7 +127,7 @@
         </div>
       </div>
      
-      <div class="uk-position-center content1">
+      <!-- <div class="uk-position-center content1">
        
         <h2 class="textcheck2">Xenith’23</h2>
         <h2 class="textcheck">Xenith’23</h2>
@@ -92,8 +137,10 @@
       </div>
       <div class="uk-position-center content2">
 	  <h1 class="check1"><span>Pursuit </span>of <span>Abyss</span></h1>
-      </div>
 
+
+      </div> -->
+      
       <!--Hidden for Pc-->
       <div class="hidden nav-mb">
         <nav role="navigation">
@@ -409,213 +456,203 @@
         </div>
       </div>
       <main style="margin-bottom:20vh ;">
+  
 
-        
-      <div class="col-md-4">
-        <div class="container">
-          <div class="image-card card" >
-          <img src="static/img/team/yuvraj.jpg" alt="Avatar" class="image ">
-          <div class="middle">
-            <div class="teamcontent">
-              <h2>Yuvraj Chaudhary</h2><br>
-              <h3>Chairperson</h3> </div>
-              </div>
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile" style="background-image: url(./static/img/team/yuvraj.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Yuvraj Chaudhary</h1>
+            <div class="occupation">Chairperson</div>
           </div>
         </div>
       </div>
 
-        
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/parth.jpg" alt="Avatar" class="image ">
-              <div class="middle">
-                <div class="teamcontent">
-                <h2>Parth Punia</h2><br>
-                <h3>Vice Chairperson</h3>
-                </div>
-              </div>
-            </div>
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/parth.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Parth Punia</h1>
+            <div class="occupation">Vice Chairperson</div>
           </div>
         </div>
+      </div>
+     
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/vinay.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Vinay Baliyan</h1>
+            <div class="occupation">Organising Secretary</div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile "  style="background-image: url(./static/img/team/ananya.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Ananya Garg</h1>
+            <div class="occupation">Treasurer</div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/avni.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Avni Arora</h1>
+            <div class="occupation">Technical Head CSE</div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/sanskar.jpeg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Sanskar Dubey</h1>
+            <div class="occupation">Technical Head ECE</div>
+          </div>
+        </div>
+      </div>
 
-              
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/vinay.jpg" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Vinay Baliyan</h2><br>
-                  <h3>Organising Secretary</h3>
-                </div>
-              </div>
-            </div>
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/mitul.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Mitul Jain</h1>
+            <div class="occupation">Public Relations Head</div>
           </div>
         </div>
+      </div>
 
-          
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/ananya.jpg" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Ananya Garg</h2><br>
-                  <h3>Treasurer</h3>
-                </div>
-              </div>
-            </div>
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/kshiti.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Kshiti Srivastava</h1>
+            <div class="occupation">Marketing Head</div>
           </div>
         </div>
+      </div>
 
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/rahul.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Rahul Raina</h1>
+            <div class="occupation">Management Head</div>
+          </div>
+        </div>
+      </div>
 
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/avni.jpg" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Avni Arora</h2><br>
-                  <h3>Technical Head CSE</h3>
-                </div>
-              </div>
-            </div>
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/nandini.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Nandini Agarwal</h1>
+            <div class="occupation">Head of Operations</div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/sanskar.jpeg" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Sanskar Dubey</h2><br>
-                  <h3>Technical Head ECE</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/mitul.jpg" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Mitul Jain</h2><br>
-                  <h3>Public Relations Head</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/kshiti.jpg" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Kshiti Srivastava</h2><br>
-                  <h3>Marketing Head</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/rahul.jpg" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Rahul Raina</h2><br>
-                  <h3>Management Head</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/nandini.jpg" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Nandini Agarwal</h2><br>
-                  <h3>Head of Operations</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/rhythm.jpg" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Rhythm Shandlya</h2><br>
-                  <h3>Strategic Head</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
 
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/abhiram.jpg" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>B.S.N Abhiram</h2><br>
-                  <h3>WebMaster</h3>
-                </div>
-              </div>
-            </div>
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/rhythm.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Rhythm Shandlya</h1>
+            <div class="occupation">Strategic Head</div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/nikita.jpg" alt="Avatar" class="image ">
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Nikita Singhal</h2><br>
-                  <h3>Creative Head</h3>
-                </div>
-              </div>
-            </div>
+      </div>
+
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/abhiram.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">B.S.N Abhiram</h1>
+            <div class="occupation">Webmaster</div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/bhavey.png" alt="Avatar" class="image " >
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Bhavey Mittal</h2><br>
-                  <h3>Digital Head</h3>
-                </div>
-              </div>
-            </div>
+      </div>
+
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/nikita.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Nikita Singhal</h1>
+            <div class="occupation">Creative Head</div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="container">
-            <div class="image-card card" >
-            <img src="static/img/team/ishanya.jpg" alt="Avatar" class="image ">
-              <div class="middle">
-                <div class="teamcontent">
-                  <h2>Ishanya Yadav</h2><br>
-                  <h3>WIE Management Head</h3>
-                </div>
-              </div>
-            </div>
+      </div>
+
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/bhavey.png)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Bhavey Mittal</h1>
+            <div class="occupation">Digital Head</div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+
+      <div class="col-4"> 
+        <div class="cont">
+          <div class="profile_container">
+            <div class="back"></div>
+            <div class="profile"  style="background-image: url(./static/img/team/ishanya.jpg)"></div>
+          </div>
+          <div class="profile_infos">
+            <h1 class="name">Ishanya Yadav</h1>
+            <div class="occupation">WIE Management Head</div>
+          </div>
+        </div>
+      </div>
+     
 
     <!-- Sponsor section begins -->
 
@@ -635,6 +672,13 @@
 
     <!-- Footer section -->
     <footer class="uk-position-relative footer-distributed" uk-scrollspy="cls:uk-animation-fade" id="contact">
+      <div class="wves">
+        <div class="wve" id="wve1"></div>
+        <div class="wve" id="wve2"></div>
+        <div class="wve" id="wve3"></div>
+        <div class="wve" id="wve4"></div>
+      </div>
+
       <div class="footer-left">
         <p class="footer-company-name">
           <img src="static/img/ieee-white.png" style="width: 70%; margin-top: -10px" />
