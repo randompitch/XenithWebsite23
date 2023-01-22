@@ -58,7 +58,7 @@
     opacity: 0;
 }
 .containerevent .card .box:hover .content12,
-.containerevent .card:focus .box .content12
+.containerevent .card .box:focus .content12
 {
     padding: 20px;
     text-align:center;
@@ -76,7 +76,7 @@
     pointer-events: none;
 }
 .containerevent .card .box:hover .content12 h2,
-.containerevent .card:focus .box .content12 h2
+.containerevent .card .box:focus .content12 h2
 {
     color: rgba(0,0, 0,0.05);
 
@@ -110,13 +110,13 @@
     box-shadow: 0 10px 20px rgba(0,0, 0,0.2); 
 }
 .containerevent .card .box:hover .content12 a,
-.containerevent .card:focus .box .content12 a
+.containerevent .card .box:focus .content12 a
 {
     background: #ff568f;
 
 }
 .containerevent .card .box:hover,
-.containerevent .card:focus .box
+.containerevent .card .box:focus
 {
     transform: translateY(-50px);
     opacity: 1;
@@ -126,8 +126,8 @@
 }
 .containerevent .card .box:hover .content12 h3,
 .containerevent .card .box:hover .content12 p,
-.containerevent .card:focus .box .content12 h3,
-.containerevent .card:focus .box .content12 p
+.containerevent .card .box:focus .content12 h3,
+.containerevent .card .box:focus .content12 p
 {
     
     color: #fff;

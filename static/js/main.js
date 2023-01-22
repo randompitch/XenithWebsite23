@@ -2,7 +2,7 @@ $(document).ready(function () {
   setTimeout(function () {
     $("#preLoader").addClass("uk-hidden");
     $("#postLoader").removeClass("uk-hidden");
-  }, 4000);
+  }, 2000);
 
   $(window).scroll(function () {
     var nav = $("#navbarMain");
@@ -225,7 +225,7 @@ function callbackFunc() {
  window .addEventListener("load", callbackFunc);
  window.addEventListener("scroll", callbackFunc);
 
- $('.card').click(function() {
+ $('.box').click(function() {
   this.focus()
   
 });
