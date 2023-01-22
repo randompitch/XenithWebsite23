@@ -57,7 +57,7 @@
     text-align:center;
     opacity: 0;
 }
-.containerevent .card:hover .box .content12,
+.containerevent .card .box:hover .content12,
 .containerevent .card:focus .box .content12
 {
     padding: 20px;
@@ -75,7 +75,7 @@
     transition: 0.5s;
     pointer-events: none;
 }
-.containerevent .card:hover .box .content12 h2,
+.containerevent .card .box:hover .content12 h2,
 .containerevent .card:focus .box .content12 h2
 {
     color: rgba(0,0, 0,0.05);
@@ -109,13 +109,13 @@
     font-weight: 400;
     box-shadow: 0 10px 20px rgba(0,0, 0,0.2); 
 }
-.containerevent .card:hover .box .content12 a,
+.containerevent .card .box:hover .content12 a,
 .containerevent .card:focus .box .content12 a
 {
     background: #ff568f;
 
 }
-.containerevent .card:hover .box,
+.containerevent .card .box:hover,
 .containerevent .card:focus .box
 {
     transform: translateY(-50px);
@@ -124,8 +124,8 @@
     background: linear-gradient(45deg, #b95ce4,#4f29cd);
 
 }
-.containerevent .card:hover .box .content12 h3,
-.containerevent .card:hover .box .content12 p,
+.containerevent .card .box:hover .content12 h3,
+.containerevent .card .box:hover .content12 p,
 .containerevent .card:focus .box .content12 h3,
 .containerevent .card:focus .box .content12 p
 {
