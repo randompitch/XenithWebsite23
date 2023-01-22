@@ -221,3 +221,8 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 }
+
+jQuery(document).on('scroll', function(){
+  jQuery('.check1').css("padding-top", Math.max(5 + 0.05*window.scrollY, 1) + "vw");
+  console.log('hi')
+  })
