@@ -81,11 +81,6 @@ window.addEventListener("scroll", () => {
         current = 'contact'
       }
     }
-    if(section.getAttribute('id')=='event')
-    {
-      document.getElementById("landingpage").style.height = "100vh";
-    }
-    
   })
   setActiveNav(navMap[current]);
 });
@@ -201,7 +196,7 @@ window.onscroll = function () {
 
 jQuery(document).on('scroll', function(){
   jQuery('.check1').css("padding-top", Math.max(5 + 0.15*window.scrollY, 1) + "vh");
-  document.getElementById("landingpage").style.height = "70vh";
+  // document.getElementById("landingpage").style.height = "90vh";
   })
 var items = document.querySelectorAll(".timeline li");
 
