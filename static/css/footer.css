@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap');
 
-/* Footer Animations and Waves */
+/* Footer Animations and wves */
 #contact {
   position: absolute;
   bottom: -50px;
@@ -72,6 +72,65 @@
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
+}
+
+.wve {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../img/wave.png");
+  /*add css/wave.png instead*/
+  background-size: 1000px 100px;
+}
+
+.wve#wve1 {
+  z-index: 10;
+  opacity: 1;
+  bottom: 0;
+  animation: animatewves 4s linear infinite;
+}
+
+.wve#wve2 {
+  z-index: 10;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wve#wve3 {
+  z-index: 10;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animatewves 3s linear infinite;
+}
+
+.wve#wve4 {
+  z-index: 10;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animatewves {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
 }
 
 section {
