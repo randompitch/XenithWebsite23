@@ -71,6 +71,7 @@ window.addEventListener("scroll", () => {
     const secHt = section.clientHeight;
     if (scrollY >= (secTop - secHt / 4)) {
       current = section.getAttribute('id')
+      console.log(current);
     }
     if(section.getAttribute('id')=='sponsors')
     {
