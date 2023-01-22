@@ -29,6 +29,11 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      var context = new AudioContext();
+    }
+    </script>
 
   <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
   <!-- Favicon -->
@@ -36,20 +41,56 @@
   <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
   <link rel="manifest" href="static/favicon/site.webmanifest">
+  <script> 
+    $(function(){
+      $("#landingpage").load("./parallax.html"); 
+    });
+    </script>
 </head>
 
 <body>
   <!--Pre Loader-->
   <div id="preLoader">
     <div class="uk-position-center preLoader">
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <lottie-player src="static/106788-water.json" background="transparent" speed="1"
-        style="width: 100%; height: 40vh" loop autoplay></lottie-player>
+        style="width: 100%; height: 40vh" loop autoplay></lottie-player> -->
+        <div class="dolphin">
+          <div class="line line__size1"></div>
+          <div class="line line__size2"></div>
+          <div class="line line__size3"></div>
+          <div class="line line__size4"></div>
+          <div class="line line__size5"></div>
+          <div class="line line__size6"></div>
+          <div class="line line__size7"></div>
+          <div class="line line__size8"></div>
+          <div class="line line__size9"></div>
+          <div class="line line__size10"></div>
+          <div class="line line__size11"></div>
+          <div class="line line__size12"></div>
+          <div class="line line__size13"></div>
+          <div class="line line__size14"></div>
+          <div class="line line__size15"></div>
+          <div class="line line__size16"></div>
+          <div class="line line__size17"></div>
+          <div class="line line__size18"></div>
+          <div class="line line__size19"></div>
+          <div class="line line__size20"></div>
+          <div class="line line__size21"></div>
+          <div class="line line__size22"></div>
+          <div class="line line__size23"></div>
+          <div class="line line__size24"></div>
+          <div class="line line__size25"></div>
+          <div class="line line__size26"></div>
+          <div class="line line__size27"></div>
+          <div class="line line__size28"></div>
+</div>
     </div>
   </div>
 
   <div id="postLoader" class="uk-hidden"
     style="background: url('./static/img/team/underwater-texture-macro-blue-water-backgrounds-water-textures-blue-backgrounds.jpg') repeat fixed 100%;background-size: cover;">
+    <div id="scroll"></div>
     <div class="uk-position-relative" id="pos-rel-1">
       <!--Hidden For Phone-->
       <video autoplay muted loop id="myVideo" style="width: 100vw;height: 100vh;object-fit: cover;">
@@ -57,14 +98,18 @@
       </video>
       <!--Hidden For Pc-->
       <!-- <img src="./wallpaperflare.com_wallpaper (1).jpg" class="hidden lottie-bg" alt="" id="1" /> -->
-
+      <div id="landingpage"></div>
+      <audio controls autoplay loop style="display:none" id="audio">
+        <source src="./assets/audio.mp3" type="audio/mpeg">
+      </audio>
+      
       <!--Hidden For Phone-->
       <div class="uk-position-top active" uk-scrollspy="cls:uk-animation-fade">
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
           <nav class="uk-navbar-container uk-margin uk-navbar-transparent uk-light" uk-navbar="dropbar: true;"
             id="navbarMain">
             <header>
-              <a href="#" class="logo"> Xenith</a>
+              <a href="#" class="logo" style="display:flex"> Xenith</a>
               <div class="uk-navbar-center">
                 <ul class="uk-navbar-nav">
                   <li id="ni-1" onclick="setActive(1)"><a class="cp-tag" href="#postLoader">Home</a></li>
@@ -82,7 +127,7 @@
         </div>
       </div>
      
-      <div class="uk-position-center content1">
+      <!-- <div class="uk-position-center content1">
        
         <h2 class="textcheck2">Xenith’23</h2>
         <h2 class="textcheck">Xenith’23</h2>
@@ -94,8 +139,8 @@
 	  <h1 class="check1"><span>Pursuit </span>of <span>Abyss</span></h1>
 
 
-      </div>
-
+      </div> -->
+      
       <!--Hidden for Pc-->
       <div class="hidden nav-mb">
         <nav role="navigation">
@@ -242,87 +287,83 @@
 </div>
 <!-- event ends -->
     <!--Timeline section begins-->
-
-    <div class="uk-position-relative" id="timeline" uk-scrollspy="cls:uk-animation-fade">
-      <div class="uk-section timeline-main">
-        <div class="uk-position-top-center">
           <div class="uk-tile uk-tile-transparent">
             <span class="sectionHead">Timeline</span>
           </div>
-        </div>
-        <div class="timeline ">
-          <ul>
-            <li>
-              <div class="timeline-card card-lift--hover cover-bg text-center mt-sm">
-                <span class="mask bg-gradient-default opacity-7"></span>
-
-                <blockquote class="card-blockquote">
-                  <h2 class="font-weight-bold text-white border-bottom">
-                    Tech Talk 1
-                  </h2>
-                </blockquote>
-                Date - 26<sup>th</sup> Febuary 2022 <br>
-                Time - 4:30 <br>
-                Venue - Youtube @ieeesbjiit
-              </div>
-            </li>
-            <li>
-              <div class="timeline-card card-lift--hover cover-bg text-center mt-sm">
-                <span class="mask bg-gradient-default opacity-7"></span>
-
-                <blockquote class="card-blockquote">
-                  <h2 class="font-weight-bold text-white border-bottom">
-                    Dense Eclipse
-                  </h2>
-                </blockquote>
-                Date - 26<sup>th</sup> February 2022 <br>
-                Time - 8 PM to 10 PM<br>
-              </div>
-            </li>
-            <li>
-                <div class="timeline-card card-lift--hover cover-bg text-center mt-sm">
-                  <span class="mask bg-gradient-default opacity-7"></span>
-  
-                  <blockquote class="card-blockquote">
-                    <h2 class="font-weight-bold text-white border-bottom">
-                    Tech Talk 2
-                    </h2>
-                  </blockquote>
-                  Date - 27<sup>th</sup> February 2022 <br>
-                  Time - 3 PM to 4 PM<br>
-                </div>
-            </li>
-            <li>
-              <div class="timeline-card card-lift--hover cover-bg text-center mt-sm">
-                <span class="mask bg-gradient-default opacity-7"></span>
-
-                <blockquote class="card-blockquote">
-                  <h2 class="font-weight-bold text-white border-bottom">
-                    Spiral Forge
-                  </h2>
-                </blockquote>
-                Date - 27<sup>th</sup> February 2022 <br>
-                Time - 8 PM to 10 PM<br>
-              </div>
-            </li>
-            <li>
-                <div class="timeline-card card-lift--hover cover-bg text-center mt-sm">
-                  <span class="mask bg-gradient-default opacity-7"></span>
-  
-                  <blockquote class="card-blockquote">
-                    <h2 class="font-weight-bold text-white border-bottom">
-                      Wire Trap
-                    </h2>
-                  </blockquote>
-                  Date - 27<sup>th</sup> February 2022 <br>
-                  Time - 1 PM to 2 PM<br>
+          <div id="time2line" class="timeline">
+            <ul>
+              <li>
+                <div>
+                  <h4><b><time>Tech Talk 1</time></b></h4>
+                  <div class="date">
+                    <h2>Date</h2>
+                    <span>4/2/23</span>
+                  </div>
+                  <div class="time">
+                    <h2>Time</h2>
+                    <span>00:00</span>
+                  </div>
                 </div>
               </li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
+              <li>
+                <div>
+                  <h4><b><time>Tech Talk 2</time></b></h4>
+                  <div class="date">
+                    <h2>Date</h2>
+                    <span>4/2/23</span>
+                  </div>
+                  <div class="time">
+                    <h2>Time</h2>
+                    <span>00:00</span>
+                  </div>
+                </div>
+              </li>
+              
+              <li>
+                <div>
+                  <h4><b><time>Runtime Terror</time></b></h4>
+                  <div class="date">
+                    <h2>Date</h2>
+                    <span>4/2/23</span>
+                  </div>
+                  <div class="time">
+                    <h2>Time</h2>
+                    <span>00:00</span>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h4><b><time>Trident Arc</time></b></h4>
+                  <div class="date">
+                    <h2>Date</h2>
+                    <span>4/2/23</span>
+                  </div>
+                  <div class="time">
+                    <h2>Time</h2>
+                    <span>00:00</span>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h4><b><time>Treasure Trail</time></b></h4>
+                  <div class="date">
+                    <h2>Date</h2>
+                    <span>4/2/23</span>
+                  </div>
+                  <div class="time">
+                    <h2>Time</h2>
+                    <span>00:00</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
     <!--Timeline section ends -->
 
     <!--gallery-->
@@ -641,11 +682,11 @@
 
     <!-- Footer section -->
     <footer class="uk-position-relative footer-distributed" uk-scrollspy="cls:uk-animation-fade" id="contact">
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
+      <div class="wves">
+        <div class="wve" id="wve1"></div>
+        <div class="wve" id="wve2"></div>
+        <div class="wve" id="wve3"></div>
+        <div class="wve" id="wve4"></div>
       </div>
 
       <div class="footer-left">
