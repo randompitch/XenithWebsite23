@@ -2,7 +2,7 @@ $(document).ready(function () {
   setTimeout(function () {
     $("#preLoader").addClass("uk-hidden");
     $("#postLoader").removeClass("uk-hidden");
-  }, 3000);
+  }, 4000);
 
   $(window).scroll(function () {
     var nav = $("#navbarMain");
@@ -71,6 +71,7 @@ window.addEventListener("scroll", () => {
     const secHt = section.clientHeight;
     if (scrollY >= (secTop - secHt / 4)) {
       current = section.getAttribute('id')
+      console.log(current);
     }
     if(section.getAttribute('id')=='sponsors')
     {
@@ -110,9 +111,10 @@ const createSponsorCard = (name, spType, imageUrl, link = "") => {
   cardContainer.className = "container";
 
   var image = document.createElement("img");
+  image.className="sponsorimage"
   image.src = imageUrl;
   image.width = 100;
-  image.height = 50;
+  image.height = 20;
   image.onclick = () => window.open(link, "_blank", "noopener noreferrer");
   image.style.cursor = "pointer";
 
@@ -179,37 +181,7 @@ $('#menu li').click(function () {
 $('input[type="checkbox"]').click(function (e) {
   e.stopPropagation();
 });
-var refresh = setInterval(function () {
-  (function () {
-    "use strict";
-    var items = document.querySelectorAll(".timeline li");
-    function isElementInViewport(el) {
-      var rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <=
-        (window.innerWidth || document.documentElement.clientWidth)
-      );
-    }
 
-    function callbackFunc() {
-      for (var i = 0; i < items.length; i++) {
-        if (isElementInViewport(items[i])) {
-          items[i].classList.add("in-view");
-        }
-      }
-    }
-
-    // listen for events
-    window.addEventListener("load", callbackFunc);
-    window.addEventListener("resize", callbackFunc);
-    window.addEventListener("scroll", callbackFunc);
-  })();
-  clearInterval(refresh);
-}, 3500);
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -221,3 +193,34 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 }
+
+jQuery(document).on('scroll', function(){
+  jQuery('.check1').css("padding-top", Math.max(5 + 0.15*window.scrollY, 1) + "vh");
+  // document.getElementById("landingpage").style.height = "90vh";
+  })
+var items = document.querySelectorAll(".timeline li");
+
+function isElementInViewport(el){
+    var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function callbackFunc() {
+    for(var i = 0; i < items.length; i++){
+        if (isElementInViewport(items[i])){
+            if(!items[i].classList.contains("in-view")){
+                items[i].classList.add("in-view");
+            }
+        } else if(items[i].classList.contains("in-view")){
+            items[i].classList.remove("in-view");
+        }
+    }
+}
+
+ window .addEventListener("load", callbackFunc);
+ window.addEventListener("scroll", callbackFunc);

@@ -1,107 +1,128 @@
-#part
- {
-   width:100%;
-    height:auto;
-}
-.eventheading h1
+*
 {
-color:white;
-text-align:center;
-font-family: 'Trebuchet MS', sans-serif;
-text-shadow: 0px 0px 4px #f5e23e;
-letter-spacing: 5px;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
 }
-#EVENTS 
+.event-final
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:transparent;
+
+}
+.containerevent
 {
     display: flex;
-    background-color: #031625;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0%;
 }
-.tl-item:hover 
+.containerevent .card
 {
-        width: 30% !important;
-}
-#EVENTS:hover.tl-item 
-{
-     width: 23.3333%;
- }
-.tl-item:hover .eventname
-{
- display:none;
-}
-.tl-item:hover .tl-content
-{
-  z-index:10;
-  opacity:1;
-  transition:all 0.5s ease 0.5s;
-}
-.tl-item 
-{
-    z-index:9;
     position: relative;
-    width:20%;
-    height: 100%;
-    color: rgb(251, 246, 246);
-    transition: width 0.5s ease;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                5px 5px 5px rgba(0,0, 0,0.05),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+
 }
-.tl-content 
+
+.containerevent .card .box
 {
-    text-size-adjust: 1%;
-    z-index:0;
-   opacity:0;
-    position:relative;
-    height:100%;
-    text-align: center;
-    padding:0.5%;
-    margin:auto;
-}
-.tl-content img
-{
-    width:100%;
-    height:30%;
-}
-.eventname{
-    opacity:1;
     position: absolute;
-    display: inline-block;
-    top: 49%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    background-image:url("../img/events/metaverse.png");
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.containerevent .card .box .content12{
+    padding: 20px;
+    text-align:center;
+    opacity: 0;
+}
+.containerevent .card:hover .box .content12{
+    padding: 20px;
+    text-align:center;
+    opacity: 1;
+}
+.containerevent .card .box .content12 h2{
+    position: absolute;
+    
+    
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0,0, 0,0.02);
+    transition: 0.5s;
+    pointer-events: none;
+}
+.containerevent .card:hover .box .content12 h2
+{
+    color: rgba(0,0, 0,0.05);
+
+}
+.containerevent .card .box .content12 h3
+{
+    font-size: 1.8em;
+    color: #777;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.containerevent .card .box .content12 p{
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
     z-index: 1;
+    transition: 0.5s;
 }
-.eventname p 
+.containerevent .card .box .content12 a
 {
-   
-  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-decoration:overline underline rgb(255, 255, 255) solid 3px;
-  line-height:0.5;
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0, 0,0.2); 
 }
+.containerevent .card:hover .box .content12 a
+{
+    background: #ff568f;
 
-.tl-bg {
-    transform: translate3d(0, 0, 0);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center center;
-    transition: opacity 0.5s ease;
-    opacity:1;
 }
-.register {
-    border-color: rgb(229, 234, 233);
-    border-radius:50px;
-    transform: scale(1.2);
-    box-shadow: 0 0 15px rgb(243, 244, 237);
-    background-color: rgb(255, 255, 255);
-    color:rgb(0, 0, 7);
-}
+.containerevent .card:hover .box
+{
+    transform: translateY(-50px);
+    opacity: 1;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, #b95ce4,#4f29cd);
 
-.register:hover {
-    border-radius:50px;
-    background-color: rgb(5, 6, 42);
-    color: aqua;
-    border-color:rgb(1, 255, 255);
-    box-shadow: 0 0 20px rgb(0, 255, 255);
-    text-shadow: 0 0 50px rgb(5, 14, 14);
+}
+.containerevent .card:hover .box .content12 h3,
+.containerevent .card:hover .box .content12 p
+{
+    
+    color: #fff;
+
 }

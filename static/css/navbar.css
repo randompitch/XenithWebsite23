@@ -2,9 +2,10 @@
 
 .nav-mb {
   position: fixed;
-  top: 0;
+  top:0;
   z-index: 100;
 }
+
 
 .a-tag {
   text-decoration: none;
@@ -24,8 +25,9 @@
 
 nav ul {
   text-align: center;
-  padding: 0;
+  padding:0;
   list-style-type: none;
+  
 }
 
 nav {
@@ -171,6 +173,7 @@ nav .active {
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 3px;
+  padding-top: 10px;
   color: #fff;
   opacity: 1;
   font-weight: bold;

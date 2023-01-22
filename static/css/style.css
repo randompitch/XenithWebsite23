@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,600,700,900,500,800;1,900');@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&family=Montserrat&family=Sacramento&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,600,700,900,500,800;1,900');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&family=Montserrat&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
@@ -28,7 +29,19 @@
   --card-height: 65vh;
   --card-width: calc(var(--card-height) / 1.5);
 }
-
+#scroll
+{
+  height:100vh;
+  width:100vw;
+  position: absolute;
+  z-index: 15 !important;
+}
+body
+{
+    overflow-x: hidden !important;
+    
+    
+}
 *:focus {
   outline: none !important;
 }
@@ -37,14 +50,17 @@
   font-family: Tigerious;
   src: url("../fonts/TigeriousItalic-9YyJn.otf");
 }
+
 @font-face {
   font-family: LoveAmourBlank;
   src: url("../fonts/LoveAmourBlank-ZVRpm.ttf");
 }
+
 @font-face {
   font-family: Logistra;
   src: url("../fonts/Logistra-0WJOR.ttf");
 }
+
 @font-face {
   font-family: realdelight;
   src: url("../fonts/RealDelight-6YwJA.ttf");
@@ -54,10 +70,12 @@
   font-family: drip;
   src: url("../fonts/DripOctober-vm0JA.ttf");
 }
+
 @font-face {
   font-family: Wynford;
   src: url("../fonts/WynfordObliqueLineAlt1-4Byx9.otf");
 }
+
 @font-face {
   font-family: Crota;
   src: url("../fonts/CrotahFreeVersionItalic-z8Ev3.ttf");
@@ -128,30 +146,30 @@ html {
 }
 
 .heading-title::before {
-  background-image: linear-gradient(
-    to right,
-    rgba(64, 37, 113, 1),
-    rgba(51, 32, 102, 1)
-  );
+  background-image: linear-gradient(to right,
+      rgba(64, 37, 113, 1),
+      rgba(51, 32, 102, 1));
   animation: animateTyping var(--typeSpeed) steps(var(--textLength)) forwards;
 }
+
 .text_1 {
   font-family: "Hyperhelix";
   position: relative;
   font-size: 1em;
   animation: text1;
 }
-.text_1{
+
+.text_1 {
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
   position: relative;
   animation-duration: 2s;
   animation-timing-function: steps(25, end);
-  animation-iteration-count:1;
+  animation-iteration-count: 1;
 }
 
-.text_1::after{
+.text_1::after {
   content: "|";
   position: absolute;
   right: 0;
@@ -162,63 +180,71 @@ html {
 
 
 @keyframes text1 {
-from {
-					width:0px;
-				}
+  from {
+    width: 0px;
+  }
 
-				to {
-					width:35vw;
-				}
+  to {
+    width: 35vw;
+  }
 }
-@media  screen and (max-width:700px) {
+
+@media screen and (max-width:700px) {
   @keyframes text1 {
     from {
-              width:0px;
-            }
-    
-            to {
-              width:70vw;
-            }
+      width: 0px;
     }
-  
+
+    to {
+      width: 70vw;
+    }
+  }
+
 }
-@media  screen and (max-width:400px) {
-  .text_1{
+
+@media screen and (max-width:400px) {
+  .text_1 {
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
     position: relative;
     animation-duration: 4s;
     animation-timing-function: steps(25, end);
-    animation-iteration-count:1;
+    animation-iteration-count: 1;
   }
+
   @keyframes text1 {
     from {
-              width:0px;
-            }
-    
-            to {
-              width:80vw;
-            }
+      width: 0px;
     }
-  
+
+    to {
+      width: 80vw;
+    }
+  }
+
 }
-@media  screen and (max-width:350px) {
+
+@media screen and (max-width:350px) {
   @keyframes text1 {
     from {
-              width:0px;
-            }
-    
-            to {
-              width:90vw;
-            }
+      width: 0px;
     }
-  
+
+    to {
+      width: 90vw;
+    }
+  }
+
 }
+
 @keyframes caret {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
@@ -249,7 +275,7 @@ from {
 }
 
 #pos-rel-1 {
-  max-height: 110vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 
@@ -272,7 +298,7 @@ from {
   #event {
     height: 150vh;
     overflow: hidden;
-    
+
     padding: 5%;
   }
 
@@ -282,7 +308,7 @@ from {
   }
 
   #team {
-    max-height: 310vh;
+
     overflow: hidden;
     padding: 5%;
   }
@@ -297,7 +323,6 @@ from {
   }
 
   #team {
-    max-height: 570vh;
     overflow: hidden;
     padding: 5%;
   }
@@ -324,7 +349,8 @@ main {
   margin: auto;
   overflow: visible;
 }
-.content1{
+
+.content1 {
   font-family: "Tigerious";
 
   margin: 0;
@@ -334,55 +360,57 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  
 
 
-    position: relative;
+
+  position: relative;
 }
 
-.content1 h2{
-    position: absolute;
-   
-    color: #fff;
-    transform: translate(-50%, -50%);
-    font-size: 100px;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
-    font-family: "drip";
-  }
-  .preLoader{
-   padding-right: 500px;
-   margin-right: 200px;
-  }
-
-
-.content1 h2:nth-child(1){
-    color: #fff;
-    -webkit-text-stroke:2px #0A2647;
+.content1 h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 18vmin;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  font-family: "drip";
 }
 
-.content1 h2:nth-child(2){
-    color: #81C6E8;
-    animation: animate123 4s ease-in-out infinite;
+/* .preLoader {
+  padding-right: 500px;
+  margin-right: 200px;
+} */
+
+
+.content1 h2:nth-child(1) {
+  color: #fff;
+  -webkit-text-stroke: 2px #0A2647;
 }
-.textcheck{
-  padding-bottom: 20px;
- 
+
+.content1 h2:nth-child(2) {
+  color: #81C6E8;
+  animation: animate123 4s ease-in-out infinite;
 }
-.uk-position-center{
+
+.textcheck {
+  padding-bottom: 25px;
+
+}
+
+/* .uk-position-center{
   padding-left: 20px;
   margin-left: 250px;
   margin-top:80px ;
-}
+} */
 
-@keyframes animate123{
-    0%,
-    100% {
-        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
-    }
+@keyframes animate123 {
 
-    50% {
-        clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
-    }
+  0%,
+  100% {
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
 }
 
 /*****/
@@ -425,8 +453,7 @@ main {
 
 
 } */
-.content2
-{
+.content2 {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
@@ -435,42 +462,47 @@ main {
   align-items: center;
   min-height: 100vh;
 }
+.content2 span
+{
+  font-family: "LoveAmourBlank";
+}
+
 .content2 h1 {
-  padding-top: 160px;
-  padding-top: 400px;
-
-  font-size: 1.5em;
-  font-size: 2.5em;
-
+  padding-top: 5vw;
+  /* padding-top: 400px; */
+  font-size: 3em;
+  text-align: center;
   color: #7DE5ED;
   font-weight: 500;
   letter-spacing: 5px;
   cursor: pointer;
   font-family: "LoveAmourBlank";
-  -webkit-text-stroke:1px #0A2647;
+  -webkit-text-stroke: 1px #0A2647;
 
 
-  }
-  .content2 h1 span
-  {
-   transition: 0.5s;
+}
 
-  }
-  .content2 h1:hover span:nth-child(1)
-  {
-    margin-right: 10px;
+.content2 h1 span {
+  transition: 0.5s;
 
-  }
-  .content2 h1:hover span:nth-child(1)::after{
-    content: "";
-  }
-  .content2 h1:hover span:nth-child(2)
-  {
-    margin-left: 30px;
-  }
-  .content2 h1:hover span {
-    color: #fff;
-    text-shadow: 0 0 10px #fff,
+}
+
+.content2 h1:hover span:nth-child(1) {
+  margin-right: 10px;
+
+}
+
+.content2 h1:hover span:nth-child(1)::after {
+  content: "";
+}
+
+.content2 h1:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+
+.content2 h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
     0 0 20px #fff,
     0 0 40px #fff,
     0 0 80px #fff,
@@ -478,20 +510,23 @@ main {
     0 0 160px #fff,
 
 
-  }
+}
+
+
 /* navbar */
-header{
+header {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   width: 100%;
   padding: 5px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
-header .logo{
+
+header .logo {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -531,16 +566,264 @@ header ul li a:hover,.active{
 
 } */
 
-#aboutit
-{
-  font-family:"Crota";
-} 
-@media(max-width: 768px)
-{
-  .textcheck2{
+#aboutit {
+  font-family: "Crota";
+}
+
+@media(max-width: 768px) {
+  .textcheck2 {
     font-size: 2px;
+    
   }
-  .textcheck{
+
+  .textcheck {
     font-size: 2px;
+   
   }
+}
+.dolphin {
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+  width: 50vmin;
+  height: 50vmin;
+  margin: 1.5% auto 0;
+  animation: rotatatingDelphin 2000ms ease-in-out 700ms infinite;
+}
+.line {
+  position: absolute;
+  width: 8px;
+  height: 8%;
+  border-radius: 5.7142857143px;
+  background: linear-gradient(90deg, #0e5da6 10%, #89fae3 50%, #0e5da6 100%);
+  box-shadow: 0 0 6px #1b2cff;
+}
+.line:nth-child(even) {
+  animation: movingUp 500ms linear;
+  animation-fill-mode: forwards;
+}
+.line:nth-child(odd) {
+  animation: movingDown 500ms linear;
+  animation-fill-mode: forwards;
+}
+.line__size1 {
+  top: 80%;
+  left: 0.6%;
+  height: 8%;
+}
+.line__size2 {
+  top: 74%;
+  left: 5%;
+  height: 11%;
+}
+.line__size3 {
+  top: 73%;
+  left: 9.8%;
+  height: 13%;
+}
+.line__size4 {
+  top: 52%;
+  left: 14.5%;
+  height: 34%;
+}
+.line__size5 {
+  top: 73%;
+  left: 19%;
+  height: 13%;
+}
+.line__size6 {
+  top: 74%;
+  left: 23.5%;
+  height: 11%;
+}
+.line__size7 {
+  top: 80%;
+  left: 28.2%;
+  height: 8%;
+}
+.line__size8 {
+  top: 42%;
+  left: 19%;
+  height: 28%;
+}
+.line__size9 {
+  top: 35.5%;
+  left: 23.5%;
+  height: 25%;
+}
+.line__size10 {
+  top: 32%;
+  left: 28%;
+  height: 24%;
+}
+.line__size11 {
+  top: 23%;
+  left: 33%;
+  height: 28%;
+}
+.line__size12 {
+  top: 13%;
+  left: 33%;
+  height: 8%;
+}
+.line__size13 {
+  top: 13%;
+  left: 37.5%;
+  height: 36%;
+}
+.line__size14 {
+  top: 14%;
+  left: 42%;
+  height: 33%;
+}
+.line__size15 {
+  top: 18%;
+  left: 46.5%;
+  height: 28%;
+}
+.line__size16 {
+  top: 48%;
+  left: 46.5%;
+  height: 5%;
+}
+.line__size17 {
+  top: 21%;
+  left: 51%;
+  height: 24%;
+}
+.line__size18 {
+  top: 47%;
+  left: 51%;
+  height: 8%;
+}
+.line__size19 {
+  top: 20%;
+  left: 55.5%;
+  height: 35%;
+}
+.line__size20 {
+  top: 20%;
+  left: 60%;
+  height: 32%;
+}
+.line__size21 {
+  top: 20.5%;
+  left: 65%;
+  height: 25%;
+}
+.line__size22 {
+  top: 21%;
+  left: 69.5%;
+  height: 22%;
+}
+.line__size23 {
+  top: 22%;
+  left: 74%;
+  height: 22%;
+}
+.line__size24 {
+  top: 25%;
+  left: 79%;
+  height: 21%;
+}
+.line__size25 {
+  top: 28%;
+  left: 83.5%;
+  height: 19%;
+}
+.line__size26 {
+  top: 31%;
+  left: 88%;
+  height: 19%;
+}
+.line__size27 {
+  top: 35%;
+  left: 92.5%;
+  height: 16%;
+}
+.line__size28 {
+  top: 46%;
+  left: 97%;
+  height: 6%;
+}
+@keyframes movingUp {
+  0% {
+    top: -100%;
+ }
+}
+@keyframes movingDown {
+  0% {
+    top: 200%;
+ }
+}
+@keyframes rotatatingDelphin {
+  0% {
+    transform: rotate(0deg);
+ }
+  80%, 100% {
+    transform: rotate(360deg);
+ }
+}
+.textBlock {
+  position: relative;
+  width: 400px;
+  margin: 1% auto 0;
+  text-align: center;
+  animation: showInvisible 700ms linear;
+  animation-fill-mode: forwards;
+}
+@keyframes showInvisible {
+  0% {
+    opacity: 0;
+ }
+  100% {
+    opacity: 1;
+ }
+}
+.dolphinText {
+  display: inline-block;
+  text-decoration: underline;
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Shrikhand', cursive;
+}
+.dot {
+  display: inline-block;
+  transform: translateY(80%);
+  width: 5.3333333333px;
+  height: 5.3333333333px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+}
+.dot:nth-child(1) {
+  animation: showInvisible 500ms linear 1000ms infinite alternate;
+}
+.dot:nth-child(2) {
+  animation: showInvisible 500ms linear 1300ms infinite alternate;
+}
+.dot:nth-child(3) {
+  animation: showInvisible 500ms linear 1600ms infinite alternate;
+}
+.dot:nth-child(4) {
+  animation: showInvisible 500ms linear 1900ms infinite alternate;
+}
+
+.sponsorimage
+{
+  max-height:20vmin;
+  width:90% !important;
+}
+@media only screen and (max-width: 600px) {
+  .sponsorimage
+{
+  max-height:50vmin;
+  width:90% !important;
+}
+}
+  
+#landingpage
+{
+  height: 100vh;
+  width:110vh;
 }

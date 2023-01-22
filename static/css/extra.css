@@ -1,23 +1,2 @@
-.tl-item::before,.tl-item::after 
-{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-}
-.tl-item::after
-{
-        background: transparentize(#031625, 0.15);
-        opacity: 1;
-        transition: opacity 0.5s ease;
-}
 
- .tl-item::before 
- {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
-        z-index: 1;
-        opacity: 0;
-        transition: opacity 0.5s ease, transform 0.5s ease;
-}
+
