@@ -456,8 +456,8 @@ main {
 }
 
 .content2 h1 {
-  padding-top: 160px;
-  padding-top: 400px;
+  /* padding-top: 160px;
+  padding-top: 400px; */
   font-size: 2.7em;
   text-align: center;
   color: #7DE5ED;

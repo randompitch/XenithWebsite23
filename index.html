@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="static/css/timeline.css" />
   <link rel="stylesheet" href="static/css/sponsor.css" />
   <link rel="stylesheet" href="static/css/team.css" />
+  <link rel="stylesheet" href="static/css/home.css" />
   <link rel="stylesheet" href="static/css/footer.css" />
   <link rel="stylesheet" href="static/css/navbar.css" />
   <link rel="stylesheet" href="static/css/gallery.css" />
@@ -55,6 +56,297 @@
       <video autoplay muted loop id="myVideo" style="width: 100vw;height: 100vh;object-fit: cover;">
         <source src="./static/video-output-4B85B99F-1103-4EC2-B56C-8AC54CC55F34.mov" type="video/mp4" class="active video123">
       </video>
+
+      <!-- Parallax Effect -->
+      <div id="container" class="wrapper">
+        <ul
+          id="scene"
+          class="scene unselectable"
+          data-friction-x="0.1"
+          data-friction-y="0.1"
+          data-scalar-x="25"
+          data-scalar-y="15"
+          style="
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            transform: translate3d(0px, 0px, 0px);
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+          "
+        >
+          <li
+            class="layer"
+            data-depth="0.00"
+            style="
+              position: relative;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(0px, 0px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          ></li>
+          <li
+            class="layer"
+            data-depth="0.10"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-9.6px, 4.23px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="background"></div>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.10"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-9.6px, 4.23px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="light orange b phase-4"></div>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.10"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-9.6px, 4.23px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="light purple c phase-5"></div>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.10"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-9.6px, 4.23px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="light orange d phase-3"></div>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.15"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-14.4px, 6.345px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <ul class="rope depth-10">
+              <li><img src="static/img/home/rope.png" alt="Rope" /></li>
+              <li class="hanger position-2">
+                <div class="board cloud-2 swing-1"></div>
+              </li>
+              <li class="hanger position-4">
+                <div class="board cloud-1 swing-3"></div>
+              </li>
+              <li class="hanger position-8">
+                <div class="board birds swing-5"></div>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.20"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-19.2px, 8.46px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <!-- <h1 class="title"><span>Pursuit </span>of <span>Abyss</span></h1> -->
+          </li>
+          <li
+            class="layer"
+            data-depth="0.30"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-28.8px, 12.69px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <ul class="rope depth-30">
+              <li><img src="static/img/home/rope.png" alt="Rope" /></li>
+              <li class="hanger position-1">
+                <div class="board cloud-1 swing-3"></div>
+              </li>
+              <li class="hanger position-5">
+                <div class="board cloud-4 swing-1"></div>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.30"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-28.8px, 12.69px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="waave paint depth-30"></div>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.40"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-38.4px, 16.92px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="waave plain depth-40"></div>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.50"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-48px, 21.15px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="waave paint depth-50"></div>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.60"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-57.6px, 25.38px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="lighthouse depth-60"></div>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.60"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-57.6px, 25.38px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <ul class="rope depth-60">
+              <li><img src="static/img/home/rope.png" alt="Rope" /></li>
+              <li class="hanger position-3">
+                <div class="board birds swing-5"></div>
+              </li>
+              <li class="hanger position-6">
+                <div class="board cloud-2 swing-2"></div>
+              </li>
+              <li class="hanger position-8">
+                <div class="board cloud-3 swing-4"></div>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.60"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-57.6px, 25.38px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="waave plain depth-60"></div>
+          </li>
+          <li
+            class="layer"
+            data-depth="0.80"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-76.8px, 33.84px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="waave plain depth-80"></div>
+          </li>
+          <li
+            class="layer"
+            data-depth="1.00"
+            style="
+              position: absolute;
+              display: block;
+              left: 0px;
+              top: 0px;
+              transform: translate3d(-96px, 42.3px, 0px);
+              transform-style: preserve-3d;
+              backface-visibility: hidden;
+            "
+          >
+            <div class="waave paint depth-100"></div>
+          </li>
+        </ul>
+      </div>
+      <!-- Parallax Effect Ends -->
+
       <!--Hidden For Pc-->
       <!-- <img src="./wallpaperflare.com_wallpaper (1).jpg" class="hidden lottie-bg" alt="" id="1" /> -->
 
@@ -82,14 +374,14 @@
         </div>
       </div>
      
-      <div class="uk-position-center content1">
+      <!-- <div class="uk-position-center content1">
        
         <h2 class="textcheck2">Xenith’23</h2>
         <h2 class="textcheck">Xenith’23</h2>
 
 
 
-      </div>
+      </div> -->
       <div class="uk-position-center content2">
 	  <h1 class="check1"><span>Pursuit </span>of <span>Abyss</span></h1>
 
@@ -748,6 +1040,11 @@
   <!--Team section ends-->
   <!--Sponsor section begins-->
   <script src="static/js/main.js"></script>
+  <script src="static/js/parallax.js"></script>
+		<script>
+			var scene = document.getElementById('scene');
+			var parallaxInstance = new Parallax(scene);
+		</script>
 </body>
 <script src="/static/js/main.js"></script>
 
