@@ -695,6 +695,11 @@ header ul li a:hover,.active{
   max-height:50vmin;
   width:90% !important;
 }
+.bx
+{
+  height: 180px;
+  width: 180px;
+}
 }
   
 #landingpage
