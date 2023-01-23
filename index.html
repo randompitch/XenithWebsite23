@@ -161,7 +161,25 @@
     <!--About section begins-->
 
     <div id="about" uk-scrollspy="cls:uk-animation-fade">
-      <div style="text-align: center; width: 100%">
+      <div class="octopus">
+        <div class="coner">
+  
+          <div id="countdown">
+            <ul>
+              <li class="time"><span id="days"></span>days</li>
+              <li class="time"><span id="hours"></span>Hours</li>
+              <li class="time"><span id="minutes"></span>Minutes</li>
+              
+            </ul>
+          </div>
+          
+        </div>
+        <video autoplay muted loop id="myVideo" style="width:100vw;height:100vh;object-fit:cover;">
+          <source src="./assets/octopus.mp4" type="video/mp4"
+            class="active video123">
+        </video>
+      </div>
+      <div style="text-align: center; width: 100%" class="aboutcontent">
         <span class="sectionHead" id="aboutit" style="color: whitesmoke;">About</span>
         <div class="about-container">
           <p class="uk-text-justify uk-text-large section-text">
@@ -188,24 +206,7 @@
           </p>
         </div>
       </div>
-      <div class="octopus">
-        <div class="coner">
-  
-          <div id="countdown">
-            <ul>
-              <li class="time"><span id="days"></span>days</li>
-              <li class="time"><span id="hours"></span>Hours</li>
-              <li class="time"><span id="minutes"></span>Minutes</li>
-              <li class="time"><span id="seconds"></span>Seconds</li>
-            </ul>
-          </div>
-          
-        </div>
-        <video autoplay muted loop id="myVideo" style="width:100vw;height:100vh;object-fit:cover;">
-          <source src="./assets/octopus.mp4" type="video/mp4"
-            class="active video123">
-        </video>
-      </div>
+      
       
    
       
