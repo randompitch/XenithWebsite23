@@ -245,7 +245,7 @@ interval=setInterval(function(){
 
 setInterval(function () {
   var video = document.getElementById('myVideo');
-  if(Math.floor(video.currentTime)+2==Math.floor(video.duration))
+  if(Math.floor(video.currentTime)+4==Math.floor(video.duration))
   {
     video.currentTime=2;
   }
