@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="static/css/style.css" />
   <link rel="stylesheet" href="static/css/about.css" />
@@ -45,7 +45,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
   <link rel="manifest" href="static/favicon/site.webmanifest">
-  
+
   <script>
     $(function () {
       $("#landingpage").load("./parallax.html");
@@ -279,7 +279,7 @@
 
         </div>
       </div>
-      
+
     </div>
     <!-- event ends -->
     <!--Timeline section begins-->
@@ -364,64 +364,64 @@
 
     <!--gallery-->
     <div class="uk-position-relative" id="gallery" uk-scrollspy="cls:uk-animation-fade">
-    <div class="uk-section timeline-main galleryalign">
-   
-      <div class="uk-tile uk-tile-transparent galleryalign2">
-        <span class="sectionHead">Gallery</span>
+      <div class="uk-section timeline-main galleryalign">
+
+        <div class="uk-tile uk-tile-transparent galleryalign2">
+          <span class="sectionHead">Gallery</span>
+        </div>
+
+
+        <div class="swiper-container" id="gallerybox">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./static/img/gallery/img6.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./static/img/gallery/img4.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./static/img/gallery/img5.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./static/img/gallery/img3.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./static/img/gallery/img1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./static/img/gallery/img2.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./static/img/gallery/img7.jpeg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+              rotate: 20,
+              stretch: 0,
+              depth: 200,
+              modifier: 1,
+              slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+              delay: 500,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+
+          });
+        </script>
       </div>
-    
-  
-    <div class="swiper-container" id="gallerybox">
-         <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./static/img/gallery/img6.jpeg" alt=""></div>
-        <div class="swiper-slide"><img src="./static/img/gallery/img4.jpeg" alt=""></div>
-        <div class="swiper-slide"><img src="./static/img/gallery/img5.jpeg" alt=""></div>
-        <div class="swiper-slide"><img src="./static/img/gallery/img3.jpeg" alt=""></div>
-        <div class="swiper-slide"><img src="./static/img/gallery/img1.jpeg" alt=""></div>
-        <div class="swiper-slide"><img src="./static/img/gallery/img2.jpeg" alt=""></div>
-        <div class="swiper-slide"><img src="./static/img/gallery/img7.jpeg" alt=""></div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflow: {
-          rotate: 20,
-          stretch: 0,
-          depth: 200,
-          modifier: 1,
-          slideShadows : true,
-        },
-        loop:true,
-        autoplay: {
-    delay:500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-
-      });
-    </script>
-</div>
-</div>
 
 
 
 
-<!--
+    <!--
     <div class="uk-position-relative" id="gallery" uk-scrollspy="cls:uk-animation-fade">
       <div class="uk-section timeline-main">
         <div class="uk-position-top-center">
@@ -729,128 +729,133 @@
       </div>
       <br /><br />
       <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-      uk-slider="center: true; autoplay: true; autoplay-interval: 2000; finite: true ">
+        uk-slider="center: true; autoplay: false; autoplay-interval: 2000; finite: true ">
 
-      <ul class="uk-slider-items uk-grid">
-        <li class="uk-width-1">
-          <div class="uk-panel">
+        <ul class="uk-slider-items uk-grid" id="sponsorContainer">
+          
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+          uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+          uk-slider-item="next"></a>
 
-      <main id="sponsorContainer">
-        <!-- Content injected via DOM -->
-      </main>
       </div>
-    </li>
-      </ul>
+
+    </div>
+
+    <!-- <main id="sponsorContainer">
+      
+      </main> -->
+  
+  <!--Sponsor section ends-->
+
+  <!-- Footer section -->
+  <footer class="uk-position-relative footer-distributed" uk-scrollspy="cls:uk-animation-fade" id="contact">
+    <!-- <div class="wves">
+      <div class="wve" id="wve1"></div>
+      <div class="wve" id="wve2"></div>
+      <div class="wve" id="wve3"></div>
+      <div class="wve" id="wve4"></div>
+    </div> -->
+
+    <div class="footer-left">
+      <p class="footer-company-name">
+        <img src="static/img/ieee-white.png" style="width: 70%; margin-top: -10px" />
+      </p>
+      <br /><br />
+    </div>
+
+    <div class="footer-center">
+      <div class="nme">
+        <div style="float: left">
+          <i class="fa fa-map-marker" aria-hidden="true" id="ig"></i>
+        </div>
+        <p style="display: flex; text-align: left">
+          Xenith 2022 <br />
+          Jaypee Institute Of Information Technology<br />
+          Sector-62, Noida <br />
+          India
+        </p>
       </div>
     </div>
-    <!--Sponsor section ends-->
-
-    <!-- Footer section -->
-    <footer class="uk-position-relative footer-distributed" uk-scrollspy="cls:uk-animation-fade" id="contact">
-      <!-- <div class="wves">
-        <div class="wve" id="wve1"></div>
-        <div class="wve" id="wve2"></div>
-        <div class="wve" id="wve3"></div>
-        <div class="wve" id="wve4"></div>
-      </div> -->
-
-      <div class="footer-left">
-        <p class="footer-company-name">
-          <img src="static/img/ieee-white.png" style="width: 70%; margin-top: -10px" />
-        </p>
-        <br /><br />
+    <div class="footer-center1">
+      <div class="nme">
+        <div style="float: left">
+          <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
+        </div>
+        <p style="display: flex">Yuvraj Chaudhary : +91 8755303468</p>
       </div>
 
-      <div class="footer-center">
-        <div class="nme">
-          <div style="float: left">
-            <i class="fa fa-map-marker" aria-hidden="true" id="ig"></i>
-          </div>
-          <p style="display: flex; text-align: left">
-            Xenith 2022 <br />
-            Jaypee Institute Of Information Technology<br />
-            Sector-62, Noida <br />
-            India
-          </p>
+      <div class="nme">
+        <div style="float: left">
+          <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
         </div>
+        <p style="display: flex">Parth Punia : +91 8960970816</p>
       </div>
-      <div class="footer-center1">
-        <div class="nme">
-          <div style="float: left">
-            <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
-          </div>
-          <p style="display: flex">Yuvraj Chaudhary : +91 8755303468</p>
+      <div class="nme">
+        <div style="float: left">
+          <i class="fa fa-at" aria-hidden="true" id="ph"></i>
         </div>
-
-        <div class="nme">
-          <div style="float: left">
-            <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
-          </div>
-          <p style="display: flex">Parth Punia : +91 8960970816</p>
-        </div>
-        <div class="nme">
-          <div style="float: left">
-            <i class="fa fa-at" aria-hidden="true" id="ph"></i>
-          </div>
-          <p style="display: flex">Email - ieeesbjiitweb@gmail.com</p>
-        </div>
+        <p style="display: flex">Email - ieeesbjiitweb@gmail.com</p>
       </div>
+    </div>
 
-      <div class="footer-right">
-        <p class="footer-company-about">
-          <span class="uk-text-center uk-text-large">Find us here</span>
-        </p>
-        <hr style="margin: -15px 0 5px 0;color:lightslategray;">
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span class="uk-text-center uk-text-large">Find us here</span>
+      </p>
+      <hr style="margin: -15px 0 5px 0;color:lightslategray;">
 
-        <div class="footer-icons">
-          <div class="container">
-            <div class="btn fb-btn"
-              onclick='window.open("https://www.facebook.com/ieeesbjiit/", "noopener noreferrer")'>
-              <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
-            </div>
-            <div class="btn ig-btn"
-              onclick="window.open('https://www.instagram.com/ieeesbjiit/', 'noopener noreferrer')">
-              <i class="fa fa-instagram" aria-hidden="true" id="ig"></i>
-            </div>
-            <div class="btn ln-btn"
-              onclick="window.open('https://www.linkedin.com/company/ieee-student-branch-jiit/', 'noopener noreferrer')">
-              <i class="fa fa-linkedin" aria-hidden="true" id="ln"></i>
-            </div>
-            <div class="btn gt-btn" onclick="window.open('https://github.com/ieeesbjiit', 'noopener noreferrer')">
-              <i class="fa fa-github" aria-hidden="true" id="gt"></i>
-            </div>
-            <div class="btn yt-btn"
-              onclick="window.open('https://www.youtube.com/c/IEEESBJIIT', 'noopener noreferrer')">
-              <i class="fa fa-youtube-play" aria-hidden="true" id="yt"></i>
-            </div>
+      <div class="footer-icons">
+        <div class="container">
+          <div class="btn fb-btn" onclick='window.open("https://www.facebook.com/ieeesbjiit/", "noopener noreferrer")'>
+            <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
+          </div>
+          <div class="btn ig-btn" onclick="window.open('https://www.instagram.com/ieeesbjiit/', 'noopener noreferrer')">
+            <i class="fa fa-instagram" aria-hidden="true" id="ig"></i>
+          </div>
+          <div class="btn ln-btn"
+            onclick="window.open('https://www.linkedin.com/company/ieee-student-branch-jiit/', 'noopener noreferrer')">
+            <i class="fa fa-linkedin" aria-hidden="true" id="ln"></i>
+          </div>
+          <div class="btn gt-btn" onclick="window.open('https://github.com/ieeesbjiit', 'noopener noreferrer')">
+            <i class="fa fa-github" aria-hidden="true" id="gt"></i>
+          </div>
+          <div class="btn yt-btn" onclick="window.open('https://www.youtube.com/c/IEEESBJIIT', 'noopener noreferrer')">
+            <i class="fa fa-youtube-play" aria-hidden="true" id="yt"></i>
           </div>
         </div>
       </div>
-      <!--       
-        <div class="footer-bottom">
-        <p class="footer-links" style="text-align: center">
-          <a href="#postLoader" class="link-1">Home</a>
+    </div>
+    <!--       
+      <div class="footer-bottom">
+      <p class="footer-links" style="text-align: center">
+        <a href="#postLoader" class="link-1">Home</a>
 
-          <a href="#about">About</a>
+        <a href="#about">About</a>
 
-          <a href="#event">Events</a>
+        <a href="#event">Events</a>
 
-          <a href="#timeline">Timeline</a>
+        <a href="#timeline">Timeline</a>
 
-          <a href="#team">Team</a>
+        <a href="#team">Team</a>
 
-          <a href="#sponsors">Sponsors</a>
+        <a href="#sponsors">Sponsors</a>
 
-          <a href="#contact">Contact</a>
-        </p>
-      </div> -->
+        <a href="#contact">Contact</a>
+      </p>
+    </div> -->
 
 
-      <div id="totop-icon">
-        <a href="#postLoader" uk-totop></a>
-      </div>
-    </footer>
-    <script src="static/js/main.js"></script>
+    <div id="totop-icon">
+      <a href="#postLoader" uk-totop></a>
+    </div>
+  </footer>
+
+  </div>
+
+
+  <script src="static/js/main.js"></script>
 </body>
 <script src="/static/js/main.js"></script>
 

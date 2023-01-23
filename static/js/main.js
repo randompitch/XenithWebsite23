@@ -103,7 +103,7 @@ const createSponsorCard = (name, spType, imageUrl, link = "") => {
   var parent = document.createElement("div");
   parent.className = "col-md-5";
   parent.style.marginBottom = "140px";
-  parent.style.marginTop = "0px";
+  parent.style.marginTop = "50px";
   var card = document.createElement("div");
   card.className = "sponsor-card";
 
