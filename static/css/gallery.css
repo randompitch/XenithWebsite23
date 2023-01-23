@@ -1,4 +1,4 @@
-#gallery {
+/* #gallery {
     overflow: hidden;
 }
 
@@ -15,4 +15,42 @@
         object-fit: cover;
         margin: 0 60px;
     }
+} */
+
+/* 2222 */
+#gallerybox{
+    background: #000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
 }
+.galleryalign
+{
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.galleryalign2
+{
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+
+.swiper-container {
+    width: 100%;
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background: #000;
+  }

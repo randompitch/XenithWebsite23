@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
   <link rel="stylesheet" href="static/css/style.css" />
   <link rel="stylesheet" href="static/css/about.css" />
   <link rel="stylesheet" href="static/css/scroll.css" />
@@ -29,6 +31,7 @@
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     window.onload = function () {
@@ -361,7 +364,72 @@
 
     <!--gallery-->
     <div class="uk-position-relative" id="gallery" uk-scrollspy="cls:uk-animation-fade">
+    <div class="uk-section timeline-main galleryalign">
+   
+      <div class="uk-tile uk-tile-transparent galleryalign2">
+        <span class="sectionHead">Gallery</span>
+      </div>
+    
+  
+    <div class="swiper-container" id="gallerybox">
+         <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./static/img/gallery/img6.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="./static/img/gallery/img4.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="./static/img/gallery/img5.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="./static/img/gallery/img3.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="./static/img/gallery/img1.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="./static/img/gallery/img2.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="./static/img/gallery/img7.jpeg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+          rotate: 20,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows : true,
+        },
+        loop:true,
+        autoplay: {
+    delay:500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      });
+    </script>
+</div>
+</div>
+
+
+
+
+<!--
+    <div class="uk-position-relative" id="gallery" uk-scrollspy="cls:uk-animation-fade">
       <div class="uk-section timeline-main">
+        <div class="uk-position-top-center">
+          <div class="uk-tile uk-tile-transparent">
+            <span class="sectionHead">gallery</span>
+          </div>
+        </div>
+       
         <div class="uk-position-top-center">
           <div class="uk-tile uk-tile-transparent">
             <span class="sectionHead">gallery</span>
@@ -435,9 +503,9 @@
             uk-slider-item="next"></a>
 
         </div>
-
+      
       </div>
-    </div>
+    </div> -->
     <!--gallery ends-->
 
 
@@ -711,14 +779,14 @@
           <div style="float: left">
             <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
           </div>
-          <p style="display: flex">Shwetank Verma : +91 9852244157</p>
+          <p style="display: flex">Yuvraj Chaudhary : +91 8755303468</p>
         </div>
 
         <div class="nme">
           <div style="float: left">
             <i class="fa fa-phone" aria-hidden="true" id="ph"></i>
           </div>
-          <p style="display: flex">Priyanjali Chaudhary : +91 7983760053</p>
+          <p style="display: flex">Parth Punia : +91 8960970816</p>
         </div>
         <div class="nme">
           <div style="float: left">
