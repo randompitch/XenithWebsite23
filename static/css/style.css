@@ -510,7 +510,7 @@ main {
 }
 @media screen and (max-width:550px) {
   .content2 h1 {
-  margin-top:25vmin;
+  margin-top:10vmin;
   }
   
 }
