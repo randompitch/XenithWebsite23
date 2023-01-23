@@ -67,7 +67,7 @@ h2 {
   }
   
   
-  .time {
+  .tme {
     display: inline-block;
     font-size: 2em;
     list-style-type: none;
@@ -77,7 +77,7 @@ h2 {
     font-weight: bolder;
   }
   
-  .time span {
+  .tme span {
     display: block;
     font-size: 4.5rem;
     padding-bottom: 1em;
@@ -90,12 +90,12 @@ h2 {
     
    
     
-    .time{
+    .tme{
       font-size: 2em;
       padding: 1em 1.5em;
     }
     
-    .time span {
+    .tme span {
         font-size: 2em;
     }
   }
@@ -109,12 +109,12 @@ h2 {
     {
       height:50vh !important;
     }
-    .time{
+    .tme{
       font-size: 1.7em;
       padding: 1em 1.5em;
     }
     
-    .time span {
+    .tme span {
         font-size: 1.7em;
     }
     
