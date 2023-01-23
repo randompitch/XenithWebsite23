@@ -2,7 +2,7 @@ $(document).ready(function () {
   setTimeout(function () {
     $("#preLoader").addClass("uk-hidden");
     $("#postLoader").removeClass("uk-hidden");
-  }, 2200);
+  }, 1500);
 
   $(window).scroll(function () {
     var nav = $("#navbarMain");
