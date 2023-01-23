@@ -2,7 +2,7 @@ $(document).ready(function () {
   setTimeout(function () {
     $("#preLoader").addClass("uk-hidden");
     $("#postLoader").removeClass("uk-hidden");
-  }, 2000);
+  }, 2200);
 
   $(window).scroll(function () {
     var nav = $("#navbarMain");
@@ -229,3 +229,16 @@ function callbackFunc() {
   this.focus()
   
 });
+
+var cnt=document.getElementById("count"); 
+var water=document.getElementById("wter");
+var percent=0;
+var interval;
+interval=setInterval(function(){ 
+  percent+=3; 
+  
+  water.style.transform='translate(0'+','+(100-percent)+'%)';
+  if(percent==100){
+    clearInterval(interval);
+  }
+},60);
