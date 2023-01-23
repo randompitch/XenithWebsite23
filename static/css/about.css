@@ -105,6 +105,10 @@ h2 {
     {
       top:30%;
     }
+    #myVideo
+    {
+      height:80vh !important;
+    }
     .time{
       font-size: 1.7em;
       padding: 1em 1.5em;
