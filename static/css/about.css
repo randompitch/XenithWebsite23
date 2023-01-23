@@ -44,3 +44,61 @@ h2 {
     box-shadow: 0px 0px 15px 15px #000000;
 
 }
+/* :root {
+    --smaller: .75;
+  } */
+
+.octopus
+{
+    position: relative;
+}
+.coner {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+     background: rgba(0,0,0,0);
+    position: absolute;
+    top:25%;
+    width:100vw;
+
+  }
+  
+  
+  .time {
+    display: inline-block;
+    font-size: 2em;
+    list-style-type: none;
+    padding: 2em;
+    text-transform: uppercase;
+    color:#FF3131;
+    font-weight: bolder;
+  }
+  
+  .time span {
+    display: block;
+    font-size: 4.5rem;
+    padding-bottom: 1em;
+    color:#fff
+  }
+  
+  
+  @media screen and (max-width:380px) {
+    .coner
+    {
+        top:0;
+    }
+    
+  }
+  @media all and (max-width: 768px) {
+    
+   
+    
+    .time{
+      font-size: 2em;
+      padding: 1em 1.5em;
+    }
+    
+    .time span {
+        font-size: 2em;
+    }
+  }
