@@ -75,7 +75,7 @@ window.addEventListener("scroll", () => {
     }
     if(section.getAttribute('id')=='sponsors')
     {
-      if(scrollY >= (secTop + section.clientHeight/1.3))
+      if(scrollY >= (secTop + section.clientHeight/4))
       {
         console.log('hi');
         current = 'contact'
