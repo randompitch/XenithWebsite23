@@ -97,21 +97,24 @@ const toggleAbout = () => {
     aboutToggle.innerHTML = "...read more";
   }
 };
+let cmt=1;
 setInterval(function () {
   var crd = document.getElementsByClassName('col-md-5');
   for (var l=0;l<crd.length;l++)
   {
     
-    if(crd[l].classList.contains('end') && crd[l].classList.contains('uk-active') )
+    if(crd[l].classList.contains('end') && crd[l].classList.contains('uk-active') &&cmt<5 )
     {
-      // fetch("./sponsorData.json")
-      // .then((res) => res.json())
-      // .then((data) => {
-      //   data.map((sponsor) =>
-      //     createSponsorCard(sponsor.name, sponsor.type, sponsor.image, sponsor.link)
-      //   );
-      // })
-      // .catch((err) => console.error(err));
+      fetch("./sponsorData.json")
+      .then((res) => res.json())
+      .then((data) => {
+        data.map((sponsor) =>
+          createSponsorCard(sponsor.name, sponsor.type, sponsor.image, sponsor.link)
+        );
+      })
+      .catch((err) => console.error(err));
+      
+
     }
     
    
@@ -173,8 +176,6 @@ fetch("./sponsorData.json")
   })
   .catch((err) => console.error(err));
 
-  for(var m=0;m<5;m++)
-  {
     fetch("./sponsorData.json")
     .then((res) => res.json())
     .then((data) => {
@@ -183,7 +184,7 @@ fetch("./sponsorData.json")
       );
     })
     .catch((err) => console.error(err));
-  }
+  
 
 
 
