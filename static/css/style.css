@@ -641,14 +641,7 @@ header ul li a:hover,.active{
 }
 
 }
-@media only screen and (max-width: 450px) {
 
-  /* #myVide
-  {
-    height:70vh !important;
-  } */
-
-}
   
 #landingpage
 {
@@ -660,4 +653,23 @@ header ul li a:hover,.active{
   font-family: "Crota" !important;
   color: whitesmoke;
   font-size:3vmax !important;
+}
+.ploader
+{
+  display:none;
+  width:100vw;
+  height:100vh;
+}
+@media only screen and (max-width: 450px) {
+
+  #myVide
+  {
+    display:none;
+  }
+  .ploader
+  {
+    display:block;
+  }
+  
+
 }
