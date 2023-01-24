@@ -71,7 +71,7 @@ window.addEventListener("scroll", () => {
     const secHt = section.clientHeight;
     if (scrollY >= (secTop - secHt / 4)) {
       current = section.getAttribute('id')
-      console.log(current);
+      // console.log(current);
     }
     if(section.getAttribute('id')=='sponsors')
     {
@@ -97,8 +97,29 @@ const toggleAbout = () => {
     aboutToggle.innerHTML = "...read more";
   }
 };
-
-
+setInterval(function () {
+  var crd = document.getElementsByClassName('col-md-5');
+  for (var l=0;l<crd.length;l++)
+  {
+    
+    if(crd[l].classList.contains('end') && crd[l].classList.contains('uk-active') )
+    {
+      // fetch("./sponsorData.json")
+      // .then((res) => res.json())
+      // .then((data) => {
+      //   data.map((sponsor) =>
+      //     createSponsorCard(sponsor.name, sponsor.type, sponsor.image, sponsor.link)
+      //   );
+      // })
+      // .catch((err) => console.error(err));
+    }
+    
+   
+  }
+ 
+  
+}, 1000);
+let cntt=0;
 const createSponsorCard = (name, spType, imageUrl, link = "") => {
   var parent = document.createElement("div");
   parent.className = "col-md-5";
@@ -130,19 +151,42 @@ const createSponsorCard = (name, spType, imageUrl, link = "") => {
   card.appendChild(cardContainer);
   parent.appendChild(card);
   document.getElementById("sponsorContainer").appendChild(parent);
+  if(cntt==0)
+  {
+    parent.className+=" start";
+  }
+  if(cntt==sponsorlength-1)
+  {
+    parent.className+=" end";
+    cnt=0;
+  }
+  cntt++;
 };
 var sponsors = [];
-for(let m=0;m<5;m++)
-{
-  fetch("./sponsorData.json")
+var sponsorlength=0;
+
+fetch("./sponsorData.json")
   .then((res) => res.json())
   .then((data) => {
-    data.map((sponsor) =>
-      createSponsorCard(sponsor.name, sponsor.type, sponsor.image, sponsor.link)
-    );
+    sponsorlength=data.length;
+
   })
   .catch((err) => console.error(err));
-}
+
+  for(var m=0;m<5;m++)
+  {
+    fetch("./sponsorData.json")
+    .then((res) => res.json())
+    .then((data) => {
+      data.map((sponsor) =>
+        createSponsorCard(sponsor.name, sponsor.type, sponsor.image, sponsor.link)
+      );
+    })
+    .catch((err) => console.error(err));
+  }
+
+
+
 
 
 function scrollHandler() {
@@ -254,8 +298,6 @@ setInterval(function () {
     video.currentTime=2;
   }
   
-  console.log(video.currentTime);
-  console.log(video.duration);
 }, 1000);
 
 
