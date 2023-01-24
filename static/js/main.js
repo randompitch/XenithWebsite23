@@ -1,8 +1,19 @@
+var mainVideo = $('#myVide');
 $(document).ready(function () {
-  setTimeout(function () {
-    $("#preLoader").addClass("uk-hidden");
-    $("#postLoader").removeClass("uk-hidden");
-  }, 3200);
+  
+  
+  // setTimeout(function () {
+    
+  // }, 3200);
+  if ($(window).width() < 600) {
+
+    mainVideo.append("<source src='./assets/xenith_mob.mp4' type='video/mp4' class='active video123' />");
+  }
+  else
+  {
+    mainVideo.append("<source src='./assets/XenithLogoPreloaderWebsite.mp4' type='video/mp4' class='active video123' />");
+  }
+  
 
   $(window).scroll(function () {
     var nav = $("#navbarMain");
@@ -13,6 +24,17 @@ $(document).ready(function () {
       nav.removeClass("background-xenith");
     }
   });
+  var refreshIntervalId=setInterval(function () {
+    var vid = document.getElementById('myVide');
+    if(Math.floor(vid.currentTime)>2)
+    {
+      $("#preLoader").addClass("uk-hidden");
+      $("#postLoader").removeClass("uk-hidden");
+      clearInterval(refreshIntervalId);
+    }
+    console.log(Math.floor(vid.currentTime))
+    
+  }, 1000);
 });
 
 const setActiveNav = (id) => {
