@@ -77,7 +77,6 @@ window.addEventListener("scroll", () => {
     {
       if(scrollY >= (secTop + section.clientHeight/4))
       {
-        console.log('hi');
         current = 'contact'
       }
     }
@@ -278,19 +277,6 @@ function callbackFunc() {
   this.focus()
   
 });
-
-var cnt=document.getElementById("count"); 
-var water=document.getElementById("wter");
-var percent=0;
-var interval;
-interval=setInterval(function(){ 
-  percent+=3; 
-  
-  water.style.transform='translate(0'+','+(100-percent)+'%)';
-  if(percent==100){
-    clearInterval(interval);
-  }
-},60);
 
 setInterval(function () {
   var video = document.getElementById('myVideo');
