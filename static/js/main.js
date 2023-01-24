@@ -132,7 +132,7 @@ const createSponsorCard = (name, spType, imageUrl, link = "") => {
   document.getElementById("sponsorContainer").appendChild(parent);
 };
 var sponsors = [];
-for(let m=0;m<20;m++)
+for(let m=0;m<5;m++)
 {
   fetch("./sponsorData.json")
   .then((res) => res.json())
