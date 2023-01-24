@@ -13,7 +13,8 @@ $(document).ready(function () {
   {
     mainVideo.append("<source src='./assets/XenithLogoPreloaderWebsite.mp4' type='video/mp4' class='active video123' />");
   }
-  
+  var vid = document.getElementById('myVide');
+  vid.play();
 
   $(window).scroll(function () {
     var nav = $("#navbarMain");
@@ -24,16 +25,17 @@ $(document).ready(function () {
       nav.removeClass("background-xenith");
     }
   });
+  let cmmt=0;
   var refreshIntervalId=setInterval(function () {
     var vid = document.getElementById('myVide');
-    if(Math.floor(vid.currentTime)>2)
+    if(Math.floor(vid.currentTime)>2 || cmt>7)
     {
       $("#preLoader").addClass("uk-hidden");
       $("#postLoader").removeClass("uk-hidden");
       clearInterval(refreshIntervalId);
     }
-    console.log(Math.floor(vid.currentTime))
-    
+    // console.log(Math.floor(vid.currentTime))
+    cmt++;
   }, 1000);
 });
 
