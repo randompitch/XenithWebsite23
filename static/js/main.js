@@ -18,7 +18,7 @@ $(document).ready(function () {
   });
   let cmmt=0;
   var refreshIntervalId=setInterval(function () {
-    if(cmmt>2)
+    if(cmmt>2000)
     {
       $("#preLoader").addClass("uk-hidden");
       $("#postLoader").removeClass("uk-hidden");

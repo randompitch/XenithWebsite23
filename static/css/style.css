@@ -121,7 +121,7 @@ html {
 #preLoader {
   width: 100%;
   height: 100vh;
-  background: black;
+  background: #010203;
 }
 
 .title
