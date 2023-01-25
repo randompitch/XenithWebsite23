@@ -659,7 +659,7 @@ header ul li a:hover,.active{
 {
   display:none;
   width:100vw;
-  height:50vh;
+  height:100vh;
 }
 @media only screen and (max-width: 450px) {
 
