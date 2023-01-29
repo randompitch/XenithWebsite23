@@ -320,7 +320,7 @@ section {
   .footer-center,
   .footer-center1
    {
-    width: 60% !important;
+    width: 100% !important;
     margin: auto;
   }
 }
