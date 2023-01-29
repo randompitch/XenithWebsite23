@@ -315,7 +315,7 @@ setInterval(function () {
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy,
-      dayMonth = "02/10/",
+      dayMonth = "02/04/",
       birthday = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
