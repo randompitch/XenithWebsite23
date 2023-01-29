@@ -571,7 +571,12 @@ header {
   align-items: center;
 
 }
-
+.logo
+{
+  position:absolute;
+  top:0;
+  left:5vw;
+}
 header .logo {
   color: #fff;
   font-weight: 700;
@@ -579,6 +584,20 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+@media(max-width:1000px) {
+  .logo
+{
+  left:2.5%;
+}
+
+}
+@media(max-width:900px) {
+ 
+.logo
+{
+  visibility: hidden;
+}
 }
 
 /* header ul{
@@ -626,6 +645,7 @@ header ul li a:hover,.active{
     font-size: 2px;
    
   }
+  
 }
 
 
@@ -647,7 +667,7 @@ header ul li a:hover,.active{
 #landingpage
 {
   height: 100vh;
-  width:110vh;
+  width:100vw;
 }
 .sectionHead
 {

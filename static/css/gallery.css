@@ -53,4 +53,21 @@
     width: 400px;
     height: 300px;
     background: #000;
+    object-fit: cover;
   }
+  .swiper-slide img
+  {
+    width: 400px;
+    height: 300px;
+  }
+
+@media (max-width:450px)
+{
+    .swiper-slide {
+        width:90vw;
+      } 
+      .swiper-slide img
+  {
+    width: 90vw;
+  }
+}
