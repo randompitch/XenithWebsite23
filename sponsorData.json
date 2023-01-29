@@ -1,149 +1,51 @@
 [
   {
     "id": 1,
-    "name": "Learn for Cause",
-    "image": "static/img/sponsors/lfc.jfif",
-    "type": "Community Partner",
-    "link": "https://github.com/Learn-For-Cause"
+    "name": "Geeks for Geeks",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012379/xenith-23-sponsor/gfg_whhd8p.jpg",
+    "type": "Sponsor",
+    "link": "https://www.geeksforgeeks.org"
   },
   {
     "id": 2,
-    "name": "Alpha Buildr",
-    "image": "static/img/sponsors/alphabuildr.jpeg",
+    "name": "Beeceptor",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012379/xenith-23-sponsor/beeceptor_thvfmw.jpg",
     "type": "Website Partner",
-    "link": "https://app.alphabuildr.com/"
+    "link": "https://beeceptor.com/"
   },
   {
     "id": 3,
-    "name": "Coding Minutes",
-    "image": "static/img/sponsors/codingminutes.png",
-    "type": "Technical Partner",
-    "link": "https://www.codingminutes.com/"
-  },
-  {
-    "id": 4,
-    "name": "GrabOn",
-    "image": "static/img/sponsors/grabon.png",
-    "type": "Saving Partner",
-    "link": "https://www.grabon.in/"
-  },
-  {
-    "id": 5,
     "name": "Programming PathShala",
-    "image": "static/img/sponsors/programmingpathshala.jpg",
-    "type": "Teaching Partner",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012520/xenith-23-sponsor/programmingpathshala_gyqiiz.jpg",
+    "type": "Sponsor",
     "link": "https://renaissance.programmingpathshala.com/crack-coding-interviews"
   },
   {
+    "id": 4,
+    "name": "Devfolio",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012818/xenith-23-sponsor/Devfolio_Logo-Colored_v31r6i.png",
+    "type": "Sponsor",
+    "link": "https://devfolio.co/"
+  },
+  {
+    "id": 5,
+    "name": "Solana",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012724/xenith-23-sponsor/solana_slqquy.png",
+    "type": "Sponsor",
+    "link": "https://solana.com"
+  },
+  {
     "id": 6,
-    "name": "Pieces",
-    "image": "static/img/sponsors/pieces.jpeg",
-    "type": "Snippet Partner",
-    "link": "https://code.pieces.app/"
+    "name": "Filecoin",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675013018/xenith-23-sponsor/filecoin_a6dsde.png",
+    "type": "Sponsor",
+    "link": "https://filecoin.io/"
   },
   {
     "id": 7,
-    "name": "Squicker",
-    "image": "static/img/sponsors/squicker.png",
-    "type": "Foreign Education Partner",
-    "link": "https://training.squickr.de/ticket"
-  },
-  {
-    "id": 8,
-    "name": "Skill Arena",
-    "image": "static/img/sponsors/skillarena.jpeg",
-    "type": "Skill Development Partner",
-    "link": "https://www.skillarena.in/"
-  },
-  {
-    "id": 9,
-    "name": "Raahee",
-    "image": "static/img/sponsors/raahee.jpeg",
-    "type": "Opportunities Partner",
-    "link": "https://raahee.in/"
-  },
-  {
-    "id": 10,
-    "name": "Geekster",
-    "image": "static/img/sponsors/geekster.png",
-    "type": "Knowledge Partner",
-    "link": "https://geekster.in/?utm_source=sponser_jiit"
-  },
-  {
-    "id":11,
-    "name": "Mynd Your Fitness",
-    "image": "static/img/sponsors/myndurfitness.png",
-    "type": "Fitness Partner",
-    "link": "http://www.myndyourfitness.com/"
-  },
-  {
-    "id": 12,
-    "name":"1Password",
-    "image": "static/img/sponsors/1password.jpeg",
-    "type": "Security Partner",
-    "link": ""
-  },
-  {
-    "id": 13,
-    "name": "Jamboree",
-    "image": "static/img/sponsors/jamboree.jpeg",
+    "name": "Replit",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012724/xenith-23-sponsor/replit_nezzvn.png",
     "type": "Sponsor",
-    "link": "https://www.jamboreeindia.com/"
-  },
-  {
-    "id": 14,
-    "name": "Converge EduTech",
-    "image": "static/img/sponsors/converge.jpg",
-    "type": "Sponsor",
-    "link": "https://www.convergeapp.co/"
-  },
-  {
-    "id": 15,
-    "name": "Yocket",
-    "image": "static/img/sponsors/yocket.png",
-    "type": "Sponsor",
-    "link": "https://yocket.com/"
-  },
-  {
-    "id": 16,
-    "name": "Notice Bard",
-    "image": "static/img/sponsors/noticebard.png",
-    "type": "Media Partner",
-    "link": "https://www.noticebard.com/"
-  },
-  {
-    "id": 17,
-    "name": "The Hindu",
-    "image": "static/img/sponsors/hindu.jpeg",
-    "type": "Media Sponsor",
-    "link": ""
-  },
-  {
-    "id": 18,
-    "name": "Youth Incorporated",
-    "image": "static/img/sponsors/youthinc.png",
-    "type": "Media Sponsor",
-    "link": ""
-  },
-  {
-    "id": 19,
-    "name": "Delhi Now",
-    "image": "static/img/sponsors/delhinow.jpeg",
-    "type": "Media Sponsor",
-    "link": ""
-  },
-  {
-    "id": 20,
-    "name": "Dehradun Now",
-    "image": "static/img/sponsors/dehradunNow.jpeg",
-    "type": "Media Sponsor",
-    "link": ""
-  },
-  {
-    "id": 21,
-    "name": "Startup News",
-    "image": "static/img/sponsors/startupnews.jpeg",
-    "type": "Media Sponsor",
-    "link": ""
+    "link": "https://replit.com/"
   }
 ]
