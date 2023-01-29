@@ -83,7 +83,7 @@ window.addEventListener("scroll", () => {
   sections.forEach(section => {
     const secTop = section.offsetTop;
     const secHt = section.clientHeight;
-    if (scrollY >= (secTop - secHt / 4)) {
+    if (scrollY >= (secTop - secHt / 3.3)) {
       current = section.getAttribute('id')
       // console.log(current);
     }
@@ -258,7 +258,6 @@ window.onscroll = function () {
 
 jQuery(document).on('scroll', function(){
   jQuery('.check1').css("padding-top", Math.max(5 + 0.15*window.scrollY, 1) + "vh");
-  // document.getElementById("landingpage").style.height = "90vh";
   })
 var items = document.querySelectorAll(".timeline li");
 
