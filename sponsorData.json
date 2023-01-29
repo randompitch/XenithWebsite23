@@ -15,37 +15,37 @@
   },
   {
     "id": 3,
-    "name": "Programming PathShala",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012520/xenith-23-sponsor/programmingpathshala_gyqiiz.jpg",
-    "type": "Sponsor",
-    "link": "https://renaissance.programmingpathshala.com/crack-coding-interviews"
-  },
-  {
-    "id": 4,
     "name": "Devfolio",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012818/xenith-23-sponsor/Devfolio_Logo-Colored_v31r6i.png",
     "type": "Sponsor",
     "link": "https://devfolio.co/"
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "Solana",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012724/xenith-23-sponsor/solana_slqquy.png",
     "type": "Sponsor",
     "link": "https://solana.com"
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "Filecoin",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675013018/xenith-23-sponsor/filecoin_a6dsde.png",
     "type": "Sponsor",
     "link": "https://filecoin.io/"
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Replit",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012724/xenith-23-sponsor/replit_nezzvn.png",
     "type": "Sponsor",
     "link": "https://replit.com/"
+  },
+  {
+    "id": 7,
+    "name": "Hudson Chopsticks",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675019005/xenith-23-sponsor/hchopsticks_neawon.png",
+    "type": "Sponsor",
+    "link": "#"
   }
 ]
