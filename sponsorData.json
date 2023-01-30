@@ -8,6 +8,13 @@
   },
   {
     "id": 2,
+    "name": "Bizthon",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675104842/xenith-23-sponsor/bizthon_p26f6i.jpg",
+    "type": "Co-Title Sponsor",
+    "link": "https://bizthon.com/"
+  },
+  {
+    "id": 2,
     "name": "Beeceptor",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675104774/xenith-23-sponsor/beeceptor_asemn7.jpg",
     "type": "API Partner",
