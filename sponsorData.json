@@ -2,119 +2,119 @@
   {
     "id": 1,
     "name": "Geeks for Geeks",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012379/xenith-23-sponsor/gfg_whhd8p.jpg",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/gfg_whhd8p.jpg",
     "type": "Coding Platform Partner",
     "link": "https://www.geeksforgeeks.org"
   },
   {
     "id": 2,
     "name": "Bizthon",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675104842/xenith-23-sponsor/bizthon_p26f6i.jpg",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/bizthon_p26f6i.jpg",
     "type": "Co-Title Sponsor",
     "link": "https://bizthon.com/"
   },
   {
     "id": 2,
     "name": "Beeceptor",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675104774/xenith-23-sponsor/beeceptor_asemn7.jpg",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/beeceptor_asemn7.jpg",
     "type": "API Partner",
     "link": "https://beeceptor.com/"
   },
   {
     "id": 3,
     "name": "Devfolio",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012818/xenith-23-sponsor/Devfolio_Logo-Colored_v31r6i.png",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/Devfolio_Logo-Colored_v31r6i.png",
     "type": "Sponsor",
     "link": "https://devfolio.co/"
   },
   {
     "id": 4,
     "name": "Solana",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012724/xenith-23-sponsor/solana_slqquy.png",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/solana_slqquy.png",
     "type": "Sponsor",
     "link": "https://solana.com"
   },
   {
     "id": 5,
     "name": "Filecoin",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675062021/xenith-23-sponsor/filecoin_zmozpq.png",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/filecoin_zmozpq.png",
     "type": "Sponsor",
     "link": "https://filecoin.io/"
   },
   {
     "id": 6,
     "name": "Replit",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675062204/xenith-23-sponsor/replit_hpwvve.png",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/replit_hpwvve.png",
     "type": "Sponsor",
     "link": "https://replit.com/"
   },
   {
     "id": 7,
     "name": "Hudson Chopsticks",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675019005/xenith-23-sponsor/hchopsticks_neawon.png",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/hchopsticks_neawon.png",
     "type": "Powered By",
     "link": "#"
   },
   {
     "id": 8,
     "name": "Interview Buddy",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675076282/xenith-23-sponsor/ibuddy_tgspoc.jpg",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/ibuddy_tgspoc.jpg",
     "type": "Interview Partner",
     "link": "#"
   },
   {
     "id": 9,
     "name": "Delhi Now",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/duvibes_yitjhd.png",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/duvibes_yitjhd.png",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
     "id": 10,
     "name": "It happens only in India",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/kota_m7iyel.jpg",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/kota_m7iyel.jpg",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
     "id": 11,
     "name": "Ensemble",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/ensemble_geyhyz.jpg",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/ensemble_geyhyz.jpg",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
     "id": 12,
     "name": "Youth Incorporated",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/youthinc_n3gtza.jpg",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/youthinc_n3gtza.jpg",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
     "id": 13,
     "name": "Postoast",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061258/xenith-23-sponsor/postoast_feydfi.png",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/postoast_feydfi.png",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
     "id": 14,
     "name": "Robotics India",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061258/xenith-23-sponsor/ri_ixmnye.jpg",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/ri_ixmnye.jpg",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
     "id": 15,
     "name": "StartupNewsFYI",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/snews_w6qtyi.jpg",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/snews_w6qtyi.jpg",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
     "id": 16,
     "name": "ED Times",
-    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/edtimes_ef5j1l.jpg",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/edtimes_ef5j1l.jpg",
     "type": "Media Sponsor",
     "link": "#"
   }
