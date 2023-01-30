@@ -3,14 +3,14 @@
     "id": 1,
     "name": "Geeks for Geeks",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012379/xenith-23-sponsor/gfg_whhd8p.jpg",
-    "type": "Sponsor",
+    "type": "Coding Platform Partner",
     "link": "https://www.geeksforgeeks.org"
   },
   {
     "id": 2,
     "name": "Beeceptor",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675012379/xenith-23-sponsor/beeceptor_thvfmw.jpg",
-    "type": "Website Partner",
+    "type": "API Partner",
     "link": "https://beeceptor.com/"
   },
   {
@@ -52,7 +52,7 @@
     "id": 8,
     "name": "Interview Buddy",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675076282/xenith-23-sponsor/ibuddy_tgspoc.jpg",
-    "type": "Sponsor",
+    "type": "Interview Partner",
     "link": "#"
   },
   {
