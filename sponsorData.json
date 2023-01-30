@@ -45,60 +45,67 @@
     "id": 7,
     "name": "Hudson Chopsticks",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675019005/xenith-23-sponsor/hchopsticks_neawon.png",
-    "type": "Sponsor",
+    "type": "Powered By",
     "link": "#"
   },
   {
     "id": 8,
+    "name": "Interview Buddy",
+    "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675076282/xenith-23-sponsor/ibuddy_tgspoc.jpg",
+    "type": "Sponsor",
+    "link": "#"
+  },
+  {
+    "id": 9,
     "name": "Delhi Now",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/duvibes_yitjhd.png",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "It happens only in India",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/kota_m7iyel.jpg",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Ensemble",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/ensemble_geyhyz.jpg",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Youth Incorporated",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/youthinc_n3gtza.jpg",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Postoast",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061258/xenith-23-sponsor/postoast_feydfi.png",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Robotics India",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061258/xenith-23-sponsor/ri_ixmnye.jpg",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
-    "id": 13,
+    "id": 15,
     "name": "StartupNewsFYI",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/snews_w6qtyi.jpg",
     "type": "Media Sponsor",
     "link": "#"
   },
   {
-    "id": 14,
+    "id": 16,
     "name": "ED Times",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/v1675061259/xenith-23-sponsor/edtimes_ef5j1l.jpg",
     "type": "Media Sponsor",
