@@ -28,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 65vh;
 }
 .galleryalign
 {
@@ -53,12 +53,13 @@
     width: 400px;
     height: 300px;
     background: #000;
-    object-fit: cover;
+    
   }
   .swiper-slide img
   {
     width: 400px;
     height: 300px;
+    object-fit: cover;
   }
 
 @media (max-width:450px)

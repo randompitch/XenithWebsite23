@@ -3,6 +3,7 @@
 .about-container {
     padding: 5%;
     padding-top: 1%;
+    padding-bottom: 0;
 }
 
 .toggle-text {

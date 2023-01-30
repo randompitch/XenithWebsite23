@@ -20,7 +20,7 @@
   position: relative;
   width: 6px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 100px;
   background: #fff;
 }
 .timeline ul li::after {
