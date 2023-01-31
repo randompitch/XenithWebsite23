@@ -71,7 +71,7 @@
   },
   {
     "id": 10,
-    "name": "It happens only in India",
+    "name": "It happens only in Kota",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/kota_m7iyel.jpg",
     "type": "Media Sponsor",
     "link": "#"
@@ -115,6 +115,20 @@
     "id": 16,
     "name": "ED Times",
     "image": "https://res.cloudinary.com/dm0muijpa/image/upload/q_auto/xenith-23-sponsor/edtimes_ef5j1l.jpg",
+    "type": "Block Partner",
+    "link": "#"
+  },
+  {
+    "id": 17,
+    "name": "DU Vibes",
+    "image": "static/img/du_vibes.jpeg",
+    "type": "Media Sponsor",
+    "link": "#"
+  },
+  {
+    "id": 18,
+    "name": "Know A Fest",
+    "image": "static/img/knowafest.png",
     "type": "Media Sponsor",
     "link": "#"
   }
