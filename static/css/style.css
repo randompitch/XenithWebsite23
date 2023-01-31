@@ -694,3 +694,8 @@ header ul li a:hover,.active{
   
 
 }
+
+#event
+{
+  padding-bottom:0 !important;
+}

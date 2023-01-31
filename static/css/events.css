@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   background: transparent;
 }
 .containerevent {
@@ -17,6 +16,7 @@
   max-width: 1200px;
   flex-wrap: wrap;
   padding: 40px 0%;
+  padding-bottom:0;
 }
 .containerevent .card {
   position: relative;
