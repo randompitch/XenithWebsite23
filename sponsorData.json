@@ -143,6 +143,7 @@
     "id": 19,
     "name": "Elearnmarkets",
     "image": "static/img/elm.jpeg",
-    "link": "#"
+    "type": "Sponsor",
+    "link": "https://www.elearnmarkets.com"
   }
 ]
