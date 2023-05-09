@@ -138,5 +138,11 @@
     "image": "static/img/knowafest.png",
     "type": "Media Sponsor",
     "link": "#"
+  },
+  {
+    "id": 19,
+    "name": "Elearnmarkets",
+    "image": "static/img/elm.jpeg",
+    "link": "#"
   }
 ]
